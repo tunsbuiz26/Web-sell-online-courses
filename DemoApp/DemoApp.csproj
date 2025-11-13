@@ -19,4 +19,8 @@
     <Folder Include="Admin\Controller\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\banner.png" />
+  </ItemGroup>
+
 </Project>

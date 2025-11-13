@@ -1,6 +1,11 @@
+wwwroot\css\header.css
+wwwroot\css\home.css
 wwwroot\css\login.css
+wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\banner.png
+wwwroot\js\header.js
 wwwroot\js\register.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,4 +65,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\register.css

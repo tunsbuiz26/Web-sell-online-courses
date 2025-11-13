@@ -250,3 +250,4 @@ D:\Lap trinh .NET\DemoApp\DemoApp\obj\Debug\net6.0\refint\DemoApp.dll
 D:\Lap trinh .NET\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.pdb
 D:\Lap trinh .NET\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.genruntimeconfig.cache
 D:\Lap trinh .NET\DemoApp\DemoApp\obj\Debug\net6.0\ref\DemoApp.dll
+D:\Lap trinh .NET\DemoApp\DemoApp\obj\Debug\net6.0\DemoApp.sourcelink.json

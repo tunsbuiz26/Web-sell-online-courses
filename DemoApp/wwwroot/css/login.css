@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
 /* --- 1. THANH HEADER (Ở TRÊN CÙNG) --- */
@@ -98,7 +99,7 @@ body {
     position: relative;
     overflow: hidden;
     border: 1px solid var(--primary-blue-light);
-}
+    
 
 .promo-header {
     display: flex;
@@ -233,6 +234,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    margin-top: 120px;
 }
 
 .login-header {
