@@ -1,6 +1,5 @@
 wwwroot\css\header.css
 wwwroot\css\home.css
-wwwroot\css\login.css
 wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
@@ -65,3 +64,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\login.css
