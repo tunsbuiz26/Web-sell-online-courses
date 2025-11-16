@@ -1,0 +1,79 @@
+﻿@model DemoApp.Models.KhoaHoc
+@{
+    Layout = "~/Views/Shared/qlkhLayout.cshtml";
+    ViewData["Title"] = "Thêm khóa học mới";
+}
+
+<div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800">Thêm khóa học mới</h1>
+    <p class="text-gray-600 mt-1">Điền thông tin chi tiết của khóa học mới vào biểu mẫu dưới đây.</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-md">
+    <form asp-controller="KhoaHocs" asp-action="Create" method="post" enctype="multipart/form-data">
+
+        <div class="p-6 md:p-8 space-y-6">
+
+            <div>
+                <label for="course-name" class="block text-sm font-medium text-gray-700 mb-2">Tên khóa học</label>
+                <input type="text" id="course-name" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Ví dụ: Lập trình web nâng cao">
+            </div>
+
+            <div>
+                <label for="course-description" class="block text-sm font-medium text-gray-700 mb-2">Mô tả khóa học</label>
+                <textarea id="course-description" rows="4" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Nhập mô tả chi tiết về nội dung khóa học"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="lesson-count" class="block text-sm font-medium text-gray-700 mb-2">Số lượng bài học</label>
+                    <input type="number" id="lesson-count" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Ví dụ: 35">
+                </div>
+                <div>
+                    <label for="student-count" class="block text-sm font-medium text-gray-700 mb-2">Số lượng sinh viên tối đa</label>
+                    <input type="number" id="student-count" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Ví dụ: 150">
+                </div>
+            </div>
+
+            <div>
+                <label for="course-status" class="block text-sm font-medium text-gray-700 mb-2">Trạng thái</label>
+                <select id="course-status" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    <option>Sắp khai giảng</option>
+                    <option>Đang hoạt động</option>
+                    <option>Đã kết thúc</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Ảnh bìa khóa học</label>
+                <div class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                    <div class="space-y-1 text-center">
+                        <span class="material-symbols-outlined text-5xl text-gray-400">
+                            cloud_upload
+                        </span>
+                        <div class="flex text-sm text-gray-600">
+                            <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none">
+                                <span>Tải lên một tệp</span>
+                                <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                            </label>
+                            <p class="pl-1">hoặc kéo và thả</p>
+                        </div>
+                        <p class="text-xs text-gray-500">PNG, JPG, GIF lên tới 10MB</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <div class="flex items-center justify-end gap-4 px-6 py-4 bg-gray-50 border-t border-gray-200 rounded-b-lg">
+
+            <a asp-action="Index" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+                Hủy bỏ
+            </a>
+
+            <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition-colors">
+                <a asp-controller="KhoaHocs" asp-action="index">Lưu khóa học</a>
+            </button>
+
+        </div>
+
+    </form>
+</div>
