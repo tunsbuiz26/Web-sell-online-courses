@@ -20,6 +20,8 @@
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
+    @if (!Context.Request.Path.StartsWithSegments("/admin"))
+    {
     <!-- Header Navigation với gradient -->
     <header class="main-header">
         <div class="header-container">
@@ -96,7 +98,7 @@
             </button>
         </div>
     </header>
-
+    }
    
 
     <!-- Mobile Menu -->

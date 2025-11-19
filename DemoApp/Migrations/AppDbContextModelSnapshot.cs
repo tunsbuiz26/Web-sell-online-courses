@@ -24,32 +24,130 @@ namespace DemoApp.Migrations
 
             modelBuilder.Entity("DemoApp.Models.BaiHoc", b =>
                 {
-                    b.Property<int>("BaiHocID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BaiHocID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("KhoaHocID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NoiDung")
+                    b.Property<string>("DuongDanNoiDung")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ThoiLuong")
+                    b.Property<int>("KhoaHocId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ThuTu")
+                    b.Property<string>("LoaiNoiDung")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("Video");
+
+                    b.Property<string>("TenBaiHoc")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("ThuTuHienThi")
                         .HasColumnType("int");
 
-                    b.Property<string>("TieuDe")
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("Id");
 
-                    b.HasKey("BaiHocID");
+                    b.HasIndex("KhoaHocId");
 
-                    b.HasIndex("KhoaHocID");
+                    b.ToTable("BaiHoc");
 
-                    b.ToTable("BaiHocs");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DuongDanNoiDung = "bai-1-gioi-thieu-html.mp4",
+                            KhoaHocId = 1,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Giới thiệu về HTML",
+                            ThuTuHienThi = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DuongDanNoiDung = "bai-2-the-html-co-ban.mp4",
+                            KhoaHocId = 1,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Thẻ HTML cơ bản",
+                            ThuTuHienThi = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DuongDanNoiDung = "bai-3-form-input.mp4",
+                            KhoaHocId = 1,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Form và Input trong HTML",
+                            ThuTuHienThi = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DuongDanNoiDung = "bai-4-css-selectors.mp4",
+                            KhoaHocId = 1,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "CSS Selectors cơ bản",
+                            ThuTuHienThi = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DuongDanNoiDung = "bai-5-bai-tap-thuc-hanh.pdf",
+                            KhoaHocId = 1,
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Bài tập thực hành HTML CSS",
+                            ThuTuHienThi = 5
+                        },
+                        new
+                        {
+                            Id = 6,
+                            DuongDanNoiDung = "bai-1-android-studio.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Giới thiệu Android Studio",
+                            ThuTuHienThi = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DuongDanNoiDung = "bai-2-layout-view.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Layout và View trong Android",
+                            ThuTuHienThi = 2
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DuongDanNoiDung = "bai-3-xu-ly-su-kien.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Xử lý sự kiện click",
+                            ThuTuHienThi = 3
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DuongDanNoiDung = "bai-4-intent-activity.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Intent và Activity",
+                            ThuTuHienThi = 4
+                        },
+                        new
+                        {
+                            Id = 10,
+                            DuongDanNoiDung = "bai-5-du-an-calculator.pdf",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Dự án ứng dụng Calculator",
+                            ThuTuHienThi = 5
+                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.Cart", b =>
@@ -72,83 +170,206 @@ namespace DemoApp.Migrations
 
             modelBuilder.Entity("DemoApp.Models.DangKyKhoaHoc", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("KhoaHocID")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("KhoaHocId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("NgayDangKy")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("TrangThai")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("DangHoc");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("KhoaHocId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("UserId", "KhoaHocId")
+                        .IsUnique();
+
+                    b.ToTable("DangKyKhoaHoc");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            KhoaHocId = 1,
+                            NgayDangKy = new DateTime(2025, 11, 19, 12, 59, 30, 339, DateTimeKind.Local).AddTicks(8404),
+                            TrangThai = "DangHoc",
+                            UserId = 3
+                        },
+                        new
+                        {
+                            Id = 2,
+                            KhoaHocId = 2,
+                            NgayDangKy = new DateTime(2025, 11, 19, 12, 59, 30, 339, DateTimeKind.Local).AddTicks(8406),
+                            TrangThai = "DangHoc",
+                            UserId = 2
+                        });
+                });
+
+            modelBuilder.Entity("DemoApp.Models.DanhMuc", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("MoTa")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId", "KhoaHocID");
+                    b.Property<string>("TenDanhMuc")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.HasIndex("KhoaHocID");
+                    b.Property<int>("ThuTuHienThi")
+                        .HasColumnType("int");
 
-                    b.ToTable("DangKyKhoaHocs");
+                    b.Property<bool>("TrangThai")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DanhMuc");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            MoTa = "Học phát triển website",
+                            TenDanhMuc = "Lập Trình Web",
+                            ThuTuHienThi = 1,
+                            TrangThai = true
+                        },
+                        new
+                        {
+                            Id = 2,
+                            MoTa = "Phát triển ứng dụng di động",
+                            TenDanhMuc = "Lập Trình Mobile",
+                            ThuTuHienThi = 2,
+                            TrangThai = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            MoTa = "SQL Server, MySQL",
+                            TenDanhMuc = "Cơ Sở Dữ Liệu",
+                            ThuTuHienThi = 3,
+                            TrangThai = true
+                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.KhoaHoc", b =>
                 {
-                    b.Property<int>("KhoaHocID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KhoaHocID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("MoTa")
+                    b.Property<string>("AnhBia")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CapDo")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("CoBan");
+
+                    b.Property<int?>("DanhMucId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("GiaTien")
+                        .ValueGeneratedOnAdd()
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0m);
+
+                    b.Property<string>("MaKhoaHoc")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("MoTaNgan")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("TenKhoaHoc")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
-                    b.Property<bool>("TrangThai")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("KhoaHocID");
-
-                    b.ToTable("KhoaHocs");
-                });
-
-            modelBuilder.Entity("DemoApp.Models.Order", b =>
-                {
-                    b.Property<int>("OrderId")
+                    b.Property<string>("TrangThai")
+                        .IsRequired()
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"), 1L, 1);
-
-                    b.Property<DateTime?>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ShippingAddress")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("TotalPrice")
-                        .HasColumnType("float");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("BanNhap");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("DanhMucId");
+
+                    b.HasIndex("MaKhoaHoc")
+                        .IsUnique();
+
+                    b.HasIndex("TrangThai");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Order");
+                    b.ToTable("KhoaHoc");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CapDo = "CoBan",
+                            DanhMucId = 1,
+                            GiaTien = 0m,
+                            MaKhoaHoc = "WEB001",
+                            MoTaNgan = "Khóa học lập trình web cho người mới",
+                            NgayTao = new DateTime(2025, 11, 19, 12, 59, 30, 339, DateTimeKind.Local).AddTicks(8367),
+                            TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
+                            TrangThai = "DaXuatBan",
+                            UserId = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CapDo = "CoBan",
+                            DanhMucId = 2,
+                            GiaTien = 299000m,
+                            MaKhoaHoc = "MOB001",
+                            MoTaNgan = "Học lập trình ứng dụng Android",
+                            NgayTao = new DateTime(2025, 11, 19, 12, 59, 30, 339, DateTimeKind.Local).AddTicks(8370),
+                            TenKhoaHoc = "Lập trình Android cơ bản",
+                            TrangThai = "DaXuatBan",
+                            UserId = 3
+                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.Role", b =>
@@ -161,35 +382,26 @@ namespace DemoApp.Migrations
 
                     b.Property<string>("RoleName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("RoleId");
 
+                    b.HasIndex("RoleName")
+                        .IsUnique();
+
                     b.ToTable("Role");
-                });
 
-            modelBuilder.Entity("DemoApp.Models.TienDoHocTap", b =>
-                {
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BaiHocID")
-                        .HasColumnType("int");
-
-                    b.Property<float>("DiemSo")
-                        .HasColumnType("real");
-
-                    b.Property<DateTime>("ThoiGianHocCuoi")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("TrangThai")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId", "BaiHocID");
-
-                    b.HasIndex("BaiHocID");
-
-                    b.ToTable("TienDoHocTaps");
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            RoleName = "User"
+                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.User", b =>
@@ -205,13 +417,12 @@ namespace DemoApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NumberPhone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
@@ -223,20 +434,62 @@ namespace DemoApp.Migrations
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("Email")
+                        .IsUnique()
+                        .HasFilter("[Email] IS NOT NULL");
+
                     b.HasIndex("RoleId");
 
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Address = "Hà Nội",
+                            Email = "admin@khoahoc.vn",
+                            FullName = "Quản Trị Viên",
+                            NumberPhone = "0123456789",
+                            Password = "admin123",
+                            RoleId = 1,
+                            Username = "admin"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Address = "TP HCM",
+                            Email = "user01@khoahoc.vn",
+                            FullName = "Nguyễn Văn A",
+                            NumberPhone = "0987654321",
+                            Password = "user123",
+                            RoleId = 2,
+                            Username = "user01"
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            Address = "Đà Nẵng",
+                            Email = "user02@gmail.com",
+                            FullName = "Lê Văn C",
+                            NumberPhone = "0912345678",
+                            Password = "user321",
+                            RoleId = 2,
+                            Username = "user02"
+                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.BaiHoc", b =>
                 {
                     b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
-                        .WithMany("BaiHocs")
-                        .HasForeignKey("KhoaHocID")
+                        .WithMany("BaiHoc")
+                        .HasForeignKey("KhoaHocId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -257,50 +510,38 @@ namespace DemoApp.Migrations
             modelBuilder.Entity("DemoApp.Models.DangKyKhoaHoc", b =>
                 {
                     b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
-                        .WithMany("dangKyKhoaHocs")
-                        .HasForeignKey("KhoaHocID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany("DangKyKhoaHoc")
+                        .HasForeignKey("KhoaHocId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("DemoApp.Models.User", "User")
-                        .WithMany("dangKyKhoaHocs")
+                    b.HasOne("DemoApp.Models.User", "user")
+                        .WithMany("DangKyKhoaHocs")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("KhoaHoc");
 
-                    b.Navigation("User");
+                    b.Navigation("user");
                 });
 
-            modelBuilder.Entity("DemoApp.Models.Order", b =>
+            modelBuilder.Entity("DemoApp.Models.KhoaHoc", b =>
                 {
-                    b.HasOne("DemoApp.Models.User", "User")
-                        .WithMany("Orders")
+                    b.HasOne("DemoApp.Models.DanhMuc", "DanhMuc")
+                        .WithMany("KhoaHoc")
+                        .HasForeignKey("DanhMucId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("DemoApp.Models.User", "user")
+                        .WithMany("KhoaHocDay")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("User");
-                });
+                    b.Navigation("DanhMuc");
 
-            modelBuilder.Entity("DemoApp.Models.TienDoHocTap", b =>
-                {
-                    b.HasOne("DemoApp.Models.BaiHoc", "BaiHoc")
-                        .WithMany("tienDoHoctaps")
-                        .HasForeignKey("BaiHocID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DemoApp.Models.User", "User")
-                        .WithMany("tienDoHoctaps")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("BaiHoc");
-
-                    b.Navigation("User");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("DemoApp.Models.User", b =>
@@ -314,16 +555,16 @@ namespace DemoApp.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("DemoApp.Models.BaiHoc", b =>
+            modelBuilder.Entity("DemoApp.Models.DanhMuc", b =>
                 {
-                    b.Navigation("tienDoHoctaps");
+                    b.Navigation("KhoaHoc");
                 });
 
             modelBuilder.Entity("DemoApp.Models.KhoaHoc", b =>
                 {
-                    b.Navigation("BaiHocs");
+                    b.Navigation("BaiHoc");
 
-                    b.Navigation("dangKyKhoaHocs");
+                    b.Navigation("DangKyKhoaHoc");
                 });
 
             modelBuilder.Entity("DemoApp.Models.Role", b =>
@@ -335,11 +576,9 @@ namespace DemoApp.Migrations
                 {
                     b.Navigation("Carts");
 
-                    b.Navigation("Orders");
+                    b.Navigation("DangKyKhoaHocs");
 
-                    b.Navigation("dangKyKhoaHocs");
-
-                    b.Navigation("tienDoHoctaps");
+                    b.Navigation("KhoaHocDay");
                 });
 #pragma warning restore 612, 618
         }

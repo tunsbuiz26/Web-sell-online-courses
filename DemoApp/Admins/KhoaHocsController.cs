@@ -22,9 +22,8 @@ namespace DemoApp.Admins
         // GET: KhoaHocs
         public async Task<IActionResult> Index()
         {
-              return _context.KhoaHoc != null ? 
-                          View(await _context.KhoaHoc.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.KhoaHoc'  is null.");
+            var appDbContext = _context.KhoaHoc.Include(k => k.DanhMuc).Include(k => k.user);
+            return View(await appDbContext.ToListAsync());
         }
 
         // GET: KhoaHocs/Details/5
@@ -36,7 +35,9 @@ namespace DemoApp.Admins
             }
 
             var khoaHoc = await _context.KhoaHoc
-                .FirstOrDefaultAsync(m => m.KhoaHocID == id);
+                .Include(k => k.DanhMuc)
+                .Include(k => k.user)
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (khoaHoc == null)
             {
                 return NotFound();
@@ -48,6 +49,8 @@ namespace DemoApp.Admins
         // GET: KhoaHocs/Create
         public IActionResult Create()
         {
+            ViewData["DanhMucId"] = new SelectList(_context.Set<DanhMuc>(), "Id", "TenDanhMuc");
+            ViewData["UserId"] = new SelectList(_context.User, "UserId", "UserId");
             return View();
         }
 
@@ -56,7 +59,7 @@ namespace DemoApp.Admins
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("KhoaHocID,TenKhoaHoc,MoTa,UserId,NgayTao,TrangThai")] KhoaHoc khoaHoc)
+        public async Task<IActionResult> Create([Bind("Id,MaKhoaHoc,TenKhoaHoc,MoTaNgan,AnhBia,UserId,DanhMucId,CapDo,GiaTien,TrangThai,NgayTao")] KhoaHoc khoaHoc)
         {
             if (ModelState.IsValid)
             {
@@ -64,6 +67,8 @@ namespace DemoApp.Admins
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DanhMucId"] = new SelectList(_context.Set<DanhMuc>(), "Id", "TenDanhMuc", khoaHoc.DanhMucId);
+            ViewData["UserId"] = new SelectList(_context.User, "UserId", "UserId", khoaHoc.UserId);
             return View(khoaHoc);
         }
 
@@ -80,6 +85,8 @@ namespace DemoApp.Admins
             {
                 return NotFound();
             }
+            ViewData["DanhMucId"] = new SelectList(_context.Set<DanhMuc>(), "Id", "TenDanhMuc", khoaHoc.DanhMucId);
+            ViewData["UserId"] = new SelectList(_context.User, "UserId", "UserId", khoaHoc.UserId);
             return View(khoaHoc);
         }
 
@@ -88,9 +95,9 @@ namespace DemoApp.Admins
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("KhoaHocID,TenKhoaHoc,MoTa,UserId,NgayTao,TrangThai")] KhoaHoc khoaHoc)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MaKhoaHoc,TenKhoaHoc,MoTaNgan,AnhBia,UserId,DanhMucId,CapDo,GiaTien,TrangThai,NgayTao")] KhoaHoc khoaHoc)
         {
-            if (id != khoaHoc.KhoaHocID)
+            if (id != khoaHoc.Id)
             {
                 return NotFound();
             }
@@ -104,7 +111,7 @@ namespace DemoApp.Admins
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!KhoaHocExists(khoaHoc.KhoaHocID))
+                    if (!KhoaHocExists(khoaHoc.Id))
                     {
                         return NotFound();
                     }
@@ -115,6 +122,8 @@ namespace DemoApp.Admins
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DanhMucId"] = new SelectList(_context.Set<DanhMuc>(), "Id", "TenDanhMuc", khoaHoc.DanhMucId);
+            ViewData["UserId"] = new SelectList(_context.User, "UserId", "UserId", khoaHoc.UserId);
             return View(khoaHoc);
         }
 
@@ -127,7 +136,9 @@ namespace DemoApp.Admins
             }
 
             var khoaHoc = await _context.KhoaHoc
-                .FirstOrDefaultAsync(m => m.KhoaHocID == id);
+                .Include(k => k.DanhMuc)
+                .Include(k => k.user)
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (khoaHoc == null)
             {
                 return NotFound();
@@ -157,7 +168,7 @@ namespace DemoApp.Admins
 
         private bool KhoaHocExists(int id)
         {
-          return (_context.KhoaHoc?.Any(e => e.KhoaHocID == id)).GetValueOrDefault();
+          return (_context.KhoaHoc?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

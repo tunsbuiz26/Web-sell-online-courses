@@ -1,144 +1,89 @@
 ﻿@model IEnumerable<DemoApp.Models.KhoaHoc>
 
 @{
-    Layout = "~/Views/Shared/qlkhLayout.cshtml";
-    ViewData["Title"] = "Quản lý khóa học";
+    ViewData["Title"] = "Index";
 }
 
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
-    <div>
-        <h1 class="text-3xl font-bold text-gray-800">Quản lý khóa học</h1>
-        <p class="text-gray-600 mt-1">Xem, thêm, chỉnh sửa và xóa các khóa học trong hệ thống.</p>
-    </div>
-    <button class="mt-4 md:mt-0 bg-blue-600 text-white font-bold py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition-colors">
-        <a asp-controller="KhoaHocs" asp-action="Create">
-            <span class="material-symbols-outlined">add</span>
-            <span>Thêm khóa học mới</span>
-        </a>
-    </button>
-</div>
+<h1>Index</h1>
 
-<div class="bg-white rounded-lg shadow-md overflow-x-auto">
-    <table class="w-full text-sm text-left text-gray-500">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-            <tr>
-                <th class="px-6 py-3" scope="col">Tên khóa học</th>
-                <th class="px-6 py-3" scope="col">Mô tả</th>
-                <th class="px-6 py-3 text-center" scope="col">ID người dùng</th>
-                <th class="px-6 py-3 text-center" scope="col">Ngày tạo</th>
-                <th class="px-6 py-3" scope="col">Trạng thái</th>
-                <th class="px-6 py-3 text-right" scope="col">Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Lập trình web nâng cao</td>
-                <td class="px-6 py-4">Khóa học về các công nghệ frontend và backend hiện đại.</td>
-                <td class="px-6 py-4 text-center">35</td>
-                <td class="px-6 py-4 text-center">150</td>
-                <td class="px-6 py-4">
-                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Đang hoạt động</span>
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <div class="flex items-center justify-end space-x-2">
-                        <button class="p-2 text-blue-600 hover:bg-blue-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Edit"><span class="material-symbols-outlined text-base">edit</span></a>
-                        </button>
-                        <button class="p-2 text-red-600 hover:bg-red-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Delete"><span class="material-symbols-outlined text-base">delete</span></a>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Phân tích dữ liệu với Python</td>
-                <td class="px-6 py-4">Học cách sử dụng Python cho việc phân tích và trực quan hóa dữ liệu.</td>
-                <td class="px-6 py-4 text-center">42</td>
-                <td class="px-6 py-4 text-center">210</td>
-                <td class="px-6 py-4">
-                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Đang hoạt động</span>
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <div class="flex items-center justify-end space-x-2">
-                        <button class="p-2 text-blue-600 hover:bg-blue-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Edit"><span class="material-symbols-outlined text-base">edit</span></a>
-                        </button>
-                        <button class="p-2 text-red-600 hover:bg-red-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Delete"><span class="material-symbols-outlined text-base">delete</span></a>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Quản trị mạng cơ bản</td>
-                <td class="px-6 py-4">Các khái niệm cơ bản về mạng máy tính và quản trị hệ thống.</td>
-                <td class="px-6 py-4 text-center">25</td>
-                <td class="px-6 py-4 text-center">85</td>
-                <td class="px-6 py-4">
-                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Sắp khai giảng</span>
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <div class="flex items-center justify-end space-x-2">
-                        <button class="p-2 text-blue-600 hover:bg-blue-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Edit"><span class="material-symbols-outlined text-base">edit</span></a>
-                        </button>
-                        <button class="p-2 text-red-600 hover:bg-red-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Delete"><span class="material-symbols-outlined text-base">delete</span></a>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Thiết kế giao diện người dùng (UI/UX)</td>
-                <td class="px-6 py-4">Nguyên tắc thiết kế và các công cụ hỗ trợ cho UI/UX.</td>
-                <td class="px-6 py-4 text-center">30</td>
-                <td class="px-6 py-4 text-center">120</td>
-                <td class="px-6 py-4">
-                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Đang hoạt động</span>
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <div class="flex items-center justify-end space-x-2">
-                        <button class="p-2 text-blue-600 hover:bg-blue-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Edit"><span class="material-symbols-outlined text-base">edit</span></a>
-                        </button>
-                        <button class="p-2 text-red-600 hover:bg-red-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Delete"><span class="material-symbols-outlined text-base">delete</span></a>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-            <tr class="bg-white hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">An ninh mạng cho người mới bắt đầu</td>
-                <td class="px-6 py-4">Tổng quan về các mối đe dọa an ninh mạng và cách phòng chống.</td>
-                <td class="px-6 py-4 text-center">28</td>
-                <td class="px-6 py-4 text-center">95</td>
-                <td class="px-6 py-4">
-                    <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Đã kết thúc</span>
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <div class="flex items-center justify-end space-x-2">
-                        <button class="p-2 text-blue-600 hover:bg-blue-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Edit"><span class="material-symbols-outlined text-base">edit</span></a>
-                        </button>
-                        <button class="p-2 text-red-600 hover:bg-red-100 rounded-full">
-                            <a asp-controller="KhoaHocs" asp-action="Delete"><span class="material-symbols-outlined text-base">delete</span></a>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="flex justify-between items-center mt-6">
-    <span class="text-sm text-gray-700">
-        Hiển thị <span class="font-semibold text-gray-900">1</span> đến <span class="font-semibold text-gray-900">5</span> của <span class="font-semibold text-gray-900">42</span> khóa học
-    </span>
-    <div class="inline-flex -space-x-px">
-        <a class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700" href="#">Trước</a>
-        <a class="py-2 px-3 leading-tight text-blue-600 bg-blue-50 border border-gray-300 hover:bg-blue-100 hover:text-blue-700" href="#">1</a>
-        <a class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700" href="#">2</a>
-        <a class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700" href="#">3</a>
-        <a class="py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700" href="#">Sau</a>
-    </div>
-</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaKhoaHoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenKhoaHoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MoTaNgan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnhBia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CapDo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GiaTien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayTao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.user)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhMuc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKhoaHoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenKhoaHoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTaNgan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnhBia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapDo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaTien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayTao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.user.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DanhMuc.TenDanhMuc)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

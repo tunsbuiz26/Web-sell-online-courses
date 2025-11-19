@@ -1,17 +1,30 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace DemoApp.Models
 {
-    [Table("DangKyKhoaHocs")]
+    [Table("DangKyKhoaHoc")]
     public class DangKyKhoaHoc
     {
-        [ForeignKey("User")]
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
         public int UserId { get; set; }
-        [ForeignKey("KhoaHoc")]
-        public int KhoaHocID { get; set; }
-        public DateTime NgayDangKy { get; set; }
-        public string? TrangThai { get; set; }
-        public User? User { get; set; }
-        public KhoaHoc? KhoaHoc { get; set; }
+
+        [Required]
+        public int KhoaHocId { get; set; }
+
+        public DateTime NgayDangKy { get; set; } = DateTime.Now;
+
+        [Required, StringLength(20)]
+        public string TrangThai { get; set; } = "DangHoc";
+
+        // Navigation
+        [ForeignKey("UserId")]
+        public virtual User? user { get; set; }
+
+        [ForeignKey("KhoaHocId")]
+        public virtual KhoaHoc? KhoaHoc { get; set; }
     }
 }

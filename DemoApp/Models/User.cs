@@ -22,12 +22,9 @@ namespace DemoApp.Models
         public int RoleId { get; set; }
 
         public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
-
-        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
-        public ICollection<DangKyKhoaHoc>? dangKyKhoaHocs { get; set; }
-        public ICollection<TienDoHocTap>? tienDoHoctaps { get; set; }
-
         public virtual Role Role { get; set; } = null!;
-
+        public ICollection<KhoaHoc> KhoaHocDay { get; set; }
+        public ICollection<DangKyKhoaHoc> DangKyKhoaHocs { get; set; }
+        
     }
 }
