@@ -20,7 +20,7 @@
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
-    @if (!Context.Request.Path.StartsWithSegments("/admin"))
+    @if (!Context.Request.Path.StartsWithSegments("/Admin"))
     {
     <!-- Header Navigation với gradient -->
     <header class="main-header">

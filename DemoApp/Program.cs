@@ -1,18 +1,27 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using DemoApp.Controllers;
+using DemoApp.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using DemoApp.Data;
 
 namespace DemoApp
 {
     public class Program
     {
         public static void Main(string[] args)
-        {
+        {   
+
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("AppDbContext") ?? throw new InvalidOperationException("Connection string 'AppDbContext' not found.")));
 
+
+            // Thêm dòng này
+            builder.Services.Configure<RouteOptions>(options =>
+            {
+                options.LowercaseUrls = true;
+                options.LowercaseQueryStrings = false;
+            });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -20,12 +29,11 @@ namespace DemoApp
             .AddCookie(options =>
             {
                 options.LoginPath = "/Account/Login";
-                options.LogoutPath = "/Account/Logout";
-                options.AccessDeniedPath = "/Account/Login";
-                options.ExpireTimeSpan = TimeSpan.FromHours(24);
-                options.SlidingExpiration = true;
+                options.AccessDeniedPath = "/Account/AccessDenied";
+                options.ExpireTimeSpan = TimeSpan.FromDays(7);
             });
-
+           
+            builder.Services.AddAuthorization();
             builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();
@@ -38,12 +46,33 @@ namespace DemoApp
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path.StartsWithSegments("/Account/Login"))
+                {
+                    foreach (var cookie in context.Request.Cookies.Keys)
+                    {
+                        if (cookie.Contains("Antiforgery"))
+                            context.Response.Cookies.Delete(cookie);
+                    }
+                }
 
+                await next();
+            });
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Admin}/{action=Dashboard}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+            // Thêm route cụ thể cho Account
+            app.MapControllerRoute(
+                name: "account",
+                pattern: "account/{action=Login}",
+                defaults: new { controller = "Account" });
+            app.MapControllerRoute(
+                name: "admin",
+                pattern: "admin/{action=Dashboard}",
+                defaults: new { controller = "Admin" });
 
             app.Run();
         }

@@ -1,4 +1,3 @@
-wwwroot\css\admin-dashboard.css
 wwwroot\css\header.css
 wwwroot\css\home.css
 wwwroot\css\login.css
@@ -68,3 +67,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\admin-dashboard.css

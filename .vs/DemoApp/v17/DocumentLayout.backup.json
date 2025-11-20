@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "D:\\Lap trinh .NET\\DemoApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\admin-dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\admin-dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\js\\admin-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\js\\admin-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\reviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\reviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\admins\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +62,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Courses.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:18:38.361Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "admin-dashboard.css",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
+              "ViewState": "AgIAADsFAAAAAAAAAAAuwFgFAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-20T10:59:28.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Orders.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Orders.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Orders.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Orders.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv38AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:44:09.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Users.cshtml*",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Users.cshtml*",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv3MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:58:46.743Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -50,63 +135,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:33:44.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Program.cs",
               "RelativeDocumentMoniker": "DemoApp\\Program.cs",
               "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Program.cs",
               "RelativeToolTip": "DemoApp\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwEwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:25:07.231Z"
+              "WhenOpened": "2025-11-20T10:30:06.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T09:40:21.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "admin-dashboard.js",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "RelativeToolTip": "DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-18T09:15:44.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "admin-dashboard.css",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "RelativeToolTip": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAAwLUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-18T09:14:40.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
               "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
               "RelativeToolTip": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAFYBAAAAAAAAAAAmwGwBAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T09:14:01.703Z",
+              "WhenOpened": "2025-11-20T10:18:09.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reviews.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Reviews.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Reviews.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Reviews.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Reviews.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:20:48.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Revenue.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Revenue.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Revenue.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Revenue.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Revenue.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:20:32.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAHQAAAAAAAAAAADwv48AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:09:30.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv2IAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:08:31.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAUwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T10:22:09.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Admins\\RolesController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Admins\\RolesController.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Admins\\RolesController.cs",
+              "RelativeToolTip": "DemoApp\\Admins\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:09:12.412Z",
               "EditorCaption": ""
             }
           ]

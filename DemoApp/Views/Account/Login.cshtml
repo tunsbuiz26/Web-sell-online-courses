@@ -10,6 +10,7 @@
     
 
     <!-- Container chính chứa cả 2 phần: Quảng cáo + Form đăng nhập -->
+    <div class="wrapper">
     <div class="main-content-wrapper">
         <!-- Phần quảng cáo bên trái -->
         <div class="promo-section">
@@ -60,13 +61,14 @@
         </div>
 
         <!-- Phần form đăng nhập bên phải -->
-        <div class="login-container">
+        <div  class="login-container">
             <div class="login-header">
-                <h1 style="color: #0050FF">Đăng nhập SMEMBER</h1>
+                <h1 >Đăng nhập SMEMBER</h1>
+                
             </div>
 
-            @if (!ViewData.ModelState.IsValid)
-            {
+                @if (Context.Request.Method == "POST" && ViewData.ModelState.ErrorCount > 0)
+                {
                 <div class="error-message">
                     <svg class="error-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
@@ -83,15 +85,15 @@
                 <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
 
                 <div class="form-group">
-                    <label asp-for="Username" class="form-label">Số điện thoại</label>
-                    <input asp-for="Username" class="form-input" placeholder="Nhập số điện thoại của bạn" autocomplete="username" />
-                    <span asp-validation-for="Username" class="field-validation-error"></span>
+                        <label asp-for="@Model.Username" class="form-label">Tên đăng nhập</label>
+                        <input asp-for="@Model.Username" class="form-input" placeholder="Nhập tên đăng nhập" autocomplete="username" />
+                    <span asp-validation-for="@Model.Username" class="field-validation-error"></span>
                 </div>
 
                 <div class="form-group">
-                    <label asp-for="Password" class="form-label">Mật khẩu</label>
-                    <input asp-for="Password" type="password" class="form-input" placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" />
-                    <span asp-validation-for="Password" class="field-validation-error"></span>
+                        <label asp-for="@Model.Password" class="form-label">Mật khẩu</label>
+                        <input asp-for="@Model.Password" type="password" class="form-input" placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" />
+                    <span asp-validation-for="@Model.Password" class="field-validation-error"></span>
                 </div>
 
                 <button type="submit" class="btn-primary">Đăng nhập</button>
@@ -132,10 +134,11 @@
             </div>
         </div>
     </div>
-
-    <div class="footer-links">
-        <a href="#">Help</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
     </div>
+    <div class="footer-links"> 
+         <a href="#">TTHKCODE</a> 
+        <a href="#">Liên hệ hỗ trợ : 0382989623</a> 
+         
+     </div>
+   
 </div>
