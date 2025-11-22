@@ -1,0 +1,394 @@
+﻿@model IEnumerable<DemoApp.Models.KhoaHoc>
+
+@{
+    ViewData["Title"] = "Quản lý khóa học";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.ActiveMenu = "courses";
+
+    // Đề phòng Model null
+    var totalCourses = Model?.Count() ?? 0;
+    var activeCourses = Model?.Count(k => k.TrangThai == "HoatDong") ?? 0;
+    var draftCourses = Model?.Count(k => k.TrangThai == "BanNhap") ?? 0;
+    var hiddenCourses = Model?.Count(k => k.TrangThai == "DaAn") ?? 0;
+
+    var pageSize = 12;
+    var totalPages = totalCourses == 0 ? 0 : (int)Math.Ceiling(totalCourses / (double)pageSize);
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/admin-courses.css" />
+}
+
+<!-- Page Header -->
+<div class="page-header-section">
+    <div class="page-header-left">
+        <h1 class="page-main-title">Quản lý khóa học</h1>
+        <p class="page-description">Xem, lọc và chỉnh sửa các khóa học trên hệ thống</p>
+    </div>
+    <a href="/admin/courses/create" class="btn-add-new">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        Thêm khóa học
+    </a>
+</div>
+
+<!-- Stats Summary -->
+<div class="stats-summary">
+    <div class="stat-mini-card">
+        <div class="stat-mini-content">
+            <span class="stat-mini-label">Tổng khóa học</span>
+            <span class="stat-mini-value">@totalCourses</span>
+        </div>
+        <div class="stat-mini-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="stat-mini-card">
+        <div class="stat-mini-content">
+            <span class="stat-mini-label">Đang hoạt động</span>
+            <span class="stat-mini-value">@activeCourses</span>
+        </div>
+        <div class="stat-mini-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="stat-mini-card">
+        <div class="stat-mini-content">
+            <span class="stat-mini-label">Bản nháp</span>
+            <span class="stat-mini-value">@draftCourses</span>
+        </div>
+        <div class="stat-mini-icon orange">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="stat-mini-card">
+        <div class="stat-mini-content">
+            <span class="stat-mini-label">Đã ẩn</span>
+            <span class="stat-mini-value">@hiddenCourses</span>
+        </div>
+        <div class="stat-mini-icon gray">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- Filter & Search Bar -->
+<div class="filter-search-bar">
+    <div class="search-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" placeholder="Tìm theo tên khóa học, mã khóa học..." class="search-input-modern" id="searchInput" />
+    </div>
+    <div class="filter-controls">
+        <select class="filter-dropdown" id="categoryFilter">
+            <option value="">Tất cả danh mục</option>
+            @if (ViewBag.DanhMucList != null)
+            {
+                foreach (var dm in ViewBag.DanhMucList as IEnumerable<DemoApp.Models.DanhMuc>)
+                {
+                    <option value="@dm.Id">@dm.TenDanhMuc</option>
+                }
+            }
+        </select>
+        <select class="filter-dropdown" id="statusFilter">
+            <option value="">Tất cả trạng thái</option>
+            <option value="HoatDong">Hoạt động</option>
+            <option value="BanNhap">Bản nháp</option>
+            <option value="DaAn">Đã ẩn</option>
+        </select>
+        <select class="filter-dropdown" id="levelFilter">
+            <option value="">Tất cả cấp độ</option>
+            <option value="CoBan">Cơ bản</option>
+            <option value="TrungCap">Trung cấp</option>
+            <option value="NangCao">Nâng cao</option>
+        </select>
+        <select class="filter-dropdown" id="sortFilter">
+            <option value="newest">Sắp xếp: Mới nhất</option>
+            <option value="oldest">Cũ nhất</option>
+            <option value="name-asc">Tên A-Z</option>
+            <option value="name-desc">Tên Z-A</option>
+            <option value="price-high">Giá cao nhất</option>
+            <option value="price-low">Giá thấp nhất</option>
+        </select>
+    </div>
+</div>
+
+<!-- Courses Grid -->
+<div class="courses-grid-modern">
+    @if (Model != null && Model.Any())
+    {
+        foreach (var khoaHoc in Model)
+        {
+            var statusClass = khoaHoc.TrangThai switch
+            {
+                "HoatDong" => "active",
+                "BanNhap" => "draft",
+                "DaAn" => "inactive",
+                _ => "draft"
+            };
+
+            var statusText = khoaHoc.TrangThai switch
+            {
+                "HoatDong" => "Hoạt động",
+                "BanNhap" => "Bản nháp",
+                "DaAn" => "Đã ẩn",
+                _ => khoaHoc.TrangThai
+            };
+
+            var levelText = khoaHoc.CapDo switch
+            {
+                "CoBan" => "Cơ bản",
+                "TrungCap" => "Trung cấp",
+                "NangCao" => "Nâng cao",
+                _ => khoaHoc.CapDo
+            };
+
+            var categoryName = khoaHoc.DanhMuc?.TenDanhMuc ?? "Chưa phân loại";
+            var instructorName = khoaHoc.user?.FullName ?? khoaHoc.user?.Username ?? "Chưa có";
+            var soHocVien = khoaHoc.DangKyKhoaHoc?.Count ?? 0;
+
+            <div class="course-card-modern"
+                 data-category="@(khoaHoc.DanhMucId ?? 0)"
+                 data-status="@khoaHoc.TrangThai"
+                 data-level="@khoaHoc.CapDo"
+                 data-name="@khoaHoc.TenKhoaHoc"
+                 data-price="@khoaHoc.GiaTien">
+                <div class="course-card-header">
+                    @if (!string.IsNullOrEmpty(khoaHoc.AnhBia))
+                    {
+                        <img src="@khoaHoc.AnhBia" alt="@khoaHoc.TenKhoaHoc" class="course-card-image" />
+                    }
+                    else
+                    {
+                        <div class="course-card-image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    }
+                    <span class="course-status-badge @statusClass">
+                        @statusText
+                    </span>
+                </div>
+                <div class="course-card-body">
+                    <div class="course-category-tag">
+                        @categoryName
+                    </div>
+                    <h3 class="course-card-title" title="@khoaHoc.TenKhoaHoc">
+                        @khoaHoc.TenKhoaHoc
+                    </h3>
+                    <div class="course-meta-badges">
+                        <span class="meta-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            </svg>
+                            @levelText
+                        </span>
+                        <span class="meta-badge">
+                            📝 @khoaHoc.MaKhoaHoc
+                        </span>
+                    </div>
+                    <p class="course-instructor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Giảng viên: @instructorName
+                    </p>
+                    @if (!string.IsNullOrEmpty(khoaHoc.MoTaNgan))
+                    {
+                        <p class="course-description">@khoaHoc.MoTaNgan</p>
+                    }
+                    <div class="course-meta-info">
+                        <div class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                            <span>@soHocVien học viên</span>
+                        </div>
+                        <div class="meta-item price">
+                            <span>@khoaHoc.GiaTien.ToString("N0")đ</span>
+                        </div>
+                    </div>
+                    <div class="course-update-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>Tạo: @khoaHoc.NgayTao.ToString("dd/MM/yyyy")</span>
+                    </div>
+                </div>
+                <div class="course-card-actions">
+                    <a href="/admin/courses/details/@khoaHoc.Id" class="btn-card-action view" title="Xem chi tiết">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </a>
+                    <a href="/admin/courses/edit/@khoaHoc.Id" class="btn-card-action edit" title="Chỉnh sửa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </a>
+                    <button type="button" class="btn-card-action delete" title="Xóa" onclick="deleteCourse(@khoaHoc.Id, '@khoaHoc.TenKhoaHoc')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="empty-state">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <h3>Chưa có khóa học nào</h3>
+            <p>Hãy tạo khóa học đầu tiên của bạn</p>
+            <a href="/admin/courses/create" class="btn-add-new">Thêm khóa học</a>
+        </div>
+    }
+</div>
+
+<!-- Pagination -->
+@if (totalCourses > pageSize)
+{
+    <div class="pagination-modern">
+        <div class="pagination-info">
+            Hiển thị <strong>1-@pageSize</strong> trong <strong>@totalCourses</strong> khóa học
+        </div>
+        <div class="pagination-controls">
+            <button class="page-btn" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="page-number active">1</button>
+            @if (totalPages >= 2)
+            {
+                <button class="page-number">2</button>
+            }
+            @if (totalPages >= 3)
+            {
+                <button class="page-number">3</button>
+            }
+            @if (totalPages > 4)
+            {
+                <span class="page-dots">...</span>
+            }
+            @if (totalPages > 3)
+            {
+                <button class="page-number">@totalPages</button>
+            }
+            <button class="page-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Delete confirmation
+        function deleteCourse(id, name) {
+            if (confirm(`Bạn có chắc chắn muốn xóa khóa học "${name}"?`)) {
+                fetch(`/admin/courses/delete/${id}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+                    }
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Xóa khóa học thành công!');
+                            location.reload();
+                        } else {
+                            alert('Có lỗi xảy ra khi xóa khóa học.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Có lỗi xảy ra khi xóa khóa học.');
+                    });
+            }
+        }
+
+        // Search & Filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const statusFilter = document.getElementById('statusFilter');
+            const levelFilter = document.getElementById('levelFilter');
+            const sortFilter = document.getElementById('sortFilter');
+            const courseCards = Array.from(document.querySelectorAll('.course-card-modern'));
+
+            function filterAndSortCourses() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categoryFilter.value;
+                const selectedStatus = statusFilter.value;
+                const selectedLevel = levelFilter.value;
+                const sortBy = sortFilter.value;
+
+                let visibleCards = courseCards.filter(card => {
+                    const name = card.dataset.name.toLowerCase();
+                    const category = card.dataset.category;
+                    const status = card.dataset.status;
+                    const level = card.dataset.level;
+
+                    const matchesSearch = name.includes(searchTerm);
+                    const matchesCategory = !selectedCategory || category === selectedCategory;
+                    const matchesStatus = !selectedStatus || status === selectedStatus;
+                    const matchesLevel = !selectedLevel || level === selectedLevel;
+
+                    return matchesSearch && matchesCategory && matchesStatus && matchesLevel;
+                });
+
+                visibleCards.sort((a, b) => {
+                    switch (sortBy) {
+                        case 'oldest':
+                            return 1;
+                        case 'name-asc':
+                            return a.dataset.name.localeCompare(b.dataset.name);
+                        case 'name-desc':
+                            return b.dataset.name.localeCompare(a.dataset.name);
+                        case 'price-high':
+                            return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+                        case 'price-low':
+                            return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+                        default: // newest
+                            return -1;
+                    }
+                });
+
+                courseCards.forEach(card => card.style.display = 'none');
+                visibleCards.forEach(card => card.style.display = '');
+            }
+
+            searchInput.addEventListener('input', filterAndSortCourses);
+            categoryFilter.addEventListener('change', filterAndSortCourses);
+            statusFilter.addEventListener('change', filterAndSortCourses);
+            levelFilter.addEventListener('change', filterAndSortCourses);
+            sortFilter.addEventListener('change', filterAndSortCourses);
+        });
+    </script>
+}

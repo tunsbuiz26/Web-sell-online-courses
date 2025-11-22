@@ -42,7 +42,7 @@ namespace DemoApp.Data
             }
             );
 
-            modelBuilder.Entity<Role>(entity =>
+            modelBuilder.Entity<Role>(entity => 
             {
                 entity.HasIndex(e => e.RoleName).IsUnique();
             });

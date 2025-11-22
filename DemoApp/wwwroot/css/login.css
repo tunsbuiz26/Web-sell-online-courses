@@ -237,23 +237,15 @@ body {
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6aac71d5a028a15f2989804c10360e0a6e6c305f
 .login-container {
     width: 100%;
     max-width: 450px;
-    background-color: white;
+    background: linear-gradient(135deg, var(--bg-blue-light) 0%, #F5F9FF 100%);
+ 
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-<<<<<<< HEAD
-/*    margin-top: 70px;*/
-=======
-    /*    margin-top: 70px;*/
->>>>>>> 6aac71d5a028a15f2989804c10360e0a6e6c305f
 }
 
 .login-header {
@@ -506,5 +498,39 @@ body {
 
     .page-header {
         padding: 1rem;
+    }
+}
+.success-popup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: #28a745; /* Xanh lá */
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+    animation: slideDown 0.45s ease forwards;
+}
+
+    /* Icon check-circle */
+    .success-popup svg {
+        width: 22px;
+        height: 22px;
+        stroke: white;
+    }
+
+/* Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
