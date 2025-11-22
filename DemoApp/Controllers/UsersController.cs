@@ -18,7 +18,96 @@ namespace DemoApp.Controllers
         {
             _context = context;
         }
+        // GET: /my-courses  → Trang "Khóa học của tôi"
+        [HttpGet("/my-courses")]
+        public async Task<IActionResult> UserCourses()
+        {
+            var userName = User.Identity!.Name;
 
+            var user = await _context.User
+                .FirstOrDefaultAsync(u => u.Username == userName || u.Email == userName);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var myRegistrations = await _context.DangKyKhoaHoc
+                .Include(d => d.KhoaHoc)
+                    .ThenInclude(k => k.DanhMuc)
+                .Include(d => d.KhoaHoc)
+                    .ThenInclude(k => k.BaiHoc)
+                .Where(d => d.UserId == user.UserId)
+                .ToListAsync();
+
+            var total = myRegistrations.Count;
+            var completed = myRegistrations.Count(x => x.TrangThai == "HoanThanh");
+            var inProgress = myRegistrations.Count(x => x.TrangThai == "DangHoc");
+
+            ViewBag.TotalCourses = total;
+            ViewBag.CompletedCourses = completed;
+            ViewBag.InProgressCourses = inProgress;
+
+            // View: /Views/User/UserCourses.cshtml
+            return View("UserCourses", myRegistrations);
+        }
+        // ============================================
+        // 2) DANH SÁCH KHÓA HỌC - CHO USER ĐĂNG KÝ
+        // GET: /user/courses
+        // ============================================
+        [HttpGet("/user/courses")]
+        public async Task<IActionResult> CourseList()
+        {
+            var courses = await _context.KhoaHoc
+                .Include(c => c.DanhMuc)
+                .ToListAsync();
+
+            return View("CourseListWithRegister", courses);
+        }
+        // POST: /user/courses/register/{courseId} → đăng ký khóa học
+        [HttpPost("/user/courses/register/{courseId:int}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RegisterCourse(int courseId)
+        {
+            var userName = User.Identity!.Name;
+
+            var user = await _context.User
+                .FirstOrDefaultAsync(u => u.Username == userName || u.Email == userName);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var course = await _context.KhoaHoc.FindAsync(courseId);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var existing = await _context.DangKyKhoaHoc
+                .FirstOrDefaultAsync(d => d.UserId == user.UserId && d.KhoaHocId == courseId);
+
+            if (existing != null)
+            {
+                TempData["InfoMessage"] = "Bạn đã đăng ký khóa học này rồi.";
+                return RedirectToAction(nameof(UserCourses));
+            }
+
+            var dk = new DangKyKhoaHoc
+            {
+                UserId = user.UserId,
+                KhoaHocId = courseId,
+                NgayDangKy = DateTime.Now,
+                TrangThai = "DangHoc"
+            };
+
+            _context.DangKyKhoaHoc.Add(dk);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Đăng ký khóa học thành công!";
+            return RedirectToAction(nameof(UserCourses));
+        }
         // GET: Users
         public async Task<IActionResult> Index()
         {
