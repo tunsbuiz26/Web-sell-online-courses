@@ -35,7 +35,7 @@ namespace DemoApp.Models
         public DateTime NgayTao { get; set; } = DateTime.Now;
 
         
-        [ForeignKey("UserId ")]
+        [ForeignKey("UserId")]
         public virtual User? user { get; set; }
 
         [ForeignKey("DanhMucId")]

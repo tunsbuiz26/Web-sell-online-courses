@@ -6,6 +6,10 @@ wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\admin-avatar.jpg
+wwwroot\images\anh1.jpg
+wwwroot\images\anh2.jpg
+wwwroot\images\anh3.jpg
+wwwroot\images\anh4.jpg
 wwwroot\images\banner.png
 wwwroot\js\admin-dashboard.js
 wwwroot\js\header.js
