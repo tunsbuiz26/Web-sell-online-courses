@@ -1,21 +1,27 @@
 ﻿@{
-    Layout = null;
-    var title = ViewData["Title"] ?? "TTNK Admin";
+    Layout = null; // Layout riêng cho admin, không lồng vào _Layout chung
+    var title = ViewData["Title"] as string ?? "TTNK Admin";
 }
 
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@title - 28Tech Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@title</title>
 
+    <!-- CSS chung -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/admin-dashboard.css" />
+
+    <!-- CSS riêng từng trang admin (nếu có) -->
     @RenderSection("Styles", required: false)
+    @RenderSection("PageStyles", required: false)
 </head>
-<body>
+<body class="admin-body">
     <div class="admin-wrapper">
-        <!-- ===== ADMIN HEADER ===== -->
+        <!-- Admin Header -->
         <header class="admin-header">
             <div class="header-container">
                 <div class="header-left">
@@ -55,7 +61,7 @@
             </div>
         </header>
 
-        <!-- ===== SIDEBAR ===== -->
+        <!-- Sidebar -->
         <aside class="admin-sidebar" id="adminSidebar">
             <div class="sidebar-header">
                 <div class="sidebar-header-top">
@@ -74,8 +80,7 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a href="/admin/dashboard"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Dashboard" ? "active" : "")">
+                <a href="/admin/dashboard" class="nav-item @(ViewBag.ActiveMenu == "dashboard" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="3" width="7" height="7"></rect>
@@ -85,9 +90,7 @@
                     </svg>
                     <span>Dashboard</span>
                 </a>
-
-                <a href="/admin/courses"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Courses" ? "active" : "")">
+                <a href="/admin/courses" class="nav-item @(ViewBag.ActiveMenu == "courses" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
@@ -95,9 +98,7 @@
                     </svg>
                     <span>Quản lý khóa học</span>
                 </a>
-
-                <a href="/admin/users"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Users" ? "active" : "")">
+                <a href="/admin/users" class="nav-item @(ViewBag.ActiveMenu == "users" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -107,9 +108,7 @@
                     </svg>
                     <span>Quản lý người dùng</span>
                 </a>
-
-                <a href="/admin/orders"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Orders" ? "active" : "")">
+                <a href="/admin/orders" class="nav-item @(ViewBag.ActiveMenu == "orders" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="9" cy="21" r="1"></circle>
@@ -119,9 +118,7 @@
                     <span>Đơn hàng</span>
                     <span class="badge">12</span>
                 </a>
-
-                <a href="/admin/revenue"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Revenue" ? "active" : "")">
+                <a href="/admin/revenue" class="nav-item @(ViewBag.ActiveMenu == "revenue" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="12" y1="1" x2="12" y2="23"></line>
@@ -129,29 +126,24 @@
                     </svg>
                     <span>Doanh thu</span>
                 </a>
-
-                <a href="/admin/reviews"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Reviews" ? "active" : "")">
+                <a href="/admin/reviews" class="nav-item @(ViewBag.ActiveMenu == "reviews" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02
-                                         12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                     </svg>
                     <span>Đánh giá</span>
-                </a>
-
-                <a href="/admin/settings"
-                   class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Settings" ? "active" : "")">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <path d="M12 1v6m0 6v6m-7-7h6m6 0h6"></path>
-                    </svg>
-                    <span>Cài đặt</span>
                 </a>
             </nav>
 
             <div class="sidebar-footer">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Thu gọn</span>
+                </button>
                 <a href="/Home/Index" class="back-to-site">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -163,7 +155,7 @@
             </div>
         </aside>
 
-        <!-- ===== MAIN CONTENT ===== -->
+        <!-- Main Content -->
         <main class="admin-main" id="adminMain">
             <div class="admin-content">
                 @RenderBody()
@@ -171,8 +163,14 @@
         </main>
     </div>
 
+    <!-- JS chung -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="~/js/admin-dashboard.js"></script>
+
+    <!-- JS riêng từng trang admin (nếu có) -->
     @RenderSection("Scripts", required: false)
+    @RenderSection("PageScripts", required: false)
 </body>
 </html>

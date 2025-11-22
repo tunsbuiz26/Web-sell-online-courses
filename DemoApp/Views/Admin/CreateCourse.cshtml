@@ -1,0 +1,71 @@
+﻿@model DemoApp.Models.KhoaHoc
+@{
+    ViewData["Title"] = "Thêm khóa học";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="mb-4">Thêm khóa học</h1>
+
+<form asp-action="CreateCourse" asp-controller="Admin" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="MaKhoaHoc" class="form-label"></label>
+        <input asp-for="MaKhoaHoc" class="form-control" />
+        <span asp-validation-for="MaKhoaHoc" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TenKhoaHoc" class="form-label"></label>
+        <input asp-for="TenKhoaHoc" class="form-control" />
+        <span asp-validation-for="TenKhoaHoc" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MoTaNgan" class="form-label"></label>
+        <textarea asp-for="MoTaNgan" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AnhBia" class="form-label"></label>
+        <input asp-for="AnhBia" class="form-control" placeholder="Nhập URL ảnh bìa" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Danh mục</label>
+        <select asp-for="DanhMucId" class="form-select"
+                asp-items="@(new SelectList((IEnumerable<DemoApp.Models.DanhMuc>)ViewBag.DanhMucList, "Id", "TenDanhMuc"))">
+            <option value="">-- Chọn danh mục --</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CapDo" class="form-label"></label>
+        <select asp-for="CapDo" class="form-select">
+            <option value="CoBan">Cơ bản</option>
+            <option value="TrungCap">Trung cấp</option>
+            <option value="NangCao">Nâng cao</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="GiaTien" class="form-label"></label>
+        <input asp-for="GiaTien" class="form-control" type="number" step="1000" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TrangThai" class="form-label"></label>
+        <select asp-for="TrangThai" class="form-select">
+            <option value="BanNhap">Bản nháp</option>
+            <option value="HoatDong">Hoạt động</option>
+            <option value="DaAn">Đã ẩn</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thêm khóa học</button>
+    <a asp-action="Courses" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
