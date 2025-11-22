@@ -1,11 +1,14 @@
 ﻿using System.Security.Claims;
 using DemoApp.Attributes;
 using DemoApp.Data;
+using DemoApp.Models;
 using DemoApp.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Crypto.Generators;
 
 namespace DemoApp.Controllers
 {
@@ -24,27 +27,8 @@ namespace DemoApp.Controllers
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
         {
-            // Trim và decode URL
-            var rv = returnUrl?.Trim();
-
-            // Decode nếu là encoded URL
-            if (!string.IsNullOrEmpty(rv))
-            {
-                rv = Uri.UnescapeDataString(rv).Trim();
-            }
-
-            // Nếu ReturnUrl trỏ về chính trang Login → bỏ
-            var loginPath = Url.Action("Login", "Account");
-            if (string.IsNullOrWhiteSpace(rv) ||
-                rv == "/" ||
-                rv.Equals(loginPath, StringComparison.OrdinalIgnoreCase) ||
-                rv.StartsWith(loginPath + "?", StringComparison.OrdinalIgnoreCase))
-            {
-                rv = null;
-            }
-
-            ViewBag.ReturnUrl = rv;
-            ViewData["ReturnUrl"] = rv;
+            ViewData["ReturnUrl"] = returnUrl;
+            ModelState.Clear();  // ⭐ quan trọng
 
             return View(new LoginViewModel());
         }
@@ -55,7 +39,7 @@ namespace DemoApp.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
             // Trim và decode URL
@@ -70,10 +54,15 @@ namespace DemoApp.Controllers
 
             ViewData["ReturnUrl"] = returnUrl;
 
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    foreach (var e in ModelState.Where(x => x.Value.Errors.Count > 0))
+            //    {
+            //        _logger.LogWarning($"Field {e.Key} ERROR: {string.Join(" | ", e.Value.Errors.Select(err => err.ErrorMessage))}");
+            //    }
+
+            //    return View(model);
+            //}
 
             var username = (model.Username ?? string.Empty).Trim().ToLower();
             var password = (model.Password ?? string.Empty).Trim();
@@ -167,6 +156,7 @@ namespace DemoApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
+            // Nếu dữ liệu form không hợp lệ (thiếu field, sai regex, không tick AcceptTerms...)
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -174,45 +164,90 @@ namespace DemoApp.Controllers
 
             try
             {
-                // TODO: Implement registration logic
-                // 1. Kiểm tra số điện thoại đã tồn tại chưa
-                // 2. Hash password
-                // 3. Lưu user vào database
-                // 4. Gửi email xác nhận (nếu có)
-                // 5. Tự động đăng nhập hoặc redirect đến trang login
+                // ===== 1. Chuẩn hoá dữ liệu đầu vào =====
+                var fullName = (model.FullName ?? string.Empty).Trim();
+                var address = (model.Address ?? string.Empty).Trim();
+                var phone = (model.PhoneNumber ?? string.Empty).Trim();
+                var email = string.IsNullOrWhiteSpace(model.Email)
+                                   ? null
+                                   : model.Email.Trim();
 
-                // Ví dụ:
-                // var userExists = await _userService.CheckUserExists(model.PhoneNumber);
-                // if (userExists)
-                // {
-                //     ModelState.AddModelError("PhoneNumber", "Số điện thoại đã được đăng ký");
-                //     return View(model);
-                // }
+                // ===== 2. Kiểm tra trùng SĐT =====
+                var phoneExists = await _context.User
+                    .AnyAsync(u => u.NumberPhone == phone);
 
-                // var hashedPassword = HashPassword(model.Password);
-                // var user = new User
-                // {
-                //     FullName = model.FullName,
-                //     PhoneNumber = model.PhoneNumber,
-                //     Email = model.Email,
-                //     DateOfBirth = model.DateOfBirth,
-                //     PasswordHash = hashedPassword,
-                //     CreatedAt = DateTime.UtcNow
-                // };
+                if (phoneExists)
+                {
+                    ModelState.AddModelError("PhoneNumber", "Số điện thoại đã được đăng ký.");
+                    return View(model);
+                }
 
-                // await _userService.CreateUser(user);
+                // ===== 3. Kiểm tra trùng Email (nếu có nhập) =====
+                if (!string.IsNullOrEmpty(email))
+                {
+                    var emailExists = await _context.User
+                        .AnyAsync(u => u.Email == email);
 
-                // Thành công - redirect về trang đăng nhập
-                TempData["SuccessMessage"] = "Đăng ký thành công! Vui lòng đăng nhập.";
+                    if (emailExists)
+                    {
+                        ModelState.AddModelError("Email", "Email này đã được sử dụng.");
+                        return View(model);
+                    }
+                }
+
+                // ===== 4. Tạo username (ở đây dùng luôn số điện thoại) =====
+                var username = phone; // Nếu sau này anh muốn tách field Username riêng thì sửa chỗ này
+
+                // Có thể check trùng username luôn cho chắc
+                var usernameExists = await _context.User
+                    .AnyAsync(u => u.Username == username);
+
+                if (usernameExists)
+                {
+                    ModelState.AddModelError("", "Tài khoản với số điện thoại này đã tồn tại.");
+                    return View(model);
+                }
+
+                // ===== 5. Gán RoleId cho User thường =====
+                // Giả sử: 1 = Admin, 2 = User (anh chỉnh lại nếu DB khác)
+                const int USER_ROLE_ID = 2;
+
+                // Nếu hiện tại login của anh đang SO SÁNH MẬT KHẨU THÔ
+                // => tạm thời lưu Password = model.Password.
+                // Nếu muốn dùng hash (BCrypt) thì phải sửa luôn cả Login.
+                var passwordToStore = model.Password; // hoặc BCrypt.Net.BCrypt.HashPassword(model.Password);
+
+                // ===== 6. Tạo entity User mới =====
+                var user = new User
+                {
+                    FullName = fullName,
+                    Address = address,
+                    NumberPhone = phone,
+                    Email = email,
+                    Username = username,
+                    Password = passwordToStore,
+                    RoleId = USER_ROLE_ID
+                };
+
+                // ===== 7. Lưu DB =====
+                _context.User.Add(user);
+                await _context.SaveChangesAsync();
+
+                // ===== 8. Thông báo & chuyển về trang Login =====
+                TempData["RegisterSuccess"] = "Đăng ký thành công! Vui lòng đăng nhập.";
                 return RedirectToAction("Login", "Account");
             }
             catch (Exception ex)
             {
-                // Log error
-                ModelState.AddModelError("", "Có lỗi xảy ra trong quá trình đăng ký. Vui lòng thử lại.");
+                _logger.LogError(ex, "Lỗi khi đăng ký tài khoản");
+
+                ModelState.AddModelError(string.Empty,
+                    "Có lỗi xảy ra trong quá trình đăng ký. Vui lòng thử lại.");
                 return View(model);
             }
         }
+
+
         [HttpGet]
         public async Task<IActionResult> Logout()
         {

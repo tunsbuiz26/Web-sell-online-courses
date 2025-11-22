@@ -59,49 +59,63 @@
             </div>
 
         </div>
-
-        <!-- Phần form đăng nhập bên phải -->
-        <div  class="login-container">
-            <div class="login-header">
-                <h1 >Đăng nhập SMEMBER</h1>
-                
-            </div>
+            <!-- Form đăng nhập -->
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>Đăng nhập SMEMBER</h1>
+                </div>
 
                 @if (Context.Request.Method == "POST" && ViewData.ModelState.ErrorCount > 0)
                 {
-                <div class="error-message">
-                    <svg class="error-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-                    </svg>
-                    <div>
-                        <strong>Login failed.</strong><br>
+                    <div class="error-message">
+                        <!-- phần error giữ nguyên -->
                         <div asp-validation-summary="ModelOnly" class="error-text"></div>
                     </div>
-                </div>
-            }
+                }
+                @if (TempData["RegisterSuccess"] != null)
+                {
+                    <div class="success-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                             viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4" />
+                            <circle cx="12" cy="12" r="9"></circle>
+                        </svg>
+                        <span>@TempData["RegisterSuccess"]</span>
+                    </div>
 
-            <form asp-action="Login" method="post">
-                @Html.AntiForgeryToken()
-                <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+                    <script>
+                        setTimeout(function () {
+                            window.location.href = "/account/login";
+                        }, 2500);
+                    </script>
+                }
+                <form asp-controller="Account" asp-action="Login" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
 
-                <div class="form-group">
-                        <label asp-for="@Model.Username" class="form-label">Tên đăng nhập</label>
-                        <input asp-for="@Model.Username" class="form-input" placeholder="Nhập tên đăng nhập" autocomplete="username" />
-                    <span asp-validation-for="@Model.Username" class="field-validation-error"></span>
-                </div>
+                    <div class="form-group">
+                        <label asp-for="Username" class="form-label"></label>
+                        <input asp-for="Username" class="form-input" placeholder="Nhập tên đăng nhập/ Số điện thoại" autocomplete="username" />
+                        <span asp-validation-for="Username" class="field-validation-error"></span>
+                    </div>
 
-                <div class="form-group">
-                        <label asp-for="@Model.Password" class="form-label">Mật khẩu</label>
-                        <input asp-for="@Model.Password" type="password" class="form-input" placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" />
-                    <span asp-validation-for="@Model.Password" class="field-validation-error"></span>
-                </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" type="password" class="form-input" placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" />
+                        <span asp-validation-for="Password" class="field-validation-error"></span>
+                    </div>
 
-                <button type="submit" class="btn-primary">Đăng nhập</button>
+                    <div class="form-group remember-me">
+                        <input asp-for="RememberMe" />
+                        <label asp-for="RememberMe"></label>
+                    </div>
 
-                <div class="text-center forgot-password">
-                    <a href="#" class="link">Quên mật khẩu?</a>
-                </div>
-            </form>
+                    <button type="submit" class="btn-primary">Đăng nhập</button>
+
+                    <div class="text-center forgot-password">
+                        <a href="#" class="link">Quên mật khẩu?</a>
+                    </div>
+                </form>
 
             <div class="divider">Hoặc đăng nhập bằng</div>
 

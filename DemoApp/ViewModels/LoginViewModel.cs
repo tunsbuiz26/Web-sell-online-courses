@@ -5,15 +5,15 @@ namespace DemoApp.ViewModels
     public class LoginViewModel
     {
         [Required(ErrorMessage = "Username is required")]
-        [Display(Name = "Username")]
+        [Display(Name = "Tài Khoản")]
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Mật khẩu")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me")]
+        [Display(Name = "Ghi nhớ đăng nhập")]
         public bool RememberMe { get; set; }
     }
 }

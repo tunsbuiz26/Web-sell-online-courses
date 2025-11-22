@@ -10,10 +10,9 @@ namespace DemoApp.ViewModels
         [StringLength(100, ErrorMessage = "Họ tên không được vượt quá 100 ký tự")]
         public string FullName { get; set; }
 
-        [Required(ErrorMessage = "Vui lòng nhập ngày sinh")]
-        [Display(Name = "Ngày sinh")]
-        [DataType(DataType.Date)]
-        public DateTime DateOfBirth { get; set; }
+        [Required(ErrorMessage = "Vui lòng nhập địa chỉ")]
+        [Display(Name = "Địa chỉ")]
+        public string Address { get; set; }
 
         [Required(ErrorMessage = "Vui lòng nhập số điện thoại")]
         [Display(Name = "Số điện thoại")]
@@ -43,8 +42,7 @@ namespace DemoApp.ViewModels
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
 
-        [Display(Name = "Đăng ký nhận tin khuyến mãi từ CellphoneS")]
-        public bool AcceptPromotion { get; set; }
+       
 
         [Display(Name = "Đồng ý với Điều khoản sử dụng và Chính sách bảo mật")]
         [Range(typeof(bool), "true", "true", ErrorMessage = "Bạn cần đồng ý với điều khoản sử dụng")]
