@@ -378,7 +378,7 @@ namespace DemoApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("NgayDangKy")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("TrangThai")
                         .IsRequired()
@@ -406,11 +406,7 @@ namespace DemoApp.Migrations
                         {
                             Id = 1,
                             KhoaHocId = 1,
-<<<<<<< HEAD
-                            NgayDangKy = new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8768),
-=======
-                            NgayDangKy = new DateTime(2025, 11, 20, 15, 34, 23, 376, DateTimeKind.Local).AddTicks(6200),
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
+                            NgayDangKy = new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7799),
                             TrangThai = "DangHoc",
                             UserId = 3
                         },
@@ -418,11 +414,7 @@ namespace DemoApp.Migrations
                         {
                             Id = 2,
                             KhoaHocId = 2,
-<<<<<<< HEAD
-                            NgayDangKy = new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8770),
-=======
-                            NgayDangKy = new DateTime(2025, 11, 20, 15, 34, 23, 376, DateTimeKind.Local).AddTicks(6202),
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
+                            NgayDangKy = new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7800),
                             TrangThai = "DangHoc",
                             UserId = 2
                         });
@@ -567,11 +559,7 @@ namespace DemoApp.Migrations
                             GiaTien = 399000m,
                             MaKhoaHoc = "WEB001",
                             MoTaNgan = "Khóa học lập trình web cho người mới",
-<<<<<<< HEAD
-                            NgayTao = new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8689),
-=======
-                            NgayTao = new DateTime(2025, 11, 20, 15, 34, 23, 376, DateTimeKind.Local).AddTicks(6128),
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
+                            NgayTao = new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7713),
                             TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
                             TrangThai = "DaXuatBan",
                             UserId = 1
@@ -585,11 +573,7 @@ namespace DemoApp.Migrations
                             GiaTien = 299000m,
                             MaKhoaHoc = "MOB001",
                             MoTaNgan = "Học lập trình ứng dụng Android",
-<<<<<<< HEAD
-                            NgayTao = new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8691),
-=======
-                            NgayTao = new DateTime(2025, 11, 20, 15, 34, 23, 376, DateTimeKind.Local).AddTicks(6132),
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
+                            NgayTao = new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7715),
                             TenKhoaHoc = "Lập trình Android cơ bản",
                             TrangThai = "DaXuatBan",
                             UserId = 3
@@ -603,7 +587,7 @@ namespace DemoApp.Migrations
                             GiaTien = 450000m,
                             MaKhoaHoc = "DATA001",
                             MoTaNgan = "Khoa học dữ liệu với Python cơ bản",
-                            NgayTao = new DateTime(2025, 11, 17, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8693),
+                            NgayTao = new DateTime(2025, 11, 17, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7744),
                             TenKhoaHoc = "Python Data Science",
                             TrangThai = "DaXuatBan",
                             UserId = 2
@@ -617,7 +601,7 @@ namespace DemoApp.Migrations
                             GiaTien = 350000m,
                             MaKhoaHoc = "UIUX001",
                             MoTaNgan = "Học thiết kế giao diện người dùng chuyên nghiệp",
-                            NgayTao = new DateTime(2025, 11, 20, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8697),
+                            NgayTao = new DateTime(2025, 11, 20, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7749),
                             TenKhoaHoc = "Thiết kế UI/UX cơ bản",
                             TrangThai = "BanNhap",
                             UserId = 3
@@ -654,6 +638,57 @@ namespace DemoApp.Migrations
                             RoleId = 2,
                             RoleName = "User"
                         });
+                });
+
+            modelBuilder.Entity("DemoApp.Models.TienDoHocTap", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("BaiHocId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("DaHoanThanh")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("KhoaHocId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ThoiGianBatDau")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ThoiGianCapNhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ThoiGianHoanThanh")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ThoiGianHoc")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TrangThaiHoc")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<decimal>("TyLeHoanThanh")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BaiHocId");
+
+                    b.HasIndex("KhoaHocId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TienDoHocTap");
                 });
 
             modelBuilder.Entity("DemoApp.Models.User", b =>
@@ -742,7 +777,7 @@ namespace DemoApp.Migrations
                     b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
                         .WithMany("BaiHoc")
                         .HasForeignKey("KhoaHocId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("KhoaHoc");
@@ -753,7 +788,7 @@ namespace DemoApp.Migrations
                     b.HasOne("DemoApp.Models.User", "User")
                         .WithMany("Carts")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("User");
@@ -770,7 +805,7 @@ namespace DemoApp.Migrations
                     b.HasOne("DemoApp.Models.User", "user")
                         .WithMany("DangKyKhoaHocs")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("KhoaHoc");
@@ -783,7 +818,7 @@ namespace DemoApp.Migrations
                     b.HasOne("DemoApp.Models.DanhMuc", "DanhMuc")
                         .WithMany("KhoaHoc")
                         .HasForeignKey("DanhMucId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("DemoApp.Models.User", "user")
                         .WithMany("KhoaHoc")
@@ -796,15 +831,47 @@ namespace DemoApp.Migrations
                     b.Navigation("user");
                 });
 
+            modelBuilder.Entity("DemoApp.Models.TienDoHocTap", b =>
+                {
+                    b.HasOne("DemoApp.Models.BaiHoc", "BaiHoc")
+                        .WithMany("TienDoHocTap")
+                        .HasForeignKey("BaiHocId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
+                        .WithMany("TienDoHocTap")
+                        .HasForeignKey("KhoaHocId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("DemoApp.Models.User", "User")
+                        .WithMany("TienDoHocTap")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("BaiHoc");
+
+                    b.Navigation("KhoaHoc");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("DemoApp.Models.User", b =>
                 {
                     b.HasOne("DemoApp.Models.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("DemoApp.Models.BaiHoc", b =>
+                {
+                    b.Navigation("TienDoHocTap");
                 });
 
             modelBuilder.Entity("DemoApp.Models.DanhMuc", b =>
@@ -817,6 +884,8 @@ namespace DemoApp.Migrations
                     b.Navigation("BaiHoc");
 
                     b.Navigation("DangKyKhoaHoc");
+
+                    b.Navigation("TienDoHocTap");
                 });
 
             modelBuilder.Entity("DemoApp.Models.Role", b =>
@@ -831,6 +900,8 @@ namespace DemoApp.Migrations
                     b.Navigation("DangKyKhoaHocs");
 
                     b.Navigation("KhoaHoc");
+
+                    b.Navigation("TienDoHocTap");
                 });
 #pragma warning restore 612, 618
         }

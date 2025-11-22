@@ -60,7 +60,7 @@ namespace DemoApp.Migrations
                         column: x => x.RoleId,
                         principalTable: "Role",
                         principalColumn: "RoleId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -79,7 +79,7 @@ namespace DemoApp.Migrations
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -107,7 +107,7 @@ namespace DemoApp.Migrations
                         column: x => x.DanhMucId,
                         principalTable: "DanhMuc",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_KhoaHoc_Users_UserId",
                         column: x => x.UserId,
@@ -136,7 +136,7 @@ namespace DemoApp.Migrations
                         column: x => x.KhoaHocId,
                         principalTable: "KhoaHoc",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -147,7 +147,7 @@ namespace DemoApp.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     KhoaHocId = table.Column<int>(type: "int", nullable: false),
-                    NgayDangKy = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NgayDangKy = table.Column<DateTime>(type: "datetime", nullable: false),
                     TrangThai = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValue: "DangHoc")
                 },
                 constraints: table =>
@@ -164,7 +164,47 @@ namespace DemoApp.Migrations
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TienDoHocTap",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    KhoaHocId = table.Column<int>(type: "int", nullable: false),
+                    BaiHocId = table.Column<int>(type: "int", nullable: false),
+                    DaHoanThanh = table.Column<bool>(type: "bit", nullable: false),
+                    ThoiGianBatDau = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ThoiGianHoanThanh = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ThoiGianCapNhat = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TyLeHoanThanh = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
+                    ThoiGianHoc = table.Column<int>(type: "int", nullable: false),
+                    TrangThaiHoc = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TienDoHocTap", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TienDoHocTap_BaiHoc_BaiHocId",
+                        column: x => x.BaiHocId,
+                        principalTable: "BaiHoc",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_TienDoHocTap_KhoaHoc_KhoaHocId",
+                        column: x => x.KhoaHocId,
+                        principalTable: "KhoaHoc",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_TienDoHocTap_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -207,10 +247,10 @@ namespace DemoApp.Migrations
                 columns: new[] { "Id", "AnhBia", "CapDo", "DanhMucId", "GiaTien", "MaKhoaHoc", "MoTaNgan", "NgayTao", "TenKhoaHoc", "TrangThai", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "anh1.jpg", "CoBan", 1, 399000m, "WEB001", "Khóa học lập trình web cho người mới", new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8689), "HTML CSS JavaScript Cơ Bản", "DaXuatBan", 1 },
-                    { 2, "anh3.jpg", "CoBan", 2, 299000m, "MOB001", "Học lập trình ứng dụng Android", new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8691), "Lập trình Android cơ bản", "DaXuatBan", 3 },
-                    { 3, "anh2.jpg", "TrungCap", 3, 450000m, "DATA001", "Khoa học dữ liệu với Python cơ bản", new DateTime(2025, 11, 17, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8693), "Python Data Science", "DaXuatBan", 2 },
-                    { 4, "anh4.jpg", "CoBan", 4, 350000m, "UIUX001", "Học thiết kế giao diện người dùng chuyên nghiệp", new DateTime(2025, 11, 20, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8697), "Thiết kế UI/UX cơ bản", "BanNhap", 3 }
+                    { 1, "anh1.jpg", "CoBan", 1, 399000m, "WEB001", "Khóa học lập trình web cho người mới", new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7713), "HTML CSS JavaScript Cơ Bản", "DaXuatBan", 1 },
+                    { 2, "anh3.jpg", "CoBan", 2, 299000m, "MOB001", "Học lập trình ứng dụng Android", new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7715), "Lập trình Android cơ bản", "DaXuatBan", 3 },
+                    { 3, "anh2.jpg", "TrungCap", 3, 450000m, "DATA001", "Khoa học dữ liệu với Python cơ bản", new DateTime(2025, 11, 17, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7744), "Python Data Science", "DaXuatBan", 2 },
+                    { 4, "anh4.jpg", "CoBan", 4, 350000m, "UIUX001", "Học thiết kế giao diện người dùng chuyên nghiệp", new DateTime(2025, 11, 20, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7749), "Thiết kế UI/UX cơ bản", "BanNhap", 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -257,8 +297,8 @@ namespace DemoApp.Migrations
                 columns: new[] { "Id", "KhoaHocId", "NgayDangKy", "TrangThai", "UserId" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8768), "DangHoc", 3 },
-                    { 2, 2, new DateTime(2025, 11, 22, 10, 48, 37, 97, DateTimeKind.Local).AddTicks(8770), "DangHoc", 2 }
+                    { 1, 1, new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7799), "DangHoc", 3 },
+                    { 2, 2, new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7800), "DangHoc", 2 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -315,6 +355,21 @@ namespace DemoApp.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_TienDoHocTap_BaiHocId",
+                table: "TienDoHocTap",
+                column: "BaiHocId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TienDoHocTap_KhoaHocId",
+                table: "TienDoHocTap",
+                column: "KhoaHocId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TienDoHocTap_UserId",
+                table: "TienDoHocTap",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",
                 table: "Users",
                 column: "Email",
@@ -336,13 +391,16 @@ namespace DemoApp.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BaiHoc");
-
-            migrationBuilder.DropTable(
                 name: "Cart");
 
             migrationBuilder.DropTable(
                 name: "DangKyKhoaHoc");
+
+            migrationBuilder.DropTable(
+                name: "TienDoHocTap");
+
+            migrationBuilder.DropTable(
+                name: "BaiHoc");
 
             migrationBuilder.DropTable(
                 name: "KhoaHoc");

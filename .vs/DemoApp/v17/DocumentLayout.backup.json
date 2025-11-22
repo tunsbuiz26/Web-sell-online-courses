@@ -1,15 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Lap trinh .NET\\DemoApp\\",
+  "WorkspaceRootPath": "D:\\QLKhoaHoc_TrucTuyen\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122034837_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemoApp\\Migrations\\20251122034837_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122074744_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemoApp\\Migrations\\20251122074744_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,6 +41,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\admins\\khoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,28 +71,8 @@
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemoApp\\Migrations\\20251119055129_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\dangkykhoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -68,16 +87,8 @@
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\dangkykhoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,114 +124,35 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-=======
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\admin-dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\admin-dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\admin-courses.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\admin-courses.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\js\\admin-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\js\\admin-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\reviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\reviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\admins\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -234,18 +162,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\User.cs",
               "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\User.cs",
               "RelativeToolTip": "DemoApp\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T15:26:57.197Z",
               "IsPinned": true,
@@ -253,23 +180,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251122034837_qlkh.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122034837_qlkh.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Migrations\\20251122034837_qlkh.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122034837_qlkh.cs",
-              "RelativeToolTip": "DemoApp\\Migrations\\20251122034837_qlkh.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA4AAAARAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "BaiHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\BaiHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\BaiHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\BaiHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\BaiHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T03:48:37.606Z",
+              "WhenOpened": "2025-11-18T08:46:13.795Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
-=======
-          "SelectedChildIndex": 6,
-          "Children": [
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251122074744_qlkh.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122074744_qlkh.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Migrations\\20251122074744_qlkh.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122074744_qlkh.cs",
+              "RelativeToolTip": "DemoApp\\Migrations\\20251122074744_qlkh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:47:44.617Z",
+              "EditorCaption": ""
+            },
             {
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -287,161 +223,115 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "KhoaHocsController.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Admins\\KhoaHocsController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Admins\\KhoaHocsController.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Admins\\KhoaHocsController.cs",
-              "RelativeToolTip": "DemoApp\\Admins\\KhoaHocsController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DangKyKhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T03:16:25.803Z",
-=======
-              "DocumentIndex": 5,
-              "Title": "Courses.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Courses.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml",
-              "ViewState": "AgIAALoAAAAAAAAAAAAAAHcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:18:38.361Z",
-              "IsPinned": true,
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-=======
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAswLcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-22T05:47:57.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
-<<<<<<< HEAD
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAIwMEAAAAAAAAAAAAAAA==",
-=======
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T05:42:02.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T05:43:10.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T05:42:56.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "DemoApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T05:16:02.092Z",
+              "WhenOpened": "2025-11-18T08:46:50.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAswCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:46:06.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TienDoHocTap.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeToolTip": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:57:39.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "KhoaHoc.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
               "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
               "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA6wDEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:44:13.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaiHoc.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\BaiHoc.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\BaiHoc.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\BaiHoc.cs",
-              "RelativeToolTip": "DemoApp\\Models\\BaiHoc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T08:46:13.795Z",
-=======
-              "DocumentIndex": 2,
-              "Title": "CreateCourse.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-22T05:08:11.887Z",
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\appsettings.json",
+              "RelativeDocumentMoniker": "DemoApp\\appsettings.json",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\appsettings.json",
+              "RelativeToolTip": "DemoApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-15T15:25:43.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "DanhMuc.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DanhMuc.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\DanhMuc.cs",
               "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DanhMuc.cs",
               "RelativeToolTip": "DemoApp\\Models\\DanhMuc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T05:28:03.118Z"
+              "WhenOpened": "2025-11-19T05:28:03.118Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\Cart.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Cart.cs",
+              "RelativeToolTip": "DemoApp\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T04:22:12.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T16:09:08.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Home\\Index.cshtml",
@@ -454,7 +344,69 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Courses.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T06:41:09.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:16:02.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:42:56.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:43:10.53Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "KhoaHocsController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Admins\\KhoaHocsController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Admins\\KhoaHocsController.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Admins\\KhoaHocsController.cs",
+              "RelativeToolTip": "DemoApp\\Admins\\KhoaHocsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T03:16:25.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
@@ -466,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
@@ -478,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "20251119055129_qlkh.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs",
               "RelativeDocumentMoniker": "DemoApp\\Migrations\\20251119055129_qlkh.cs",
@@ -490,20 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\appsettings.json",
-              "RelativeDocumentMoniker": "DemoApp\\appsettings.json",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\appsettings.json",
-              "RelativeToolTip": "DemoApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-15T15:25:43.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-<<<<<<< HEAD
+              "DocumentIndex": 20,
               "Title": "DangKyKhoaHocsController.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Admins\\DangKyKhoaHocsController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Admins\\DangKyKhoaHocsController.cs",
@@ -515,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
@@ -527,234 +466,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Role.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\Role.cs",
               "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Role.cs",
               "RelativeToolTip": "DemoApp\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-=======
-              "Title": "admin-dashboard.js",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "RelativeToolTip": "DemoApp\\wwwroot\\js\\admin-dashboard.js",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAuwF4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-22T03:24:23.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KhoaHoc.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\KhoaHoc.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\KhoaHoc.cs",
-              "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvxcAAAASAAAAAAAAAA==",
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T03:19:38.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:27:05.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "DemoApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwGcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T10:33:44.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAswKUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-22T02:11:58.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "DemoApp\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T02:20:37.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\User.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\User.cs",
-              "RelativeToolTip": "DemoApp\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T02:11:26.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\Product.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\Product.cs",
-              "RelativeToolTip": "DemoApp\\Models\\Product.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T05:38:10.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "admin-dashboard.css",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "RelativeToolTip": "DemoApp\\wwwroot\\css\\admin-dashboard.css",
-              "ViewState": "AgIAAOAFAAAAAAAAAAAiwP4FAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-20T10:59:28.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "admin-courses.css",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-courses.css",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\admin-courses.css",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-courses.css",
-              "RelativeToolTip": "DemoApp\\wwwroot\\css\\admin-courses.css",
-              "ViewState": "AgIAAPIBAAAAAAAAAAAiwP4BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T04:39:20.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 16,
-              "Title": "DangKyKhoaHoc.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
-              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T08:46:50.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\Cart.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Cart.cs",
-              "RelativeToolTip": "DemoApp\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T04:22:12.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "DemoApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T16:09:08.301Z"
-=======
-              "DocumentIndex": 12,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "DemoApp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T10:08:31.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:18:09.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAFAAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:09:30.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAuwLAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:22:09.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "register.css",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\register.css",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\register.css",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\register.css",
-              "RelativeToolTip": "DemoApp\\wwwroot\\css\\register.css",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAFsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T03:11:10.621Z",
-              "EditorCaption": ""
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-<<<<<<< HEAD
+              "DocumentIndex": 23,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "DemoApp\\ViewModels\\RegisterViewModel.cs",
@@ -766,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "DemoApp\\ViewModels\\LoginViewModel.cs",
@@ -778,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Controllers\\ProductController.cs",
@@ -790,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
@@ -802,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Login.cshtml",
@@ -814,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Controllers\\UsersController.cs",
@@ -826,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Controllers\\AccountController.cs",
@@ -838,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
@@ -850,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Home\\Privacy.cshtml",
@@ -862,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\Product.cs",
@@ -874,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Register.cshtml",
@@ -886,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "header.js",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\header.js",
               "RelativeDocumentMoniker": "DemoApp\\wwwroot\\js\\header.js",
@@ -898,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "login.css",
               "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\login.css",
               "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\login.css",
@@ -907,117 +631,30 @@
               "ViewState": "AgIAAIsBAAAAAAAAAAAqwKIBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-13T22:01:51.421Z"
-=======
-              "Title": "Reviews.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Reviews.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Reviews.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Reviews.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Reviews.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:20:48.968Z",
-              "EditorCaption": ""
->>>>>>> 48f16f09e0863eee26e787810ad5717e630abbea
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "login.css",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\login.css",
-              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\login.css",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\login.css",
-              "RelativeToolTip": "DemoApp\\wwwroot\\css\\login.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwBAAATAAAAAAAAAA==",
+              "DocumentIndex": 35,
+              "Title": "header.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\header.css",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\header.css",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAqwBEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T03:06:18.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T21:28:17.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "DemoApp\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T14:45:32.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Models\\Role.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\Role.cs",
-              "RelativeToolTip": "DemoApp\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T02:20:35.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Users.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Users.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Users.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Users.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Users.cshtml",
-              "ViewState": "AgIAAD0AAAAAAAAAAADwv3MAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:58:46.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Program.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Program.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Program.cs",
-              "RelativeToolTip": "DemoApp\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwEwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T10:30:06.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Orders.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Orders.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Orders.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Orders.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Orders.cshtml",
-              "ViewState": "AgIAAGQAAAAAAAAAAADwv38AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:44:09.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Revenue.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Revenue.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Revenue.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Revenue.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Revenue.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T10:20:32.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Admins\\RolesController.cs",
-              "RelativeDocumentMoniker": "DemoApp\\Admins\\RolesController.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Admins\\RolesController.cs",
-              "RelativeToolTip": "DemoApp\\Admins\\RolesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T10:09:12.412Z"
+              "DocumentIndex": 37,
+              "Title": "home.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\home.css",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAjwHMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:26:38.39Z"
             }
           ]
         }

@@ -46,7 +46,7 @@ namespace DemoApp.Models
 
         [ForeignKey("DanhMucId")]
         public virtual DanhMuc? DanhMuc { get; set; }
-
+        public virtual ICollection<TienDoHocTap>? TienDoHocTap { get; set; }
         public virtual ICollection<BaiHoc>? BaiHoc { get; set; }
         public virtual ICollection<DangKyKhoaHoc>? DangKyKhoaHoc { get; set; }
     }

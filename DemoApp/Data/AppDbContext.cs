@@ -20,7 +20,7 @@ namespace DemoApp.Data
         public DbSet<DemoApp.Models.DangKyKhoaHoc>? DangKyKhoaHoc { get; set; }
         public DbSet<DemoApp.Models.DanhMuc>? DanhMuc { get; set; }
         public DbSet<DemoApp.Models.Role>? Role { get; set; }
-
+        public DbSet<DemoApp.Models.TienDoHocTap> TienDoHocTap { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -29,28 +29,49 @@ namespace DemoApp.Data
                 entity.HasIndex(e => e.Email).IsUnique();
                 entity.HasIndex(e => e.Username).IsUnique();
                 entity.HasIndex(e => e.RoleId);
-                entity.HasMany(e => e.KhoaHoc)
-                .WithOne(e => e.user)
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
 
+                // Chỉ cần 1 lần cấu hình cho KhoaHoc
+                entity.HasMany(u => u.KhoaHoc)
+                      .WithOne(kh => kh.user)
+                      .HasForeignKey(kh => kh.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
-                entity.HasMany(e => e.DangKyKhoaHocs)
-                    .WithOne(e => e.user)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-            }
-            );
+                entity.HasMany(u => u.TienDoHocTap)
+                      .WithOne(td => td.User)
+                      .HasForeignKey(td => td.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-            modelBuilder.Entity<Role>(entity => 
+                entity.HasMany(u => u.DangKyKhoaHocs)
+                      .WithOne(dk => dk.user)
+                      .HasForeignKey(dk => dk.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
+
+                entity.HasMany(u => u.Carts)
+                      .WithOne(c => c.User)
+                      .HasForeignKey(c => c.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+
+                entity.HasOne(u => u.Role)
+                      .WithMany(r => r.Users)
+                      .HasForeignKey(u => u.RoleId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+            });
+
+            modelBuilder.Entity<Role>(entity =>
             {
                 entity.HasIndex(e => e.RoleName).IsUnique();
             });
+
             modelBuilder.Entity<DanhMuc>(entity =>
             {
-                entity.Property(e => e.TrangThai)
-                    .HasDefaultValue(true);
+                entity.Property(e => e.TrangThai).HasDefaultValue(true);
+
+                entity.HasMany(dm => dm.KhoaHoc)
+                      .WithOne(kh => kh.DanhMuc)
+                      .HasForeignKey(kh => kh.DanhMucId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
             });
+
             modelBuilder.Entity<KhoaHoc>(entity =>
             {
                 entity.HasIndex(e => e.MaKhoaHoc).IsUnique();
@@ -58,35 +79,52 @@ namespace DemoApp.Data
                 entity.HasIndex(e => e.DanhMucId);
                 entity.HasIndex(e => e.TrangThai);
 
-                entity.Property(e => e.CapDo)
-                    .HasDefaultValue("CoBan");
+                entity.Property(e => e.CapDo).HasDefaultValue("CoBan");
+                entity.Property(e => e.TrangThai).HasDefaultValue("BanNhap");
+                entity.Property(e => e.GiaTien).HasPrecision(18, 2).HasDefaultValue(0);
 
-                entity.Property(e => e.TrangThai)
-                    .HasDefaultValue("BanNhap");
+                entity.HasMany(kh => kh.TienDoHocTap)
+                      .WithOne(td => td.KhoaHoc)
+                      .HasForeignKey(td => td.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-                entity.Property(e => e.GiaTien)
-                    .HasPrecision(18, 2)
-                    .HasDefaultValue(0);
+                entity.HasMany(kh => kh.BaiHoc)
+                      .WithOne(bh => bh.KhoaHoc)
+                      .HasForeignKey(bh => bh.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
 
+                entity.HasMany(kh => kh.DangKyKhoaHoc)
+                      .WithOne(dk => dk.KhoaHoc)
+                      .HasForeignKey(dk => dk.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Giữ Restrict
 
-                entity.HasOne(e => e.DanhMuc)
-                    .WithMany(e => e.KhoaHoc)
-                    .HasForeignKey(e => e.DanhMucId)
-                    .OnDelete(DeleteBehavior.SetNull);
+                entity.HasOne(kh => kh.user)
+                      .WithMany(u => u.KhoaHoc)
+                      .HasForeignKey(kh => kh.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+
+                entity.HasOne(kh => kh.DanhMuc)
+                      .WithMany(dm => dm.KhoaHoc)
+                      .HasForeignKey(kh => kh.DanhMucId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ SetNull thành Restrict
             });
+
             modelBuilder.Entity<BaiHoc>(entity =>
             {
                 entity.HasIndex(e => e.KhoaHocId);
+                entity.Property(e => e.LoaiNoiDung).HasDefaultValue("Video");
 
-                entity.Property(e => e.LoaiNoiDung)
-                    .HasDefaultValue("Video");
+                entity.HasMany(bh => bh.TienDoHocTap)
+                      .WithOne(td => td.BaiHoc)
+                      .HasForeignKey(td => td.BaiHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-
-                entity.HasOne(e => e.KhoaHoc)
-                    .WithMany(e => e.BaiHoc)
-                    .HasForeignKey(e => e.KhoaHocId)
-                    .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(bh => bh.KhoaHoc)
+                      .WithMany(kh => kh.BaiHoc)
+                      .HasForeignKey(bh => bh.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
             });
+
             modelBuilder.Entity<DangKyKhoaHoc>(entity =>
             {
                 entity.HasIndex(e => e.UserId);
@@ -94,19 +132,45 @@ namespace DemoApp.Data
                 entity.HasIndex(e => new { e.UserId, e.KhoaHocId }).IsUnique();
 
                 entity.Property(e => e.TrangThai)
-                    .HasDefaultValue("DangHoc");
+                      .HasMaxLength(20)
+                      .HasDefaultValue("DangHoc");
 
-                entity.HasOne(e => e.user)
-                    .WithMany(e => e.DangKyKhoaHocs)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(dk => dk.user)
+                      .WithMany(u => u.DangKyKhoaHocs)
+                      .HasForeignKey(dk => dk.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
 
-                entity.HasOne(e => e.KhoaHoc)
-                    .WithMany(e => e.DangKyKhoaHoc)
-                    .HasForeignKey(e => e.KhoaHocId)
-                    .OnDelete(DeleteBehavior.Restrict);
+                entity.HasOne(dk => dk.KhoaHoc)
+                      .WithMany(kh => kh.DangKyKhoaHoc)
+                      .HasForeignKey(dk => dk.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Giữ Restrict
+            });
 
-               
+            modelBuilder.Entity<TienDoHocTap>(entity =>
+            {
+                entity.HasOne(td => td.User)
+                      .WithMany(u => u.TienDoHocTap)
+                      .HasForeignKey(td => td.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(td => td.KhoaHoc)
+                      .WithMany(kh => kh.TienDoHocTap)
+                      .HasForeignKey(td => td.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(td => td.BaiHoc)
+                      .WithMany(bh => bh.TienDoHocTap)
+                      .HasForeignKey(td => td.BaiHocId)
+                      .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.HasKey(e => e.CartId);
+                entity.HasOne(c => c.User)
+                      .WithMany(u => u.Carts)
+                      .HasForeignKey(c => c.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
             SeedData(modelBuilder);
         }
@@ -253,7 +317,7 @@ namespace DemoApp.Data
 
             
             modelBuilder.Entity<BaiHoc>().HasData(
-    // === BÀI HỌC CHO KHÓA HỌC 1: HTML CSS JavaScript Cơ Bản (WEB001) ===
+
     new BaiHoc
     {
         Id = 1,
