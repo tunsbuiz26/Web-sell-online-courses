@@ -41,12 +41,12 @@ namespace DemoApp.Models
         public DateTime NgayTao { get; set; } = DateTime.Now;
 
         
-        [ForeignKey("UserId ")]
+        [ForeignKey("UserId")]
         public virtual User? user { get; set; }
 
         [ForeignKey("DanhMucId")]
         public virtual DanhMuc? DanhMuc { get; set; }
-
+        public virtual ICollection<TienDoHocTap>? TienDoHocTap { get; set; }
         public virtual ICollection<BaiHoc>? BaiHoc { get; set; }
         public virtual ICollection<DangKyKhoaHoc>? DangKyKhoaHoc { get; set; }
     }

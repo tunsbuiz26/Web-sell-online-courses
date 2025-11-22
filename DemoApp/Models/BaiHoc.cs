@@ -13,7 +13,7 @@ namespace DemoApp.Models
         public int KhoaHocId { get; set; }
 
         [Required, StringLength(200)]
-        public string TenBaiHoc { get; set; }
+        public string? TenBaiHoc { get; set; }
 
         [Required, StringLength(20)]
         public string LoaiNoiDung { get; set; } = "Video";
@@ -21,9 +21,12 @@ namespace DemoApp.Models
         public string? DuongDanNoiDung { get; set; }
         public int ThuTuHienThi { get; set; } = 0;
 
-        // Navigation
+    
         [ForeignKey("KhoaHocId")]
         public virtual KhoaHoc? KhoaHoc { get; set; }
+
+        public virtual ICollection<TienDoHocTap>? TienDoHocTap { get; set; }
+
     }
 
 }

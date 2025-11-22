@@ -14,13 +14,13 @@ namespace DemoApp.Models
 
         [Required]
         public int KhoaHocId { get; set; }
-
+        [Column(TypeName = "datetime")]
         public DateTime NgayDangKy { get; set; } = DateTime.Now;
 
         [Required, StringLength(20)]
         public string TrangThai { get; set; } = "DangHoc";
 
-        // Navigation
+     
         [ForeignKey("UserId")]
         public virtual User? user { get; set; }
 

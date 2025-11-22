@@ -20,7 +20,7 @@ namespace DemoApp.Data
         public DbSet<DemoApp.Models.DangKyKhoaHoc>? DangKyKhoaHoc { get; set; }
         public DbSet<DemoApp.Models.DanhMuc>? DanhMuc { get; set; }
         public DbSet<DemoApp.Models.Role>? Role { get; set; }
-
+        public DbSet<DemoApp.Models.TienDoHocTap> TienDoHocTap { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -29,28 +29,49 @@ namespace DemoApp.Data
                 entity.HasIndex(e => e.Email).IsUnique();
                 entity.HasIndex(e => e.Username).IsUnique();
                 entity.HasIndex(e => e.RoleId);
-                entity.HasMany(e => e.KhoaHocDay)
-                .WithOne(e => e.user)
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
 
+                // Chỉ cần 1 lần cấu hình cho KhoaHoc
+                entity.HasMany(u => u.KhoaHoc)
+                      .WithOne(kh => kh.user)
+                      .HasForeignKey(kh => kh.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
-                entity.HasMany(e => e.DangKyKhoaHocs)
-                    .WithOne(e => e.user)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-            }
-            );
+                entity.HasMany(u => u.TienDoHocTap)
+                      .WithOne(td => td.User)
+                      .HasForeignKey(td => td.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-            modelBuilder.Entity<Role>(entity => 
+                entity.HasMany(u => u.DangKyKhoaHocs)
+                      .WithOne(dk => dk.user)
+                      .HasForeignKey(dk => dk.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
+
+                entity.HasMany(u => u.Carts)
+                      .WithOne(c => c.User)
+                      .HasForeignKey(c => c.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+
+                entity.HasOne(u => u.Role)
+                      .WithMany(r => r.Users)
+                      .HasForeignKey(u => u.RoleId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+            });
+
+            modelBuilder.Entity<Role>(entity =>
             {
                 entity.HasIndex(e => e.RoleName).IsUnique();
             });
+
             modelBuilder.Entity<DanhMuc>(entity =>
             {
-                entity.Property(e => e.TrangThai)
-                    .HasDefaultValue(true);
+                entity.Property(e => e.TrangThai).HasDefaultValue(true);
+
+                entity.HasMany(dm => dm.KhoaHoc)
+                      .WithOne(kh => kh.DanhMuc)
+                      .HasForeignKey(kh => kh.DanhMucId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
             });
+
             modelBuilder.Entity<KhoaHoc>(entity =>
             {
                 entity.HasIndex(e => e.MaKhoaHoc).IsUnique();
@@ -58,35 +79,52 @@ namespace DemoApp.Data
                 entity.HasIndex(e => e.DanhMucId);
                 entity.HasIndex(e => e.TrangThai);
 
-                entity.Property(e => e.CapDo)
-                    .HasDefaultValue("CoBan");
+                entity.Property(e => e.CapDo).HasDefaultValue("CoBan");
+                entity.Property(e => e.TrangThai).HasDefaultValue("BanNhap");
+                entity.Property(e => e.GiaTien).HasPrecision(18, 2).HasDefaultValue(0);
 
-                entity.Property(e => e.TrangThai)
-                    .HasDefaultValue("BanNhap");
+                entity.HasMany(kh => kh.TienDoHocTap)
+                      .WithOne(td => td.KhoaHoc)
+                      .HasForeignKey(td => td.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-                entity.Property(e => e.GiaTien)
-                    .HasPrecision(18, 2)
-                    .HasDefaultValue(0);
+                entity.HasMany(kh => kh.BaiHoc)
+                      .WithOne(bh => bh.KhoaHoc)
+                      .HasForeignKey(bh => bh.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
 
+                entity.HasMany(kh => kh.DangKyKhoaHoc)
+                      .WithOne(dk => dk.KhoaHoc)
+                      .HasForeignKey(dk => dk.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Giữ Restrict
 
-                entity.HasOne(e => e.DanhMuc)
-                    .WithMany(e => e.KhoaHoc)
-                    .HasForeignKey(e => e.DanhMucId)
-                    .OnDelete(DeleteBehavior.SetNull);
+                entity.HasOne(kh => kh.user)
+                      .WithMany(u => u.KhoaHoc)
+                      .HasForeignKey(kh => kh.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
+
+                entity.HasOne(kh => kh.DanhMuc)
+                      .WithMany(dm => dm.KhoaHoc)
+                      .HasForeignKey(kh => kh.DanhMucId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ SetNull thành Restrict
             });
+
             modelBuilder.Entity<BaiHoc>(entity =>
             {
                 entity.HasIndex(e => e.KhoaHocId);
+                entity.Property(e => e.LoaiNoiDung).HasDefaultValue("Video");
 
-                entity.Property(e => e.LoaiNoiDung)
-                    .HasDefaultValue("Video");
+                entity.HasMany(bh => bh.TienDoHocTap)
+                      .WithOne(td => td.BaiHoc)
+                      .HasForeignKey(td => td.BaiHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Thêm NoAction
 
-
-                entity.HasOne(e => e.KhoaHoc)
-                    .WithMany(e => e.BaiHoc)
-                    .HasForeignKey(e => e.KhoaHocId)
-                    .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(bh => bh.KhoaHoc)
+                      .WithMany(kh => kh.BaiHoc)
+                      .HasForeignKey(bh => bh.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
             });
+
             modelBuilder.Entity<DangKyKhoaHoc>(entity =>
             {
                 entity.HasIndex(e => e.UserId);
@@ -94,19 +132,45 @@ namespace DemoApp.Data
                 entity.HasIndex(e => new { e.UserId, e.KhoaHocId }).IsUnique();
 
                 entity.Property(e => e.TrangThai)
-                    .HasDefaultValue("DangHoc");
+                      .HasMaxLength(20)
+                      .HasDefaultValue("DangHoc");
 
-                entity.HasOne(e => e.user)
-                    .WithMany(e => e.DangKyKhoaHocs)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(dk => dk.user)
+                      .WithMany(u => u.DangKyKhoaHocs)
+                      .HasForeignKey(dk => dk.UserId)
+                      .OnDelete(DeleteBehavior.Restrict); // Đổi từ Cascade thành Restrict
 
-                entity.HasOne(e => e.KhoaHoc)
-                    .WithMany(e => e.DangKyKhoaHoc)
-                    .HasForeignKey(e => e.KhoaHocId)
-                    .OnDelete(DeleteBehavior.Restrict);
+                entity.HasOne(dk => dk.KhoaHoc)
+                      .WithMany(kh => kh.DangKyKhoaHoc)
+                      .HasForeignKey(dk => dk.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict); // Giữ Restrict
+            });
 
-               
+            modelBuilder.Entity<TienDoHocTap>(entity =>
+            {
+                entity.HasOne(td => td.User)
+                      .WithMany(u => u.TienDoHocTap)
+                      .HasForeignKey(td => td.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(td => td.KhoaHoc)
+                      .WithMany(kh => kh.TienDoHocTap)
+                      .HasForeignKey(td => td.KhoaHocId)
+                      .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(td => td.BaiHoc)
+                      .WithMany(bh => bh.TienDoHocTap)
+                      .HasForeignKey(td => td.BaiHocId)
+                      .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.HasKey(e => e.CartId);
+                entity.HasOne(c => c.User)
+                      .WithMany(u => u.Carts)
+                      .HasForeignKey(c => c.UserId)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
             SeedData(modelBuilder);
         }
@@ -176,138 +240,409 @@ namespace DemoApp.Data
                 new DanhMuc
                 {
                     Id = 3,
-                    TenDanhMuc = "Cơ Sở Dữ Liệu",
-                    MoTa = "SQL Server, MySQL",
+                    TenDanhMuc = "Data Science",
+                    MoTa = "Làm việc với Python",
                     ThuTuHienThi = 3,
                     TrangThai = true
-                }
+                },
+                 new DanhMuc
+                 {
+                     Id = 4,
+                     TenDanhMuc = "Thiết kế UX/UI Cơ Bản",
+                     MoTa = "UI (Giao diện người dùng), UX (Trải nghiệm người dùng)",
+                     ThuTuHienThi = 4,
+                     TrangThai = true
+                 }
             );
 
-           
+
             modelBuilder.Entity<KhoaHoc>().HasData(
-                new KhoaHoc
-                {
-                    Id = 1,
-                    MaKhoaHoc = "WEB001",
-                    TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
-                    MoTaNgan = "Khóa học lập trình web cho người mới",
-                    UserId = 2,
-                    DanhMucId = 1,
-                    CapDo = "CoBan",
-                    GiaTien = 0,
-                    TrangThai = "DaXuatBan",
-                    NgayTao = DateTime.Now
-                },
+                 new KhoaHoc
+                 {
+                     Id = 1,
+                     MaKhoaHoc = "WEB001",
+                     TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
+                     MoTaNgan = "Khóa học lập trình web cho người mới",
+                     AnhBia = "anh1.jpg",
+                     UserId = 1,
+                     DanhMucId = 1,
+                     CapDo = "CoBan",
+                     GiaTien = 399000,
+                     TrangThai = "DaXuatBan",
+                     NgayTao = DateTime.Now
+                 },
                 new KhoaHoc
                 {
                     Id = 2,
                     MaKhoaHoc = "MOB001",
                     TenKhoaHoc = "Lập trình Android cơ bản",
                     MoTaNgan = "Học lập trình ứng dụng Android",
+                    AnhBia = "anh3.jpg",
                     UserId = 3,
                     DanhMucId = 2,
                     CapDo = "CoBan",
                     GiaTien = 299000,
                     TrangThai = "DaXuatBan",
                     NgayTao = DateTime.Now
+                },
+                new KhoaHoc
+                {
+                    Id = 3,
+                    MaKhoaHoc = "DATA001",
+                    TenKhoaHoc = "Python Data Science",
+                    MoTaNgan = "Khoa học dữ liệu với Python cơ bản",
+                    AnhBia = "anh2.jpg",
+                    UserId = 2,
+                    DanhMucId = 3,
+                    CapDo = "TrungCap",
+                    GiaTien = 450000,
+                    TrangThai = "DaXuatBan",
+                    NgayTao = DateTime.Now.AddDays(-5)
+                },
+                new KhoaHoc
+                {
+                    Id = 4,
+                    MaKhoaHoc = "UIUX001",
+                    TenKhoaHoc = "Thiết kế UI/UX cơ bản",
+                    MoTaNgan = "Học thiết kế giao diện người dùng chuyên nghiệp",
+                    AnhBia = "anh4.jpg",
+                    UserId = 3,
+                    DanhMucId = 4,
+                    CapDo = "CoBan",
+                    GiaTien = 350000,
+                    TrangThai = "BanNhap",
+                    NgayTao = DateTime.Now.AddDays(-2)
                 }
             );
 
             
             modelBuilder.Entity<BaiHoc>().HasData(
-      // Bài học cho khóa học WEB001 (HTML CSS JavaScript)
-          new BaiHoc
-          {
-              Id = 1,
-              KhoaHocId = 1,
-              TenBaiHoc = "Giới thiệu về HTML",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-1-gioi-thieu-html.mp4",
-              ThuTuHienThi = 1
-          },
-          new BaiHoc
-          {
-              Id = 2,
-              KhoaHocId = 1,
-              TenBaiHoc = "Thẻ HTML cơ bản",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-2-the-html-co-ban.mp4",
-              ThuTuHienThi = 2
-          },
-          new BaiHoc
-          {
-              Id = 3,
-              KhoaHocId = 1,
-              TenBaiHoc = "Form và Input trong HTML",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-3-form-input.mp4",
-              ThuTuHienThi = 3
-          },
-          new BaiHoc
-          {
-              Id = 4,
-              KhoaHocId = 1,
-              TenBaiHoc = "CSS Selectors cơ bản",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-4-css-selectors.mp4",
-              ThuTuHienThi = 4
-          },
-          new BaiHoc
-          {
-              Id = 5,
-              KhoaHocId = 1,
-              TenBaiHoc = "Bài tập thực hành HTML CSS",
-              LoaiNoiDung = "PDF",
-              DuongDanNoiDung = "bai-5-bai-tap-thuc-hanh.pdf",
-              ThuTuHienThi = 5
-          },
 
-          // Bài học cho khóa học MOB001 (Lập trình Android)
-          new BaiHoc
-          {
-              Id = 6,
-              KhoaHocId = 2,
-              TenBaiHoc = "Giới thiệu Android Studio",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-1-android-studio.mp4",
-              ThuTuHienThi = 1
-          },
-          new BaiHoc
-          {
-              Id = 7,
-              KhoaHocId = 2,
-              TenBaiHoc = "Layout và View trong Android",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-2-layout-view.mp4",
-              ThuTuHienThi = 2
-          },
-          new BaiHoc
-          {
-              Id = 8,
-              KhoaHocId = 2,
-              TenBaiHoc = "Xử lý sự kiện click",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-3-xu-ly-su-kien.mp4",
-              ThuTuHienThi = 3
-          },
-          new BaiHoc
-          {
-              Id = 9,
-              KhoaHocId = 2,
-              TenBaiHoc = "Intent và Activity",
-              LoaiNoiDung = "Video",
-              DuongDanNoiDung = "bai-4-intent-activity.mp4",
-              ThuTuHienThi = 4
-          },
-          new BaiHoc
-          {
-              Id = 10,
-              KhoaHocId = 2,
-              TenBaiHoc = "Dự án ứng dụng Calculator",
-              LoaiNoiDung = "PDF",
-              DuongDanNoiDung = "bai-5-du-an-calculator.pdf",
-              ThuTuHienThi = 5
-          }
+    new BaiHoc
+    {
+        Id = 1,
+        KhoaHocId = 1,
+        TenBaiHoc = "Giới thiệu về Web Development",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-1-gioi-thieu-web.mp4",
+        ThuTuHienThi = 1,
+      
+    },
+    new BaiHoc
+    {
+        Id = 2,
+        KhoaHocId = 1,
+        TenBaiHoc = "Cấu trúc HTML cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-2-cau-truc-html.mp4",
+        ThuTuHienThi = 2,
+    
+    },
+    new BaiHoc
+    {
+        Id = 3,
+        KhoaHocId = 1,
+        TenBaiHoc = "Các thẻ HTML thông dụng",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-3-the-html-thong-dung.mp4",
+        ThuTuHienThi = 3,
+       
+    },
+    new BaiHoc
+    {
+        Id = 4,
+        KhoaHocId = 1,
+        TenBaiHoc = "Form và Input trong HTML",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-4-form-input.mp4",
+        ThuTuHienThi = 4,
+     
+    },
+    new BaiHoc
+    {
+        Id = 5,
+        KhoaHocId = 1,
+        TenBaiHoc = "CSS Selectors và Box Model",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-5-css-box-model.mp4",
+        ThuTuHienThi = 5,
+    
+    },
+    new BaiHoc
+    {
+        Id = 6,
+        KhoaHocId = 1,
+        TenBaiHoc = "Flexbox và Grid Layout",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-6-flexbox-grid.mp4",
+        ThuTuHienThi = 6,
+      
+    },
+    new BaiHoc
+    {
+        Id = 7,
+        KhoaHocId = 1,
+        TenBaiHoc = "JavaScript cơ bản - Variables & Functions",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-7-js-co-ban.mp4",
+        ThuTuHienThi = 7,
+        
+    },
+    new BaiHoc
+    {
+        Id = 8,
+        KhoaHocId = 1,
+        TenBaiHoc = "DOM Manipulation",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-8-dom-manipulation.mp4",
+        ThuTuHienThi = 8,
+       
+    },
+    new BaiHoc
+    {
+        Id = 9,
+        KhoaHocId = 1,
+        TenBaiHoc = "Dự án Portfolio Website",
+        LoaiNoiDung = "PDF",
+        DuongDanNoiDung = "bai-9-du-an-portfolio.pdf",
+        ThuTuHienThi = 9,
+        
+    },
+
+    // === BÀI HỌC CHO KHÓA HỌC 2: Lập trình Android cơ bản (MOB001) ===
+    new BaiHoc
+    {
+        Id = 10,
+        KhoaHocId = 2,
+        TenBaiHoc = "Giới thiệu Android Development",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-10-gioi-thieu-android.mp4",
+        ThuTuHienThi = 1,
+       
+    },
+    new BaiHoc
+    {
+        Id = 11,
+        KhoaHocId = 2,
+        TenBaiHoc = "Cài đặt Android Studio",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-11-cai-dat-android-studio.mp4",
+        ThuTuHienThi = 2,
+       
+    },
+    new BaiHoc
+    {
+        Id = 12,
+        KhoaHocId = 2,
+        TenBaiHoc = "Layout XML cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-12-layout-xml.mp4",
+        ThuTuHienThi = 3,
+        
+    },
+    new BaiHoc
+    {
+        Id = 13,
+        KhoaHocId = 2,
+        TenBaiHoc = "LinearLayout vs RelativeLayout",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-13-layout-comparison.mp4",
+        ThuTuHienThi = 4,
+    }, 
+    new BaiHoc
+    {
+        Id = 14,
+        KhoaHocId = 2,
+        TenBaiHoc = "Xử lý sự kiện Click",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-14-xu-ly-su-kien.mp4",
+        ThuTuHienThi = 5,
+      
+    },
+    new BaiHoc
+    {
+        Id = 15,
+        KhoaHocId = 2,
+        TenBaiHoc = "Intent và Navigation",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-15-intent-navigation.mp4",
+        ThuTuHienThi = 6,
+        
+    },
+    new BaiHoc
+    {
+        Id = 16,
+        KhoaHocId = 2,
+        TenBaiHoc = "RecyclerView cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-16-recyclerview.mp4",
+        ThuTuHienThi = 7,
+       
+    },
+    new BaiHoc
+    {
+        Id = 17,
+        KhoaHocId = 2,
+        TenBaiHoc = "Dự án ứng dụng Todo List",
+        LoaiNoiDung = "PDF",
+        DuongDanNoiDung = "bai-17-du-an-todo-list.pdf",
+        ThuTuHienThi = 8,
+       
+    },
+
+    // === BÀI HỌC CHO KHÓA HỌC 3: Python Data Science (DATA001) ===
+    new BaiHoc
+    {
+        Id = 18,
+        KhoaHocId = 3,
+        TenBaiHoc = "Giới thiệu Data Science",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-18-gioi-thieu-data-science.mp4",
+        ThuTuHienThi = 1,
+    
+    },
+    new BaiHoc
+    {
+        Id = 19,
+        KhoaHocId = 3,
+        TenBaiHoc = "Cài đặt môi trường Python & Jupyter",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-19-cai-dat-moi-truong.mp4",
+        ThuTuHienThi = 2,
+    
+    },
+    new BaiHoc
+    {
+        Id = 20,
+        KhoaHocId = 3,
+        TenBaiHoc = "Pandas cơ bản - DataFrames",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-20-pandas-dataframes.mp4",
+        ThuTuHienThi = 3,
+      
+    },
+    new BaiHoc
+    {
+        Id = 21,
+        KhoaHocId = 3,
+        TenBaiHoc = "Data Cleaning với Pandas",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-21-data-cleaning.mp4",
+        ThuTuHienThi = 4,
+        
+    },
+    new BaiHoc
+    {
+        Id = 22,
+        KhoaHocId = 3,
+        TenBaiHoc = "Data Visualization với Matplotlib",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-22-matplotlib.mp4",
+        ThuTuHienThi = 5,
+       
+    },
+    new BaiHoc
+    {
+        Id = 23,
+        KhoaHocId = 3,
+        TenBaiHoc = "Seaborn cho visualization nâng cao",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-23-seaborn.mp4",
+        ThuTuHienThi = 6,
+
+    },
+    new BaiHoc
+    {
+        Id = 24,
+        KhoaHocId = 3,
+        TenBaiHoc = "Phân tích dữ liệu thực tế",
+        LoaiNoiDung = "PDF",
+        DuongDanNoiDung = "bai-24-phan-tich-du-lieu.pdf",
+        ThuTuHienThi = 7,
+      
+    },
+
+    // === BÀI HỌC CHO KHÓA HỌC 4: Thiết kế UI/UX cơ bản (UIUX001) ===
+    new BaiHoc
+    {
+        Id = 25,
+        KhoaHocId = 4,
+        TenBaiHoc = "Giới thiệu UI/UX Design",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-25-gioi-thieu-ui-ux.mp4",
+        ThuTuHienThi = 1,
+      
+    },
+    new BaiHoc
+    {
+        Id = 26,
+        KhoaHocId = 4,
+        TenBaiHoc = "Nguyên lý thiết kế cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-26-nguyen-ly-thiet-ke.mp4",
+        ThuTuHienThi = 2,
+     
+    },
+    new BaiHoc
+    {
+        Id = 27,
+        KhoaHocId = 4,
+        TenBaiHoc = "Color Theory trong UI Design",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-27-color-theory.mp4",
+        ThuTuHienThi = 3,
+        
+    },
+    new BaiHoc
+    {
+        Id = 28,
+        KhoaHocId = 4,
+        TenBaiHoc = "Typography cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-28-typography.mp4",
+        ThuTuHienThi = 4,
+      
+    },
+    new BaiHoc
+    {
+        Id = 29,
+        KhoaHocId = 4,
+        TenBaiHoc = "Wireframing với Figma",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-29-wireframing-figma.mp4",
+        ThuTuHienThi = 5,
+      
+    },
+    new BaiHoc
+    {
+        Id = 30,
+        KhoaHocId = 4,
+        TenBaiHoc = "Prototyping và Interaction",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-30-prototyping.mp4",
+        ThuTuHienThi = 6,
+        
+    },
+    new BaiHoc
+    {
+        Id = 31,
+        KhoaHocId = 4,
+        TenBaiHoc = "Dự án thiết kế Mobile App",
+        LoaiNoiDung = "PDF",
+        DuongDanNoiDung = "bai-31-du-an-mobile-app.pdf",
+        ThuTuHienThi = 7,
+       
+    },
+    new BaiHoc
+    {
+        Id = 32,
+        KhoaHocId = 4,
+        TenBaiHoc = "Design System cơ bản",
+        LoaiNoiDung = "Video",
+        DuongDanNoiDung = "bai-32-design-system.mp4",
+        ThuTuHienThi = 8,
+        
+    }
       );
 
          
