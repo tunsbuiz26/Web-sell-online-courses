@@ -3,7 +3,133 @@
   "WorkspaceRootPath": "D:\\QLKhoaHoc\\Web-sell-online-courses\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251122074744_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemoApp\\Migrations\\20251122074744_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\users\\usercourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\users\\usercourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\users\\courselistwithregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\users\\courselistwithregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\admins\\khoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\khoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\dangkykhoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\dangkykhoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DemoApp\\Migrations\\20251119055129_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\dangkykhoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\dangkykhoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\admins\\dangkykhoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\dangkykhoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -143,6 +269,7 @@
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\dskh.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -212,6 +339,11 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
     }
   ],
   "DocumentGroupContainers": [
@@ -221,7 +353,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 12,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
           "Children": [
             {
               "$type": "Document",
@@ -250,6 +391,7 @@
               "IsPinned": true
             },
             {
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -266,11 +408,24 @@
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
+<<<<<<< HEAD
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswFsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T07:23:49.751Z",
+=======
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
@@ -280,6 +435,127 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-15T16:54:50.602Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "DangKyKhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:46:50.178Z",
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+<<<<<<< HEAD
+              "Title": "CourseListWithRegister.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Users\\CourseListWithRegister.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Users\\CourseListWithRegister.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Users\\CourseListWithRegister.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Users\\CourseListWithRegister.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAPYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T07:17:18.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserCourses.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Users\\UserCourses.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Users\\UserCourses.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Users\\UserCourses.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Users\\UserCourses.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAwwIgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T06:42:15.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DangKyKhoaHoc.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:41:12.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KhoaHoc.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:40:35.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\User.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\User.cs",
+              "RelativeToolTip": "DemoApp\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:40:30.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAewEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:39:15.705Z"
+=======
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAswCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:46:06.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TienDoHocTap.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeToolTip": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:57:39.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA6wDEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:44:13.443Z",
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
               "EditorCaption": ""
             },
             {
@@ -887,6 +1163,34 @@
               "ViewState": "AgIAAIsBAAAAAAAAAAAqwKIBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-13T22:01:51.421Z"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "header.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\header.css",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\header.css",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAqwBEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:28:17.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "home.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\home.css",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAjwHMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:26:38.39Z"
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
             }
           ]
         }
