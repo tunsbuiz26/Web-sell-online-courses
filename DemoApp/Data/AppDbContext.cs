@@ -326,6 +326,7 @@ namespace DemoApp.Data
 
             // ===== KhoaHoc (4 khóa theo yêu cầu) =====
             modelBuilder.Entity<KhoaHoc>().HasData(
+<<<<<<< HEAD
                 new KhoaHoc
                 {
                     Id = 1,
@@ -349,6 +350,41 @@ namespace DemoApp.Data
                     AnhBia = "htmlcss.jpg",
                     UserId = 1,
                     DanhMucId = 1,
+=======
+                 new KhoaHoc
+                 {
+                     Id = 1,
+                     MaKhoaHoc = "WEB001",
+                     TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
+                     MoTaNgan = "Khóa học lập trình web cho người mới",
+                     MoTaChiTiet = "Biến bạn từ người mới bắt đầu thành người xây dựng website chuyên nghiệp!" +
+                     "Khóa học HTML CSS JavaScript Cơ Bản chính là nền tảng vững chắc đầu tiên dành cho bạn!" +
+                     "Khóa học được thiết kế từ CƠ BẢN đến NÂNG CAO, phù hợp cho người mới bắt đầu. Bạn chỉ cần: Chăm chỉ và kiên trì thực hành,không ngại hỏi đáp, tích cực tương tác,chủ động đưa ra thắc mắc trong quá trình học tập" +
+                     "Sau khóa học, bạn ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Frontend Developer, tự tin xây dựng website responsive, phát triển các dự án cá nhân chất lượng" +
+                     "ĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
+                     AnhBia = "anh1.jpg",
+                     UserId = 1,
+                     DanhMucId = 1,
+                     CapDo = "CoBan",
+                     GiaTien = 399000,
+                     TrangThai = "DaXuatBan",
+                     NgayTao = DateTime.Now
+                 },
+                new KhoaHoc
+                {
+                    Id = 2,
+                    MaKhoaHoc = "MOB001",
+                    TenKhoaHoc = "Lập trình Android cơ bản",
+                    MoTaNgan = "Học lập trình ứng dụng Android",
+                    MoTaChiTiet = "Biến ý tưởng thành ứng dụng thực tế - Khởi đầu sự nghiệp Mobile Developer!" +
+                    "Khóa học Lập trình Android Cơ Bản chính là chìa khóa mở cánh cửa vào thế giới phát triển di động!" +
+                    "Khóa học được thiết kế từ CƠ BẢN đến THỰC HÀNH, chỉ cần bạn: Chăm chỉ thực hành và không ngại thử nghiệm, tích cực hỏi đáp và chia sẻ khó khăn, có laptop cấu hình tối thiểu để cài đặt Android Studio" +
+                    "Sau khóa học, bạn HOÀN TOÀN ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Android Developer, tự phát triển ứng dụng Android hoàn chỉnh, hiểu và áp dụng Android architecture patterns, kết nối với RESTful API và xử lý data public ứng dụng lên Google Play Store" +
+                    "ĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
+                    AnhBia = "anh3.jpg",
+                    UserId = 3,
+                    DanhMucId = 2,
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                     CapDo = "CoBan",
                     GiaTien = 300000,
                     TrangThai = "DaXuatBan",
@@ -357,11 +393,24 @@ namespace DemoApp.Data
                 new KhoaHoc
                 {
                     Id = 3,
+<<<<<<< HEAD
                     MaKhoaHoc = "SQL001",
                     TenKhoaHoc = "Lập trình SQL",
                     MoTaNgan = "SQL cho người mới bắt đầu",
                     AnhBia = "sql.png",
                     UserId = 1,
+=======
+                    MaKhoaHoc = "DATA001",
+                    TenKhoaHoc = "Python Data Science",
+                    MoTaNgan = "Khoa học dữ liệu với Python cơ bản",
+                    MoTaChiTiet = "Biến dữ liệu thô thành insights giá trị - Khởi đầu sự nghiệp Data Scientist!" +
+                    "Khóa học Python Data Science sẽ trang bị cho bạn công cụ để trở thành chuyên gia phân tích dữ liệu thời đại 4.0!" +
+                    "Khóa học được thiết kế từ CƠ BẢN đến CHUYÊN SÂU, chỉ cần bạn: Tư duy logic và ham học hỏi, chăm chỉ thực hành case study thực tế, không ngại hỏi đáp về các vấn đề data" +
+                    "Sau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher Data Analyst, tự tin phỏng vấn với technical knowledge, xử lý real-world data problems, tiếp tục học lên Advanced Data Science" +
+                    "ĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
+                    AnhBia = "anh2.jpg",
+                    UserId = 2,
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                     DanhMucId = 3,
                     CapDo = "CoBan",
                     GiaTien = 250000,
@@ -371,11 +420,24 @@ namespace DemoApp.Data
                 new KhoaHoc
                 {
                     Id = 4,
+<<<<<<< HEAD
                     MaKhoaHoc = "REACT001",
                     TenKhoaHoc = "Lập trình React",
                     MoTaNgan = "Khóa học ReactJS cơ bản",
                     AnhBia = "react.png",
                     UserId = 1,
+=======
+                    MaKhoaHoc = "UIUX001",
+                    TenKhoaHoc = "Thiết kế UI/UX cơ bản",
+                    MoTaNgan = "Học thiết kế giao diện người dùng chuyên nghiệp",
+                    MoTaChiTiet = "Biến ý tưởng thành trải nghiệm người dùng tuyệt vời - Khởi đầu sự nghiệp Designer chuyên nghiệp!" +
+                    "Khóa học Thiết kế UI/UX Cơ Bản sẽ biến bạn từ người mới bắt đầu thành designer có tư duy hệ thống!" +
+                    "Khóa học được thiết kế từ NGUYÊN LÝ đến THỰC HÀNH, chỉ cần bạn: Đam mê sáng tạo và yêu thích cái đẹp, tư duy logic và hướng về người dùng, chăm chỉ thực hành và không ngại feedback" +
+                    "Sau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher UI/UX Designer, làm freelance project với mức lương 2-5 triệu/project, tiếp tục học nâng cao lên Senior level, tự quản lý design process từ A-Z" +
+                    "ĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
+                    AnhBia = "anh4.jpg",
+                    UserId = 3,
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                     DanhMucId = 4,
                     CapDo = "CoBan",
                     GiaTien = 500000,

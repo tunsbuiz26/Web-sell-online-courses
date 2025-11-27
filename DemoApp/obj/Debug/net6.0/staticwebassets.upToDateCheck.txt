@@ -5,7 +5,11 @@ wwwroot\css\dskh.css
 wwwroot\css\header.css
 wwwroot\css\home.css
 wwwroot\css\login.css
+<<<<<<< HEAD
 wwwroot\css\mycourses.css
+=======
+wwwroot\css\Profile.css
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
 wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
@@ -13,6 +17,9 @@ wwwroot\images\admin-avatar.jpg
 wwwroot\images\anh2.jpg
 wwwroot\images\anh3.jpg
 wwwroot\images\anh4.jpg
+wwwroot\images\anh5.png
+wwwroot\images\anh6.png
+wwwroot\images\anh7.jpg
 wwwroot\images\banner.png
 wwwroot\images\cpp.png
 wwwroot\images\htmlcss.jpg

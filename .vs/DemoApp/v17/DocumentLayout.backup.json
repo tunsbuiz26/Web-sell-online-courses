@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Lap trinh .NET\\DemoApp\\",
   "Documents": [
     {
@@ -8,6 +9,25 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+  "WorkspaceRootPath": "D:\\QLKhoaHoc\\Web-sell-online-courses\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\users\\usercourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\users\\usercourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,8 +117,264 @@
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\chitietkhoahoc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\chitietkhoahoc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\admins\\dangkykhoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\dangkykhoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\admins\\khoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\admins\\khoahocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\danhsachkhoahoc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\danhsachkhoahoc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\ctkh.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\ctkh.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\baihoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\khoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\khoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\dskh.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\dskh.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\dangkykhoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\tiendohoctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\dangkykhoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\dangkykhoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\dangkykhoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\dangkykhoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\dangkykhoahocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc\\web-sell-online-courses\\demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\js\\header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\qlkhoahoc_tructuyen\\demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
     }
   ],
   "DocumentGroupContainers": [
@@ -108,9 +384,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 13,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 4,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\User.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\User.cs",
+              "RelativeToolTip": "DemoApp\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:26:57.197Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BaiHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\BaiHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\BaiHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\BaiHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\BaiHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:46:13.795Z",
+              "IsPinned": true
+            },
+            {
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -129,12 +445,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ViewState": "AgIAAJkCAAAAAAAAAAAAAKYCAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-11-27T18:16:48.319Z",
+=======
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswFsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T07:23:49.751Z",
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 5,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T16:54:50.602Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "DangKyKhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:46:50.178Z",
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
               "EditorCaption": ""
             },
             {
@@ -419,10 +773,673 @@
               "ViewState": "AgIAABcAAAAAAAAAAAAAwCYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-22T06:39:15.705Z"
+<<<<<<< HEAD
+=======
+=======
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAswCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:46:06.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TienDoHocTap.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeToolTip": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:57:39.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA6wDEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:44:13.443Z",
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowFcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T21:11:57.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T03:07:55.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAABgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T21:11:28.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Program.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Program.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Program.cs",
+              "RelativeToolTip": "DemoApp\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswDoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T08:32:53.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABABAAAAAAAAAAAowBoBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:32:39.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswE0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T03:13:37.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T21:59:48.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T04:38:02.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T04:38:00.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "DemoApp\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:19:26.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DemoApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:46:06.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Chitietkhoahoc.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Chitietkhoahoc.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\Chitietkhoahoc.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Chitietkhoahoc.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\Chitietkhoahoc.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T08:45:16.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Profile.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\Profile.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\Profile.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\Profile.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\Profile.css",
+              "ViewState": "AgIAALsAAAAAAAAAAAAcwNcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-26T04:14:32.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T08:02:45.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "DemoApp\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T08:02:25.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\ChangePasswordViewModel.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "DemoApp\\ViewModels\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:20:30.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:32:10.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DangKyKhoaHocsController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Admins\\DangKyKhoaHocsController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Admins\\DangKyKhoaHocsController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Admins\\DangKyKhoaHocsController.cs",
+              "RelativeToolTip": "DemoApp\\Admins\\DangKyKhoaHocsController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswDgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:41:50.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:16:02.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "KhoaHocsController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Admins\\KhoaHocsController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Admins\\KhoaHocsController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Admins\\KhoaHocsController.cs",
+              "RelativeToolTip": "DemoApp\\Admins\\KhoaHocsController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAqwLAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T03:16:25.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "home.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\home.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAAAEBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:26:38.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\appsettings.json",
+              "RelativeDocumentMoniker": "DemoApp\\appsettings.json",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\appsettings.json",
+              "RelativeToolTip": "DemoApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T08:33:33.074Z"
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+<<<<<<< HEAD
+=======
+              "Title": "ctkh.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\ctkh.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\ctkh.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\ctkh.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\ctkh.css",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAcwO8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-24T17:28:55.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DanhSachKhoaHoc.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAowJUAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T08:38:05.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T16:09:08.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "KhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\KhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\KhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\KhoaHoc.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswC8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:44:13.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Details.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\Details.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Details.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T17:33:24.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\Delete.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Delete.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T17:33:36.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\Create.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Create.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T17:33:35.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\Edit.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\KhoaHocs\\Edit.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\KhoaHocs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T17:33:31.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T16:11:18.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "header.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\header.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\header.css",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:28:17.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "dskh.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\dskh.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\dskh.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\dskh.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\dskh.css",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-22T17:39:21.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Courses.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T06:41:09.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TienDoHocTap.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\TienDoHocTap.cs",
+              "RelativeToolTip": "DemoApp\\Models\\TienDoHocTap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:57:39.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DangKyKhoaHoc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DangKyKhoaHoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:46:50.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DanhMuc.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\DanhMuc.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\DanhMuc.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\DanhMuc.cs",
+              "RelativeToolTip": "DemoApp\\Models\\DanhMuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:28:03.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\Cart.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Cart.cs",
+              "RelativeToolTip": "DemoApp\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T04:22:12.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:42:56.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:43:10.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:43:20.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\DangKyKhoaHocs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:43:26.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20251119055129_qlkh.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs",
+              "RelativeDocumentMoniker": "..\\..\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs",
+              "RelativeToolTip": "..\\..\\QLKhoaHoc_TrucTuyen\\DemoApp\\Migrations\\20251119055129_qlkh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T05:51:30.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T05:15:44.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\Role.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Role.cs",
+              "RelativeToolTip": "DemoApp\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:27:05.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "DemoApp\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "DemoApp\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T08:52:44.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "DemoApp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:32:32.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DemoApp\\Models\\Product.cs",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\Models\\Product.cs",
+              "RelativeToolTip": "DemoApp\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:47:16.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "header.js",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\header.js",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\js\\header.js",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\header.js",
+              "RelativeToolTip": "DemoApp\\wwwroot\\js\\header.js",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAQwAwBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-15T04:36:10.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\login.css",
+              "ToolTip": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAIsBAAAAAAAAAAAqwKIBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T22:01:51.421Z"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "header.css",
+              "DocumentMoniker": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\header.css",
+              "ToolTip": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+              "RelativeToolTip": "DemoApp\\wwwroot\\css\\header.css",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAqwBEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T21:28:17.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
               "Title": "home.css",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\home.css",
               "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\home.css",
@@ -430,7 +1447,13 @@
               "RelativeToolTip": "DemoApp\\wwwroot\\css\\home.css",
               "ViewState": "AgIAAPYBAAAAAAAAAAAuwBUCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+<<<<<<< HEAD
               "WhenOpened": "2025-11-24T14:47:37.561Z"
+=======
+              "WhenOpened": "2025-11-13T21:26:38.39Z"
+>>>>>>> 5a5c3414fbd51d473760e578e5f217ccd25abd30
+>>>>>>> 9398dde6ee8016b423f0e6f63140a1833eef0edd
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
             }
           ]
         }

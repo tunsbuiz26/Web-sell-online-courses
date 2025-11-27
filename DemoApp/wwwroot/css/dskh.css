@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿﻿.page-header {
+=======
+﻿.page-header {
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem 0;
@@ -37,7 +41,10 @@
     margin: 0 auto;
     line-height: 1.6;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
 .courses-horizontal-container {
     display: flex;
     flex-wrap: wrap;

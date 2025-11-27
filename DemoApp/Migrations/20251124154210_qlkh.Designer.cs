@@ -4,6 +4,7 @@ using DemoApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251124154210_qlkh")]
+    partial class qlkh
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,9 +50,6 @@ namespace DemoApp.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int?>("ThoiLuong")
-                        .HasColumnType("int");
-
                     b.Property<int>("ThuTuHienThi")
                         .HasColumnType("int");
 
@@ -64,144 +63,290 @@ namespace DemoApp.Migrations
                         new
                         {
                             Id = 1,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=S3nx34WFXjI&list=PLZPZq0r_RZOMHoXIcxze_lP97j2Ase2on",
+                            DuongDanNoiDung = "bai-1-gioi-thieu-web.mp4",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Lộ Trình Học Lập Trình Cho Người Mới",
-                            ThoiLuong = 0,
+                            TenBaiHoc = "Giới thiệu về Web Development",
                             ThuTuHienThi = 1
                         },
                         new
                         {
                             Id = 2,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=74B6PXO97Tw&list=PLux-_phi0Rz0Hq9fDP4TlOulBl8APKp79&index=2",
+                            DuongDanNoiDung = "bai-2-cau-truc-html.mp4",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Làm Quen Với Ngôn Ngữ Lập Trình C++",
-                            ThoiLuong = 0,
+                            TenBaiHoc = "Cấu trúc HTML cơ bản",
                             ThuTuHienThi = 2
                         },
                         new
                         {
                             Id = 3,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=y-_fNgvSfjc&list=PLux-_phi0Rz0Hq9fDP4TlOulBl8APKp79&index=3",
+                            DuongDanNoiDung = "bai-3-the-html-thong-dung.mp4",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong Ngôn Ngữ Lập Trình C++ (Phần 1)",
-                            ThoiLuong = 0,
+                            TenBaiHoc = "Các thẻ HTML thông dụng",
                             ThuTuHienThi = 3
                         },
                         new
                         {
                             Id = 4,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=y-_fNgvSfjc&list=PLux-_phi0Rz0Hq9fDP4TlOulBl8APKp79&index=3",
+                            DuongDanNoiDung = "bai-4-form-input.mp4",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong Ngôn Ngữ Lập Trình C++ (Phần 2)",
-                            ThoiLuong = 0,
+                            TenBaiHoc = "Form và Input trong HTML",
                             ThuTuHienThi = 4
                         },
                         new
                         {
                             Id = 5,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=R6plN3FvzFY&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
-                            KhoaHocId = 2,
+                            DuongDanNoiDung = "bai-5-css-box-model.mp4",
+                            KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Tổng quan về khóa học HTML CSS",
-                            ThoiLuong = 0,
-                            ThuTuHienThi = 1
+                            TenBaiHoc = "CSS Selectors và Box Model",
+                            ThuTuHienThi = 5
                         },
                         new
                         {
                             Id = 6,
-                            DuongDanNoiDung = "http://youtube.com/watch?v=zwsPND378OQ&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=2",
-                            KhoaHocId = 2,
+                            DuongDanNoiDung = "bai-6-flexbox-grid.mp4",
+                            KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "HTML CSS là gì? | Ví dụ trực quan về HTML & CSS",
-                            ThoiLuong = 0,
-                            ThuTuHienThi = 2
+                            TenBaiHoc = "Flexbox và Grid Layout",
+                            ThuTuHienThi = 6
                         },
                         new
                         {
                             Id = 7,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=7BJiPyN4zZ0&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=3",
-                            KhoaHocId = 2,
+                            DuongDanNoiDung = "bai-7-js-co-ban.mp4",
+                            KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Làm quen với Dev tools",
-                            ThoiLuong = 0,
-                            ThuTuHienThi = 3
+                            TenBaiHoc = "JavaScript cơ bản - Variables & Functions",
+                            ThuTuHienThi = 7
                         },
                         new
                         {
                             Id = 8,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=oPV2sjMG53U&list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ",
-                            KhoaHocId = 3,
+                            DuongDanNoiDung = "bai-8-dom-manipulation.mp4",
+                            KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "SQL cho người mới bắt đầu",
-                            ThoiLuong = 0,
-                            ThuTuHienThi = 1
+                            TenBaiHoc = "DOM Manipulation",
+                            ThuTuHienThi = 8
                         },
                         new
                         {
                             Id = 9,
-                            DuongDanNoiDung = "https://www.youtube.com/watch?v=x0fSBAgBrOQ&list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
-                            KhoaHocId = 4,
-                            LoaiNoiDung = "Video",
-                            TenBaiHoc = "ReactJS là gì | Tại sao nên học ReactJS | Khóa học ReactJS miễn phí",
-                            ThoiLuong = 0,
-                            ThuTuHienThi = 1
-                        });
-                });
-
-            modelBuilder.Entity("DemoApp.Models.BuoiHoc", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("KhoaHocId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("NgayHoc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("TenBuoiHoc")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int?>("ThoiLuong")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ThuTuBuoi")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("KhoaHocId");
-
-                    b.ToTable("BuoiHoc");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
+                            DuongDanNoiDung = "bai-9-du-an-portfolio.pdf",
                             KhoaHocId = 1,
-                            NgayHoc = new DateTime(2025, 11, 24, 0, 0, 0, 0, DateTimeKind.Local),
-                            TenBuoiHoc = "Buổi 1 - Lộ trình học & bài 1 C++",
-                            ThoiLuong = 60,
-                            ThuTuBuoi = 1
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Dự án Portfolio Website",
+                            ThuTuHienThi = 9
                         },
                         new
                         {
-                            Id = 2,
-                            KhoaHocId = 1,
-                            NgayHoc = new DateTime(2025, 11, 25, 0, 0, 0, 0, DateTimeKind.Local),
-                            TenBuoiHoc = "Buổi 2 - Làm quen với C++",
-                            ThoiLuong = 60,
-                            ThuTuBuoi = 2
+                            Id = 10,
+                            DuongDanNoiDung = "bai-10-gioi-thieu-android.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Giới thiệu Android Development",
+                            ThuTuHienThi = 1
+                        },
+                        new
+                        {
+                            Id = 11,
+                            DuongDanNoiDung = "bai-11-cai-dat-android-studio.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Cài đặt Android Studio",
+                            ThuTuHienThi = 2
+                        },
+                        new
+                        {
+                            Id = 12,
+                            DuongDanNoiDung = "bai-12-layout-xml.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Layout XML cơ bản",
+                            ThuTuHienThi = 3
+                        },
+                        new
+                        {
+                            Id = 13,
+                            DuongDanNoiDung = "bai-13-layout-comparison.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "LinearLayout vs RelativeLayout",
+                            ThuTuHienThi = 4
+                        },
+                        new
+                        {
+                            Id = 14,
+                            DuongDanNoiDung = "bai-14-xu-ly-su-kien.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Xử lý sự kiện Click",
+                            ThuTuHienThi = 5
+                        },
+                        new
+                        {
+                            Id = 15,
+                            DuongDanNoiDung = "bai-15-intent-navigation.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Intent và Navigation",
+                            ThuTuHienThi = 6
+                        },
+                        new
+                        {
+                            Id = 16,
+                            DuongDanNoiDung = "bai-16-recyclerview.mp4",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "RecyclerView cơ bản",
+                            ThuTuHienThi = 7
+                        },
+                        new
+                        {
+                            Id = 17,
+                            DuongDanNoiDung = "bai-17-du-an-todo-list.pdf",
+                            KhoaHocId = 2,
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Dự án ứng dụng Todo List",
+                            ThuTuHienThi = 8
+                        },
+                        new
+                        {
+                            Id = 18,
+                            DuongDanNoiDung = "bai-18-gioi-thieu-data-science.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Giới thiệu Data Science",
+                            ThuTuHienThi = 1
+                        },
+                        new
+                        {
+                            Id = 19,
+                            DuongDanNoiDung = "bai-19-cai-dat-moi-truong.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Cài đặt môi trường Python & Jupyter",
+                            ThuTuHienThi = 2
+                        },
+                        new
+                        {
+                            Id = 20,
+                            DuongDanNoiDung = "bai-20-pandas-dataframes.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Pandas cơ bản - DataFrames",
+                            ThuTuHienThi = 3
+                        },
+                        new
+                        {
+                            Id = 21,
+                            DuongDanNoiDung = "bai-21-data-cleaning.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Data Cleaning với Pandas",
+                            ThuTuHienThi = 4
+                        },
+                        new
+                        {
+                            Id = 22,
+                            DuongDanNoiDung = "bai-22-matplotlib.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Data Visualization với Matplotlib",
+                            ThuTuHienThi = 5
+                        },
+                        new
+                        {
+                            Id = 23,
+                            DuongDanNoiDung = "bai-23-seaborn.mp4",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Seaborn cho visualization nâng cao",
+                            ThuTuHienThi = 6
+                        },
+                        new
+                        {
+                            Id = 24,
+                            DuongDanNoiDung = "bai-24-phan-tich-du-lieu.pdf",
+                            KhoaHocId = 3,
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Phân tích dữ liệu thực tế",
+                            ThuTuHienThi = 7
+                        },
+                        new
+                        {
+                            Id = 25,
+                            DuongDanNoiDung = "bai-25-gioi-thieu-ui-ux.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Giới thiệu UI/UX Design",
+                            ThuTuHienThi = 1
+                        },
+                        new
+                        {
+                            Id = 26,
+                            DuongDanNoiDung = "bai-26-nguyen-ly-thiet-ke.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Nguyên lý thiết kế cơ bản",
+                            ThuTuHienThi = 2
+                        },
+                        new
+                        {
+                            Id = 27,
+                            DuongDanNoiDung = "bai-27-color-theory.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Color Theory trong UI Design",
+                            ThuTuHienThi = 3
+                        },
+                        new
+                        {
+                            Id = 28,
+                            DuongDanNoiDung = "bai-28-typography.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Typography cơ bản",
+                            ThuTuHienThi = 4
+                        },
+                        new
+                        {
+                            Id = 29,
+                            DuongDanNoiDung = "bai-29-wireframing-figma.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Wireframing với Figma",
+                            ThuTuHienThi = 5
+                        },
+                        new
+                        {
+                            Id = 30,
+                            DuongDanNoiDung = "bai-30-prototyping.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Prototyping và Interaction",
+                            ThuTuHienThi = 6
+                        },
+                        new
+                        {
+                            Id = 31,
+                            DuongDanNoiDung = "bai-31-du-an-mobile-app.pdf",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "PDF",
+                            TenBaiHoc = "Dự án thiết kế Mobile App",
+                            ThuTuHienThi = 7
+                        },
+                        new
+                        {
+                            Id = 32,
+                            DuongDanNoiDung = "bai-32-design-system.mp4",
+                            KhoaHocId = 4,
+                            LoaiNoiDung = "Video",
+                            TenBaiHoc = "Design System cơ bản",
+                            ThuTuHienThi = 8
                         });
                 });
 
@@ -263,9 +408,6 @@ namespace DemoApp.Migrations
                         {
                             Id = 1,
                             KhoaHocId = 1,
-<<<<<<< HEAD
-                            NgayDangKy = new DateTime(2025, 11, 24, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3803),
-=======
                             NgayDangKy = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9760),
                             TrangThai = "DangHoc",
                             UserId = 3
@@ -275,7 +417,6 @@ namespace DemoApp.Migrations
                             Id = 2,
                             KhoaHocId = 2,
                             NgayDangKy = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9800),
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DangHoc",
                             UserId = 2
                         });
@@ -329,82 +470,18 @@ namespace DemoApp.Migrations
                         new
                         {
                             Id = 3,
-                            MoTa = "Cơ sở dữ liệu, SQL, backend",
-                            TenDanhMuc = "Cơ Sở Dữ Liệu & Backend",
+                            MoTa = "Làm việc với Python",
+                            TenDanhMuc = "Data Science",
                             ThuTuHienThi = 3,
                             TrangThai = true
                         },
                         new
                         {
                             Id = 4,
-                            MoTa = "React, Vue, Angular...",
-                            TenDanhMuc = "Frontend Framework",
+                            MoTa = "UI (Giao diện người dùng), UX (Trải nghiệm người dùng)",
+                            TenDanhMuc = "Thiết kế UX/UI Cơ Bản",
                             ThuTuHienThi = 4,
                             TrangThai = true
-                        });
-                });
-
-            modelBuilder.Entity("DemoApp.Models.DiemDanh", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("BuoiHocId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("GhiChu")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("KhoaHocId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("NgayDiemDanh")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasDefaultValue("present");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BuoiHocId");
-
-                    b.HasIndex("KhoaHocId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("DiemDanh");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BuoiHocId = 1,
-                            GhiChu = "Có mặt đầy đủ buổi 1",
-                            KhoaHocId = 1,
-                            NgayDiemDanh = new DateTime(2025, 11, 24, 0, 0, 0, 0, DateTimeKind.Local),
-                            TrangThai = "present",
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BuoiHocId = 2,
-                            GhiChu = "Đến muộn 5 phút buổi 2",
-                            KhoaHocId = 1,
-                            NgayDiemDanh = new DateTime(2025, 11, 25, 0, 0, 0, 0, DateTimeKind.Local),
-                            TrangThai = "late",
-                            UserId = 2
                         });
                 });
 
@@ -481,16 +558,8 @@ namespace DemoApp.Migrations
                         new
                         {
                             Id = 1,
-                            AnhBia = "cpp.png",
+                            AnhBia = "anh1.jpg",
                             CapDo = "CoBan",
-<<<<<<< HEAD
-                            DanhMucId = 3,
-                            GiaTien = 150000m,
-                            MaKhoaHoc = "CPP001",
-                            MoTaNgan = "Khóa học lập trình C++ cho người mới",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3762),
-                            TenKhoaHoc = "Lập trình C++",
-=======
                             DanhMucId = 1,
                             GiaTien = 399000m,
                             MaKhoaHoc = "WEB001",
@@ -498,23 +567,14 @@ namespace DemoApp.Migrations
                             MoTaNgan = "Khóa học lập trình web cho người mới",
                             NgayTao = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9703),
                             TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
                             UserId = 1
                         },
                         new
                         {
                             Id = 2,
-                            AnhBia = "htmlcss.jpg",
+                            AnhBia = "anh3.jpg",
                             CapDo = "CoBan",
-<<<<<<< HEAD
-                            DanhMucId = 1,
-                            GiaTien = 300000m,
-                            MaKhoaHoc = "HTMLCSS001",
-                            MoTaNgan = "Khóa học HTML CSS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3765),
-                            TenKhoaHoc = "Lập trình HTML và CSS",
-=======
                             DanhMucId = 2,
                             GiaTien = 299000m,
                             MaKhoaHoc = "MOB001",
@@ -522,48 +582,30 @@ namespace DemoApp.Migrations
                             MoTaNgan = "Học lập trình ứng dụng Android",
                             NgayTao = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9705),
                             TenKhoaHoc = "Lập trình Android cơ bản",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
-                            UserId = 1
+                            UserId = 3
                         },
                         new
                         {
                             Id = 3,
-                            AnhBia = "sql.png",
-                            CapDo = "CoBan",
+                            AnhBia = "anh2.jpg",
+                            CapDo = "TrungCap",
                             DanhMucId = 3,
-<<<<<<< HEAD
-                            GiaTien = 250000m,
-                            MaKhoaHoc = "SQL001",
-                            MoTaNgan = "SQL cho người mới bắt đầu",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3767),
-                            TenKhoaHoc = "Lập trình SQL",
-=======
                             GiaTien = 450000m,
                             MaKhoaHoc = "DATA001",
                             MoTaChiTiet = "Biến dữ liệu thô thành insights giá trị - Khởi đầu sự nghiệp Data Scientist!Khóa học Python Data Science sẽ trang bị cho bạn công cụ để trở thành chuyên gia phân tích dữ liệu thời đại 4.0!Khóa học được thiết kế từ CƠ BẢN đến CHUYÊN SÂU, chỉ cần bạn: Tư duy logic và ham học hỏi, chăm chỉ thực hành case study thực tế, không ngại hỏi đáp về các vấn đề dataSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher Data Analyst, tự tin phỏng vấn với technical knowledge, xử lý real-world data problems, tiếp tục học lên Advanced Data ScienceĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
                             MoTaNgan = "Khoa học dữ liệu với Python cơ bản",
                             NgayTao = new DateTime(2025, 11, 19, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9707),
                             TenKhoaHoc = "Python Data Science",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
-                            UserId = 1
+                            UserId = 2
                         },
                         new
                         {
                             Id = 4,
-                            AnhBia = "react.png",
+                            AnhBia = "anh4.jpg",
                             CapDo = "CoBan",
                             DanhMucId = 4,
-<<<<<<< HEAD
-                            GiaTien = 500000m,
-                            MaKhoaHoc = "REACT001",
-                            MoTaNgan = "Khóa học ReactJS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3769),
-                            TenKhoaHoc = "Lập trình React",
-                            TrangThai = "DaXuatBan",
-                            UserId = 1
-=======
                             GiaTien = 350000m,
                             MaKhoaHoc = "UIUX001",
                             MoTaChiTiet = "Biến ý tưởng thành trải nghiệm người dùng tuyệt vời - Khởi đầu sự nghiệp Designer chuyên nghiệp!Khóa học Thiết kế UI/UX Cơ Bản sẽ biến bạn từ người mới bắt đầu thành designer có tư duy hệ thống!Khóa học được thiết kế từ NGUYÊN LÝ đến THỰC HÀNH, chỉ cần bạn: Đam mê sáng tạo và yêu thích cái đẹp, tư duy logic và hướng về người dùng, chăm chỉ thực hành và không ngại feedbackSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher UI/UX Designer, làm freelance project với mức lương 2-5 triệu/project, tiếp tục học nâng cao lên Senior level, tự quản lý design process từ A-ZĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
@@ -572,7 +614,6 @@ namespace DemoApp.Migrations
                             TenKhoaHoc = "Thiết kế UI/UX cơ bản",
                             TrangThai = "BanNhap",
                             UserId = 3
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                         });
                 });
 
@@ -657,47 +698,6 @@ namespace DemoApp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("TienDoHocTap");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BaiHocId = 1,
-                            DaHoanThanh = true,
-                            KhoaHocId = 1,
-                            ThoiGianBatDau = new DateTime(2025, 11, 25, 23, 12, 0, 294, DateTimeKind.Local).AddTicks(3849),
-                            ThoiGianCapNhat = new DateTime(2025, 11, 25, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3854),
-                            ThoiGianHoanThanh = new DateTime(2025, 11, 25, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3853),
-                            ThoiGianHoc = 30,
-                            TrangThaiHoc = "DaHoanThanh",
-                            TyLeHoanThanh = 100m,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BaiHocId = 2,
-                            DaHoanThanh = false,
-                            KhoaHocId = 1,
-                            ThoiGianBatDau = new DateTime(2025, 11, 26, 23, 32, 0, 294, DateTimeKind.Local).AddTicks(3857),
-                            ThoiGianCapNhat = new DateTime(2025, 11, 26, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3858),
-                            ThoiGianHoc = 10,
-                            TrangThaiHoc = "DangHoc",
-                            TyLeHoanThanh = 40m,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BaiHocId = 3,
-                            DaHoanThanh = false,
-                            KhoaHocId = 1,
-                            ThoiGianCapNhat = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3860),
-                            ThoiGianHoc = 0,
-                            TrangThaiHoc = "DangHoc",
-                            TyLeHoanThanh = 0m,
-                            UserId = 2
-                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.User", b =>
@@ -792,17 +792,6 @@ namespace DemoApp.Migrations
                     b.Navigation("KhoaHoc");
                 });
 
-            modelBuilder.Entity("DemoApp.Models.BuoiHoc", b =>
-                {
-                    b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
-                        .WithMany("BuoiHocs")
-                        .HasForeignKey("KhoaHocId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("KhoaHoc");
-                });
-
             modelBuilder.Entity("DemoApp.Models.Cart", b =>
                 {
                     b.HasOne("DemoApp.Models.User", "User")
@@ -831,33 +820,6 @@ namespace DemoApp.Migrations
                     b.Navigation("KhoaHoc");
 
                     b.Navigation("user");
-                });
-
-            modelBuilder.Entity("DemoApp.Models.DiemDanh", b =>
-                {
-                    b.HasOne("DemoApp.Models.BuoiHoc", "BuoiHoc")
-                        .WithMany("DiemDanhs")
-                        .HasForeignKey("BuoiHocId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
-                        .WithMany("DiemDanhs")
-                        .HasForeignKey("KhoaHocId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("DemoApp.Models.User", "User")
-                        .WithMany("DiemDanhs")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("BuoiHoc");
-
-                    b.Navigation("KhoaHoc");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DemoApp.Models.KhoaHoc", b =>
@@ -921,11 +883,6 @@ namespace DemoApp.Migrations
                     b.Navigation("TienDoHocTap");
                 });
 
-            modelBuilder.Entity("DemoApp.Models.BuoiHoc", b =>
-                {
-                    b.Navigation("DiemDanhs");
-                });
-
             modelBuilder.Entity("DemoApp.Models.DanhMuc", b =>
                 {
                     b.Navigation("KhoaHoc");
@@ -935,11 +892,7 @@ namespace DemoApp.Migrations
                 {
                     b.Navigation("BaiHoc");
 
-                    b.Navigation("BuoiHocs");
-
                     b.Navigation("DangKyKhoaHoc");
-
-                    b.Navigation("DiemDanhs");
 
                     b.Navigation("TienDoHocTap");
                 });
@@ -954,8 +907,6 @@ namespace DemoApp.Migrations
                     b.Navigation("Carts");
 
                     b.Navigation("DangKyKhoaHocs");
-
-                    b.Navigation("DiemDanhs");
 
                     b.Navigation("KhoaHoc");
 
