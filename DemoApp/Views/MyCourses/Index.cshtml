@@ -1,0 +1,109 @@
+﻿@model IEnumerable<DemoApp.ViewModels.MyCourseItemViewModel>
+
+@{
+    ViewData["Title"] = "Khóa học của tôi";
+    var totalCourses = Model?.Count() ?? 0;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/mycourses.css" />
+}
+
+<section class="mc-page">
+    <div class="mc-container">
+
+        <!-- Header -->
+        <header class="mc-page-header">
+            <h1 class="mc-page-title">Khóa học của tôi</h1>
+            <p class="mc-page-subtitle">
+                Bạn đã đăng ký <strong>@totalCourses</strong> khóa học
+            </p>
+        </header>
+
+        @if (Model == null || !Model.Any())
+        {
+            <div class="mc-empty-box">
+                <p>Bạn chưa đăng ký khóa học nào.</p>
+                <a href="/courses" class="mc-btn-outline">Xem danh sách khóa học →</a>
+            </div>
+        }
+        else
+        {
+            <div class="mc-course-list">
+                @foreach (var course in Model)
+                {
+                    // Tạm tính số bài đã hoàn thành từ % tiến độ
+                    var completed = course.TotalLessons > 0
+                    ? (int)Math.Round(course.TotalLessons * (course.ProgressPercent / 100.0))
+                    : 0;
+
+                    <article class="mc-course-card">
+                        <!-- Phần trên: gradient + thumbnail -->
+                        <div class="mc-course-card-header">
+                            @if (!string.IsNullOrEmpty(course.ThumbnailUrl))
+                            {
+                                <img src="@course.ThumbnailUrl"
+                                     alt="@course.CourseTitle"
+                                     class="mc-course-card-thumb" />
+                            }
+                            <div class="mc-course-card-overlay"></div>
+
+                            <div class="mc-course-level">
+                                @course.Level
+                            </div>
+                        </div>
+
+                        <!-- Phần dưới: thông tin -->
+                        <div class="mc-course-card-body">
+                            @* Mô tả ngắn nếu có *@
+                            @if (!string.IsNullOrEmpty(course.ShortDescription))
+                            {
+                                <div class="mc-course-category">
+                                    @course.ShortDescription
+                                </div>
+                            }
+
+                            <h2 class="mc-course-title">
+                                @course.CourseTitle
+                            </h2>
+
+                            @if (course.StartDate.HasValue)
+                            {
+                                <p class="mc-course-teacher">
+                                    Bắt đầu học: @course.StartDate.Value.ToString("dd/MM/yyyy")
+                                </p>
+                            }
+
+                            <!-- Tiến độ -->
+                            <div class="mc-course-progress">
+                                <div class="mc-course-progress-top">
+                                    <span>Tiến độ</span>
+                                    <span class="mc-course-progress-percent">
+                                        @course.ProgressPercent%
+                                    </span>
+                                </div>
+                                <div class="mc-progress-bar">
+                                    <div class="mc-progress-bar-fill"
+                                         style="width:@course.ProgressPercent%;"></div>
+                                </div>
+                                <div class="mc-course-progress-meta">
+                                    <span class="mc-course-meta-item">
+                                        📚 @completed/@course.TotalLessons bài
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Nút vào học -->
+                            <a asp-controller="MyCourses"
+                               asp-action="Details"
+                               asp-route-id="@course.CourseId"
+                               class="mc-btn-primary mc-btn-full">
+                                Tiếp tục học
+                            </a>
+                        </div>
+                    </article>
+                }
+            </div>
+        }
+    </div>
+</section>

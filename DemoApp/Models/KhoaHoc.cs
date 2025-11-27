@@ -14,10 +14,12 @@ namespace DemoApp.Models
         public string MaKhoaHoc { get; set; }
 
         [Required, StringLength(200)]
-        [Display(Name = "Tên Kháo Học")]
+        [Display(Name = "Tên Khóa Học")]
         public string TenKhoaHoc { get; set; }
+
         [Display(Name = "Mô tả ngắn ")]
         public string? MoTaNgan { get; set; }
+
         [Display(Name = "Ảnh bìa")]
         public string? AnhBia { get; set; }
 
@@ -40,14 +42,20 @@ namespace DemoApp.Models
 
         public DateTime NgayTao { get; set; } = DateTime.Now;
 
-        
         [ForeignKey("UserId")]
         public virtual User? user { get; set; }
 
         [ForeignKey("DanhMucId")]
         public virtual DanhMuc? DanhMuc { get; set; }
+
+        // Quan hệ hiện có
         public virtual ICollection<TienDoHocTap>? TienDoHocTap { get; set; }
         public virtual ICollection<BaiHoc>? BaiHoc { get; set; }
         public virtual ICollection<DangKyKhoaHoc>? DangKyKhoaHoc { get; set; }
+
+        // Thêm cho phần quản lý buổi học & điểm danh
+        public virtual ICollection<BuoiHoc>? BuoiHocs { get; set; }
+        public virtual ICollection<DiemDanh>? DiemDanhs { get; set; }
     }
+
 }

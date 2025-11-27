@@ -19,14 +19,18 @@ namespace DemoApp.Models
         public string LoaiNoiDung { get; set; } = "Video";
 
         public string? DuongDanNoiDung { get; set; }
+
+        // Thứ tự trong khóa
         public int ThuTuHienThi { get; set; } = 0;
 
-    
+        // Thời lượng (phút) – dùng để hiển thị 45 phút, 60 phút...
+        [Display(Name = "Thời lượng (phút)")]
+        public int? ThoiLuong { get; set; }
+
         [ForeignKey("KhoaHocId")]
         public virtual KhoaHoc? KhoaHoc { get; set; }
 
         public virtual ICollection<TienDoHocTap>? TienDoHocTap { get; set; }
-
     }
 
 }

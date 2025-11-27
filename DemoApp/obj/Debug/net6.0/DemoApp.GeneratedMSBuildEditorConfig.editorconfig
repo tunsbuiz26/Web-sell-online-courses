@@ -128,8 +128,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Lap trinh .NET/DemoApp/DemoApp/Views/KhoaHocs/ChiTietKhoaHoc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcQ2hpVGlldEtob2FIb2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Lap trinh .NET/DemoApp/DemoApp/Views/KhoaHocs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lap trinh .NET/DemoApp/DemoApp/Views/KhoaHocs/DanhSachKhoaHoc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcRGFuaFNhY2hLaG9hSG9jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Lap trinh .NET/DemoApp/DemoApp/Views/KhoaHocs/Delete.cshtml]
@@ -146,6 +154,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Lap trinh .NET/DemoApp/DemoApp/Views/KhoaHocs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lap trinh .NET/DemoApp/DemoApp/Views/MyCourses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb3Vyc2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lap trinh .NET/DemoApp/DemoApp/Views/MyCourses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb3Vyc2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Lap trinh .NET/DemoApp/DemoApp/Views/Roles/Create.cshtml]

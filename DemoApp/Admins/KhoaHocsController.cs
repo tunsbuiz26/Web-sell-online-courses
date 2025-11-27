@@ -170,5 +170,31 @@ namespace DemoApp.Admins
         {
           return (_context.KhoaHoc?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+        public IActionResult DanhSachKhoaHoc()
+        {
+            var khoaHocs = _context.KhoaHoc.ToList();
+            return View(khoaHocs);
+        }
+        public IActionResult ChiTietKhoaHoc(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var khoaHoc = _context.KhoaHoc
+                .Include(k => k.BaiHoc)
+                .FirstOrDefault(k => k.Id == id);
+
+            if (khoaHoc == null)
+            {
+                return NotFound();
+            }
+
+            khoaHoc.BaiHoc = khoaHoc.BaiHoc?
+                .OrderBy(b => b.ThuTuHienThi)
+                .ToList();
+
+            return View(khoaHoc);
+        }
     }
 }
