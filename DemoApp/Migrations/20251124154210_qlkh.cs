@@ -91,6 +91,7 @@ namespace DemoApp.Migrations
                     MaKhoaHoc = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     TenKhoaHoc = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     MoTaNgan = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MoTaChiTiet = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AnhBia = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     DanhMucId = table.Column<int>(type: "int", nullable: true),
@@ -244,13 +245,13 @@ namespace DemoApp.Migrations
 
             migrationBuilder.InsertData(
                 table: "KhoaHoc",
-                columns: new[] { "Id", "AnhBia", "CapDo", "DanhMucId", "GiaTien", "MaKhoaHoc", "MoTaNgan", "NgayTao", "TenKhoaHoc", "TrangThai", "UserId" },
+                columns: new[] { "Id", "AnhBia", "CapDo", "DanhMucId", "GiaTien", "MaKhoaHoc", "MoTaChiTiet", "MoTaNgan", "NgayTao", "TenKhoaHoc", "TrangThai", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "anh1.jpg", "CoBan", 1, 399000m, "WEB001", "Khóa học lập trình web cho người mới", new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7713), "HTML CSS JavaScript Cơ Bản", "DaXuatBan", 1 },
-                    { 2, "anh3.jpg", "CoBan", 2, 299000m, "MOB001", "Học lập trình ứng dụng Android", new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7715), "Lập trình Android cơ bản", "DaXuatBan", 3 },
-                    { 3, "anh2.jpg", "TrungCap", 3, 450000m, "DATA001", "Khoa học dữ liệu với Python cơ bản", new DateTime(2025, 11, 17, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7744), "Python Data Science", "DaXuatBan", 2 },
-                    { 4, "anh4.jpg", "CoBan", 4, 350000m, "UIUX001", "Học thiết kế giao diện người dùng chuyên nghiệp", new DateTime(2025, 11, 20, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7749), "Thiết kế UI/UX cơ bản", "BanNhap", 3 }
+                    { 1, "anh1.jpg", "CoBan", 1, 399000m, "WEB001", "Biến bạn từ người mới bắt đầu thành người xây dựng website chuyên nghiệp!Khóa học HTML CSS JavaScript Cơ Bản chính là nền tảng vững chắc đầu tiên dành cho bạn!Khóa học được thiết kế từ CƠ BẢN đến NÂNG CAO, phù hợp cho người mới bắt đầu. Bạn chỉ cần: Chăm chỉ và kiên trì thực hành,không ngại hỏi đáp, tích cực tương tác,chủ động đưa ra thắc mắc trong quá trình học tậpSau khóa học, bạn ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Frontend Developer, tự tin xây dựng website responsive, phát triển các dự án cá nhân chất lượngĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!", "Khóa học lập trình web cho người mới", new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9703), "HTML CSS JavaScript Cơ Bản", "DaXuatBan", 1 },
+                    { 2, "anh3.jpg", "CoBan", 2, 299000m, "MOB001", "Biến ý tưởng thành ứng dụng thực tế - Khởi đầu sự nghiệp Mobile Developer!Khóa học Lập trình Android Cơ Bản chính là chìa khóa mở cánh cửa vào thế giới phát triển di động!Khóa học được thiết kế từ CƠ BẢN đến THỰC HÀNH, chỉ cần bạn: Chăm chỉ thực hành và không ngại thử nghiệm, tích cực hỏi đáp và chia sẻ khó khăn, có laptop cấu hình tối thiểu để cài đặt Android StudioSau khóa học, bạn HOÀN TOÀN ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Android Developer, tự phát triển ứng dụng Android hoàn chỉnh, hiểu và áp dụng Android architecture patterns, kết nối với RESTful API và xử lý data public ứng dụng lên Google Play StoreĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!", "Học lập trình ứng dụng Android", new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9705), "Lập trình Android cơ bản", "DaXuatBan", 3 },
+                    { 3, "anh2.jpg", "TrungCap", 3, 450000m, "DATA001", "Biến dữ liệu thô thành insights giá trị - Khởi đầu sự nghiệp Data Scientist!Khóa học Python Data Science sẽ trang bị cho bạn công cụ để trở thành chuyên gia phân tích dữ liệu thời đại 4.0!Khóa học được thiết kế từ CƠ BẢN đến CHUYÊN SÂU, chỉ cần bạn: Tư duy logic và ham học hỏi, chăm chỉ thực hành case study thực tế, không ngại hỏi đáp về các vấn đề dataSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher Data Analyst, tự tin phỏng vấn với technical knowledge, xử lý real-world data problems, tiếp tục học lên Advanced Data ScienceĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!", "Khoa học dữ liệu với Python cơ bản", new DateTime(2025, 11, 19, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9707), "Python Data Science", "DaXuatBan", 2 },
+                    { 4, "anh4.jpg", "CoBan", 4, 350000m, "UIUX001", "Biến ý tưởng thành trải nghiệm người dùng tuyệt vời - Khởi đầu sự nghiệp Designer chuyên nghiệp!Khóa học Thiết kế UI/UX Cơ Bản sẽ biến bạn từ người mới bắt đầu thành designer có tư duy hệ thống!Khóa học được thiết kế từ NGUYÊN LÝ đến THỰC HÀNH, chỉ cần bạn: Đam mê sáng tạo và yêu thích cái đẹp, tư duy logic và hướng về người dùng, chăm chỉ thực hành và không ngại feedbackSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher UI/UX Designer, làm freelance project với mức lương 2-5 triệu/project, tiếp tục học nâng cao lên Senior level, tự quản lý design process từ A-ZĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!", "Học thiết kế giao diện người dùng chuyên nghiệp", new DateTime(2025, 11, 22, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9714), "Thiết kế UI/UX cơ bản", "BanNhap", 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -297,8 +298,8 @@ namespace DemoApp.Migrations
                 columns: new[] { "Id", "KhoaHocId", "NgayDangKy", "TrangThai", "UserId" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7799), "DangHoc", 3 },
-                    { 2, 2, new DateTime(2025, 11, 22, 14, 47, 44, 213, DateTimeKind.Local).AddTicks(7800), "DangHoc", 2 }
+                    { 1, 1, new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9760), "DangHoc", 3 },
+                    { 2, 2, new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9800), "DangHoc", 2 }
                 });
 
             migrationBuilder.CreateIndex(

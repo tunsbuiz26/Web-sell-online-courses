@@ -18,7 +18,7 @@ namespace DemoApp.Admins
         {
             _context = context;
         }
-
+       
         // GET: KhoaHocs
         public async Task<IActionResult> Index()
         {
@@ -165,7 +165,32 @@ namespace DemoApp.Admins
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult DanhSachKhoaHoc()
+        {
+            var khoaHocs = _context.KhoaHoc.ToList();
+            return View(khoaHocs);
+        }
+        public IActionResult ChiTietKhoaHoc(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var khoaHoc = _context.KhoaHoc
+                .Include(k => k.BaiHoc)
+                .FirstOrDefault(k => k.Id == id);
 
+            if (khoaHoc == null)
+            {
+                return NotFound();
+            }
+
+            khoaHoc.BaiHoc = khoaHoc.BaiHoc?
+                .OrderBy(b => b.ThuTuHienThi)
+                .ToList();
+
+            return View(khoaHoc);
+        }
         private bool KhoaHocExists(int id)
         {
           return (_context.KhoaHoc?.Any(e => e.Id == id)).GetValueOrDefault();

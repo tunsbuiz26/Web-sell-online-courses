@@ -15,9 +15,12 @@ namespace DemoApp.Models
 
         [Required, StringLength(200)]
         [Display(Name = "Tên Kháo Học")]
-        public string TenKhoaHoc { get; set; }
+        public string? TenKhoaHoc { get; set; }
         [Display(Name = "Mô tả ngắn ")]
         public string? MoTaNgan { get; set; }
+
+        [Display(Name = "Mô tả chi tiết ")]
+        public string? MoTaChiTiet { get; set; }
         [Display(Name = "Ảnh bìa")]
         public string? AnhBia { get; set; }
 

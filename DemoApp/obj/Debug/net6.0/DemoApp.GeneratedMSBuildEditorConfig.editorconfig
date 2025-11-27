@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -128,8 +132,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/KhoaHocs/Chitietkhoahoc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcQ2hpdGlldGtob2Fob2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/KhoaHocs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/KhoaHocs/DanhSachKhoaHoc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY3NcRGFuaFNhY2hLaG9hSG9jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/QLKhoaHoc/Web-sell-online-courses/DemoApp/Views/KhoaHocs/Delete.cshtml]

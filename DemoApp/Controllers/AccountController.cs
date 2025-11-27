@@ -5,6 +5,7 @@ using DemoApp.Models;
 using DemoApp.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
@@ -39,7 +40,7 @@ namespace DemoApp.Controllers
         }
 
         [HttpPost]
-       // [ValidateAntiForgeryToken]
+        // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
             // Trim và decode URL
@@ -246,8 +247,159 @@ namespace DemoApp.Controllers
                 return View(model);
             }
         }
+        [HttpGet]
+        [Authorize]
+        public async Task<ActionResult> Profile()
+        {
+            //lấy user từ claim
+            var userClaims = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userClaims) || !int.TryParse(userClaims, out int userId)) {
+                return RedirectToAction("Login");
+            }
+            //lấy userId từ database
+            var user =  _context.User
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.UserId == userId);
+            if (user == null) {
+                await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                return RedirectToAction("Login");
+            }
+            var model = new ProfileViewModel
+            {
+                UserId = user.UserId,
+                Username = user.Username,
+                FullName = user.FullName,
+                Address = user.Address,
+                Email = user.Email,
+                NumberPhone = user.NumberPhone,
+                RoleName = user.Role?.RoleName ?? "User"
+            };
+            return View(model);
+        }
+        // POST: Account/UpdateProfile
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public async Task<IActionResult> UpdateProfile(ProfileViewModel model)
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
+            if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+            {
+                return RedirectToAction("Login");
+            }
 
+            if (!ModelState.IsValid)
+            {
+                
+                var tempUser = await _context.User.Include(u => u.Role).FirstOrDefaultAsync(u => u.UserId == userId);
+                if (tempUser != null)
+                {
+                    model.Username = tempUser.Username;
+                    model.RoleName = tempUser.Role?.RoleName;
+                }
+                return View("Profile", model);
+            }
+
+            try
+            {
+                //await để lấy User object
+                var userExists = await _context.User.FindAsync(userId);
+
+                if (userExists == null)
+                {
+                    return RedirectToAction("Login");
+                }
+
+                // Kiểm tra email trùng (trừ email của chính user)
+                var emailExists = await _context.User
+                    .AnyAsync(u => u.Email == model.Email && u.UserId != userId);
+
+                if (emailExists)
+                {
+                    ModelState.AddModelError("Email", "Email đã được sử dụng bởi tài khoản khác.");
+
+                    // Load lại thông tin để hiển thị
+                    var tempUser = await _context.User.Include(u => u.Role).FirstOrDefaultAsync(u => u.UserId == userId);
+                    if (tempUser != null)
+                    {
+                        model.Username = tempUser.Username;
+                        model.RoleName = tempUser.Role?.RoleName;
+                    }
+                    return View("Profile", model);
+                }
+
+                // Kiểm tra số điện thoại trùng
+                if (!string.IsNullOrEmpty(model.NumberPhone))
+                {
+                    var phoneExists = await _context.User
+                        .AnyAsync(u => u.NumberPhone == model.NumberPhone && u.UserId != userId);
+
+                    if (phoneExists)
+                    {
+                        ModelState.AddModelError("NumberPhone", "Số điện thoại đã được sử dụng.");
+
+                        // Load lại thông tin
+                        var tempUser = await _context.User.Include(u => u.Role).FirstOrDefaultAsync(u => u.UserId == userId);
+                        if (tempUser != null)
+                        {
+                            model.Username = tempUser.Username;
+                            model.RoleName = tempUser.Role?.RoleName;
+                        }
+                        return View("Profile", model);
+                    }
+                }
+
+                //Cập nhật thông tin user
+                userExists.Email = model.Email;
+                userExists.FullName = model.FullName;
+                userExists.NumberPhone = model.NumberPhone;
+                userExists.Address = model.Address;
+
+                await _context.SaveChangesAsync();
+
+                // Cập nhật lại Claims
+                await UpdateUserClaims(userExists);
+
+                _logger.LogInformation("User {UserId} cập nhật thông tin thành công", userId);
+
+                TempData["SuccessMessage"] = "Cập nhật thông tin thành công!";
+                return RedirectToAction("Profile");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Lỗi khi cập nhật profile user {UserId}", userId);
+                ModelState.AddModelError(string.Empty, "Có lỗi xảy ra. Vui lòng thử lại.");
+                return View("Profile", model);
+            }
+        }
+
+        // Cập nhật Claims sau khi update profile
+        private async Task UpdateUserClaims(User user)
+        {
+            // Load Role nếu chưa có
+            if (user.Role == null)
+            {
+                await _context.Entry(user).Reference(u => u.Role).LoadAsync();
+            }
+
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(ClaimTypes.Name, user.Username ?? string.Empty),
+        new Claim("FullName", user.FullName ?? string.Empty),
+        new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
+        new Claim(ClaimTypes.Role, user.Role?.RoleName ?? "User")
+    };
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                principal,
+                new AuthenticationProperties { IsPersistent = true });
+        }
         [HttpGet]
         public async Task<IActionResult> Logout()
         {

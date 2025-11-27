@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 using DemoApp.Data;
 using DemoApp.Models;
     using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-    namespace DemoApp.Controllers
+namespace DemoApp.Controllers
     {
         public class HomeController : Controller
         {
@@ -22,17 +23,36 @@ using DemoApp.Models;
                 return View();
             }
 
-            public IActionResult Privacy()
+            //public IActionResult DanhSachKhoaHoc()
+            //{
+            //    var khoaHocs = _context.KhoaHoc.ToList();
+            //    return View(khoaHocs);
+            //}
+        //public IActionResult ChiTietKhoaHoc(int id)
+        //{
+        //    var khoaHoc = _context.KhoaHoc
+        //        .Include(k => k.BaiHoc)
+        //        .Include(k => k.user)
+        //        .Include(k => k.DanhMuc)
+        //        .FirstOrDefault(k => k.Id == id);
+
+        //    if (khoaHoc == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    khoaHoc.BaiHoc = khoaHoc.BaiHoc?
+        //        .OrderBy(b => b.ThuTuHienThi)
+        //        .ToList();
+
+        //    return View(khoaHoc);
+        //}
+        public IActionResult Privacy()
             {
                 return View();
             }
             
-            public async Task<IActionResult> Khoahoc()
-        {
-            
-            return View();
-        }
-
+      
             [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
             public IActionResult Error()
             {

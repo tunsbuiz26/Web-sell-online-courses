@@ -33,7 +33,7 @@
                 <!-- Navigation Menu -->
                 <nav class="nav-menu">
                     <a href="/" class="nav-link active">Trang Chủ</a>
-                    <a href="/courses/zoom" class="nav-link">Danh Sách Khóa Học</a>
+                    <a asp-action="DanhSachKhoaHoc" asp-controller="KhoaHocs" class="nav-link">Danh Sách Khóa Học</a>
                     <a href="/blog" class="nav-link">Blog</a>
                     <a href="/feedback" class="nav-link">Feedback</a>
                     <a href="/tutorial" class="nav-link">Tutorial</a>
@@ -89,7 +89,7 @@
                                     <span>@User.Identity.Name</span>
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a href="/profile" class="dropdown-item">
+                                    <a asp-action="Profile" asp-controller="Account"class="dropdown-item">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                             <circle cx="12" cy="7" r="4"></circle>

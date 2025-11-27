@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MQLYHdBu6TXsy08h9hF91ogVW8Kel/Q+SeYbP5lge6k=",
+  "Hash": "7I0YCWcj6vPH+b4fbFhvEhKEhOAjrFv/5dohgf4EyMI=",
   "Source": "DemoApp",
   "BasePath": "_content/DemoApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "DemoApp\\wwwroot",
       "Source": "DemoApp",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
       "SourceId": "DemoApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "DemoApp#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "74NPFrqT2kDuQwXEkNiYyPJuADtdVPt9VVlD+KDuP5w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css"
+      "OriginalItemSpec": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
       "SourceId": "DemoApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "DemoApp#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "74NPFrqT2kDuQwXEkNiYyPJuADtdVPt9VVlD+KDuP5w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css"
+      "OriginalItemSpec": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-courses.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-courses.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/admin-courses#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\admin-courses.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/admin-dashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,52 @@
       "OriginalItemSpec": "wwwroot\\css\\admin-dashboard.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\ctkh.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "css/ctkh#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5eyntqagff",
+      "Integrity": "I22tJe1hcOfVpyaUaiXOWykP9cpD85iv+eKs4ESTSTc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ctkh.css"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\dskh.css",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "css/dskh#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7nx26lmlxd",
+      "Integrity": "LQ+JHwbf4kfCv8ftEFChecz6ukc9JXPuXnzzfWauD4A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dskh.css"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\header.css",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/header#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\header.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\home.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/home#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\login.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\login.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +206,31 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\register.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\Profile.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "css/Profile#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9z1j907c9k",
+      "Integrity": "xanR9POZjDAHINMHqj9yZaZUhlRg2eeoW7JayAgM9E8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Profile.css"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\register.css",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/register#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\register.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\site.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\site.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\favicon.ico",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\favicon.ico",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -227,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/admin-avatar#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\images\\admin-avatar.jpg"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh1.jpg",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh1.jpg",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/anh1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -269,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\images\\anh1.jpg"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh2.jpg",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh2.jpg",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/anh2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -290,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\images\\anh2.jpg"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh3.jpg",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh3.jpg",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/anh3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -311,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\anh3.jpg"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh4.jpg",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh4.jpg",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/anh4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -332,10 +395,73 @@
       "OriginalItemSpec": "wwwroot\\images\\anh4.jpg"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\banner.png",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh5.png",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "images/anh5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "er1pdzk01k",
+      "Integrity": "1lHe+cVfHOLN78WYNEE7huubOyJP+IVlBYFTVkL7s3o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anh5.png"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh6.png",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "images/anh6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s75ay2pjyc",
+      "Integrity": "GM2yeIIM3lWn1P5ZWXizUYAMI98eu8LMh4W9HMD5MIA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anh6.png"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh7.jpg",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
+      "BasePath": "_content/DemoApp",
+      "RelativePath": "images/anh7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bb5hzadqql",
+      "Integrity": "J/Db1S/aqgEZuN2ppaCXgUhPF7oc073BaRjFW7DB9T0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anh7.jpg"
+    },
+    {
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\banner.png",
+      "SourceId": "DemoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "images/banner#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner.png"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "js/admin-dashboard#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\js\\admin-dashboard.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\header.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\header.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "js/header#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -395,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\js\\header.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\register.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\register.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "js/register#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\js\\register.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\site.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\site.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -458,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -479,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -500,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -521,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -542,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -584,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -605,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -626,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -647,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -668,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -689,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -710,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -731,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -752,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -773,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -794,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -836,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -878,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -920,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -962,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -983,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1004,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1025,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1046,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1067,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1088,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1109,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1130,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1151,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1172,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1193,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1235,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1277,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1319,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1340,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1361,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1382,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1403,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1445,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1466,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1487,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1529,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1550,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1571,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1592,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "DemoApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\",
+      "ContentRoot": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\",
       "BasePath": "_content/DemoApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1637,7 +1763,7 @@
   "Endpoints": [
     {
       "Route": "css/admin-courses.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-courses.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1658,7 +1784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1674,7 +1800,7 @@
     },
     {
       "Route": "css/admin-courses.st97s9byt6.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-courses.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1695,7 +1821,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1719,7 +1845,7 @@
     },
     {
       "Route": "css/admin-dashboard.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1740,7 +1866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1756,7 +1882,7 @@
     },
     {
       "Route": "css/admin-dashboard.tipab5hhoj.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\admin-dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1777,7 +1903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1800,8 +1926,172 @@
       ]
     },
     {
+      "Route": "css/ctkh.5eyntqagff.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\ctkh.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I22tJe1hcOfVpyaUaiXOWykP9cpD85iv+eKs4ESTSTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:09:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5eyntqagff"
+        },
+        {
+          "Name": "label",
+          "Value": "css/ctkh.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I22tJe1hcOfVpyaUaiXOWykP9cpD85iv+eKs4ESTSTc="
+        }
+      ]
+    },
+    {
+      "Route": "css/ctkh.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\ctkh.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I22tJe1hcOfVpyaUaiXOWykP9cpD85iv+eKs4ESTSTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:09:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I22tJe1hcOfVpyaUaiXOWykP9cpD85iv+eKs4ESTSTc="
+        }
+      ]
+    },
+    {
+      "Route": "css/dskh.7nx26lmlxd.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\dskh.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LQ+JHwbf4kfCv8ftEFChecz6ukc9JXPuXnzzfWauD4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 15:51:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7nx26lmlxd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dskh.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LQ+JHwbf4kfCv8ftEFChecz6ukc9JXPuXnzzfWauD4A="
+        }
+      ]
+    },
+    {
+      "Route": "css/dskh.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\dskh.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LQ+JHwbf4kfCv8ftEFChecz6ukc9JXPuXnzzfWauD4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Nov 2025 15:51:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LQ+JHwbf4kfCv8ftEFChecz6ukc9JXPuXnzzfWauD4A="
+        }
+      ]
+    },
+    {
       "Route": "css/header.8blpc5rrmo.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\header.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1822,7 +2112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1846,7 +2136,7 @@
     },
     {
       "Route": "css/header.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\header.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\header.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1867,7 +2157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1883,7 +2173,7 @@
     },
     {
       "Route": "css/home.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1904,7 +2194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1920,7 +2210,7 @@
     },
     {
       "Route": "css/home.u9zijab2c0.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\home.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1941,7 +2231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1965,7 +2255,7 @@
     },
     {
       "Route": "css/login.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\login.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1986,7 +2276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2002,7 +2292,7 @@
     },
     {
       "Route": "css/login.dmvmrujgtq.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\login.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2023,7 +2313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 06:39:18 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2046,8 +2336,90 @@
       ]
     },
     {
+      "Route": "css/Profile.9z1j907c9k.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\Profile.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xanR9POZjDAHINMHqj9yZaZUhlRg2eeoW7JayAgM9E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 04:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9z1j907c9k"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Profile.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xanR9POZjDAHINMHqj9yZaZUhlRg2eeoW7JayAgM9E8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Profile.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\Profile.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xanR9POZjDAHINMHqj9yZaZUhlRg2eeoW7JayAgM9E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Nov 2025 04:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xanR9POZjDAHINMHqj9yZaZUhlRg2eeoW7JayAgM9E8="
+        }
+      ]
+    },
+    {
       "Route": "css/register.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\register.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2068,7 +2440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2084,7 +2456,7 @@
     },
     {
       "Route": "css/register.wln5k9d0xz.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\register.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2105,7 +2477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2129,7 +2501,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2150,7 +2522,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2166,7 +2538,7 @@
     },
     {
       "Route": "css/site.ynhbr9wfe2.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2187,7 +2559,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2211,7 +2583,7 @@
     },
     {
       "Route": "DemoApp.bundle.scp.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2232,7 +2604,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 07:46:46 GMT"
+          "Value": "Wed, 26 Nov 2025 04:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2248,7 +2620,7 @@
     },
     {
       "Route": "DemoApp.styles.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2269,7 +2641,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 07:46:46 GMT"
+          "Value": "Wed, 26 Nov 2025 04:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2285,7 +2657,7 @@
     },
     {
       "Route": "DemoApp.x4mkvseu7u.bundle.scp.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2306,7 +2678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 07:46:46 GMT"
+          "Value": "Wed, 26 Nov 2025 04:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2330,7 +2702,7 @@
     },
     {
       "Route": "DemoApp.x4mkvseu7u.styles.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DemoApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2351,7 +2723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 07:46:46 GMT"
+          "Value": "Wed, 26 Nov 2025 04:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2375,7 +2747,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2396,7 +2768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2420,7 +2792,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2441,7 +2813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2457,7 +2829,7 @@
     },
     {
       "Route": "images/admin-avatar.8f2v4jw8gm.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2478,7 +2850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Nov 2025 05:13:16 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2502,7 +2874,7 @@
     },
     {
       "Route": "images/admin-avatar.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\admin-avatar.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2523,7 +2895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Nov 2025 05:13:16 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2539,7 +2911,7 @@
     },
     {
       "Route": "images/anh1.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh1.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2560,7 +2932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:26:03 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2576,7 +2948,7 @@
     },
     {
       "Route": "images/anh1.olafx77wge.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh1.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2597,7 +2969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:26:03 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2621,7 +2993,7 @@
     },
     {
       "Route": "images/anh2.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh2.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2642,7 +3014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:27:34 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2658,7 +3030,7 @@
     },
     {
       "Route": "images/anh2.m8he75pjky.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh2.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2679,7 +3051,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:27:34 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2703,7 +3075,7 @@
     },
     {
       "Route": "images/anh3.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh3.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2724,7 +3096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:27:03 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2740,7 +3112,7 @@
     },
     {
       "Route": "images/anh3.kxsbtij6ss.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh3.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2761,7 +3133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:27:03 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2785,7 +3157,7 @@
     },
     {
       "Route": "images/anh4.ao5sf5a58k.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh4.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2806,7 +3178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:28:13 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2830,7 +3202,7 @@
     },
     {
       "Route": "images/anh4.jpg",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\anh4.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2851,7 +3223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Nov 2025 02:28:13 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2866,8 +3238,254 @@
       ]
     },
     {
+      "Route": "images/anh5.er1pdzk01k.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1lHe+cVfHOLN78WYNEE7huubOyJP+IVlBYFTVkL7s3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "er1pdzk01k"
+        },
+        {
+          "Name": "label",
+          "Value": "images/anh5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1lHe+cVfHOLN78WYNEE7huubOyJP+IVlBYFTVkL7s3o="
+        }
+      ]
+    },
+    {
+      "Route": "images/anh5.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1lHe+cVfHOLN78WYNEE7huubOyJP+IVlBYFTVkL7s3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1lHe+cVfHOLN78WYNEE7huubOyJP+IVlBYFTVkL7s3o="
+        }
+      ]
+    },
+    {
+      "Route": "images/anh6.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "257650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GM2yeIIM3lWn1P5ZWXizUYAMI98eu8LMh4W9HMD5MIA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:44:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GM2yeIIM3lWn1P5ZWXizUYAMI98eu8LMh4W9HMD5MIA="
+        }
+      ]
+    },
+    {
+      "Route": "images/anh6.s75ay2pjyc.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "257650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GM2yeIIM3lWn1P5ZWXizUYAMI98eu8LMh4W9HMD5MIA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:44:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s75ay2pjyc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/anh6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GM2yeIIM3lWn1P5ZWXizUYAMI98eu8LMh4W9HMD5MIA="
+        }
+      ]
+    },
+    {
+      "Route": "images/anh7.bb5hzadqql.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/Db1S/aqgEZuN2ppaCXgUhPF7oc073BaRjFW7DB9T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bb5hzadqql"
+        },
+        {
+          "Name": "label",
+          "Value": "images/anh7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/Db1S/aqgEZuN2ppaCXgUhPF7oc073BaRjFW7DB9T0="
+        }
+      ]
+    },
+    {
+      "Route": "images/anh7.jpg",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\anh7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/Db1S/aqgEZuN2ppaCXgUhPF7oc073BaRjFW7DB9T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 15:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/Db1S/aqgEZuN2ppaCXgUhPF7oc073BaRjFW7DB9T0="
+        }
+      ]
+    },
+    {
       "Route": "images/banner.72rd56bxg8.png",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\banner.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\banner.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2888,7 +3506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2912,7 +3530,7 @@
     },
     {
       "Route": "images/banner.png",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\images\\banner.png",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\images\\banner.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2933,7 +3551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2949,7 +3567,7 @@
     },
     {
       "Route": "js/admin-dashboard.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2970,7 +3588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Nov 2025 05:13:16 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2986,7 +3604,7 @@
     },
     {
       "Route": "js/admin-dashboard.virdfyd6kb.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3007,7 +3625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Nov 2025 05:13:16 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3031,7 +3649,7 @@
     },
     {
       "Route": "js/header.gzfhuhn0qk.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\header.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\header.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3052,7 +3670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3076,7 +3694,7 @@
     },
     {
       "Route": "js/header.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\header.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\header.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3097,7 +3715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3113,7 +3731,7 @@
     },
     {
       "Route": "js/register.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\register.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3134,7 +3752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3150,7 +3768,7 @@
     },
     {
       "Route": "js/register.zeofvgpn87.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\register.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3171,7 +3789,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3195,7 +3813,7 @@
     },
     {
       "Route": "js/site.6b9nfc4n3r.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3216,7 +3834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3240,7 +3858,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3261,7 +3879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3277,7 +3895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3298,7 +3916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3314,7 +3932,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3335,7 +3953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3359,7 +3977,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3380,7 +3998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3396,7 +4014,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3417,7 +4035,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3441,7 +4059,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3462,7 +4080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3478,7 +4096,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3499,7 +4117,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3523,7 +4141,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3544,7 +4162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3560,7 +4178,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.ozu22stjof.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3581,7 +4199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3605,7 +4223,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3626,7 +4244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3642,7 +4260,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3663,7 +4281,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3687,7 +4305,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3708,7 +4326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3724,7 +4342,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.gjcw7pocpk.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3745,7 +4363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3769,7 +4387,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.6l4ir0ityv.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3790,7 +4408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3814,7 +4432,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3835,7 +4453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3851,7 +4469,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3872,7 +4490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3896,7 +4514,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3917,7 +4535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3933,7 +4551,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3954,7 +4572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3970,7 +4588,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3991,7 +4609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4007,7 +4625,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4028,7 +4646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4052,7 +4670,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.5p029spbuu.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4073,7 +4691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4097,7 +4715,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4118,7 +4736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4134,7 +4752,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4155,7 +4773,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4179,7 +4797,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4200,7 +4818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4216,7 +4834,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.nakmwdwsxp.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4237,7 +4855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4261,7 +4879,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4282,7 +4900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4298,7 +4916,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4319,7 +4937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4343,7 +4961,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4364,7 +4982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4380,7 +4998,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.e6q6xbwqzk.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4401,7 +5019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4425,7 +5043,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4446,7 +5064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4462,7 +5080,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4483,7 +5101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4499,7 +5117,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4520,7 +5138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4544,7 +5162,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.dy6jgresuo.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4565,7 +5183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4589,7 +5207,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4610,7 +5228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4626,7 +5244,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4647,7 +5265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4671,7 +5289,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4692,7 +5310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4708,7 +5326,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4729,7 +5347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4745,7 +5363,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4766,7 +5384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4782,7 +5400,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4803,7 +5421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4827,7 +5445,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.z7kmom2977.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4848,7 +5466,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4872,7 +5490,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mk8rdyw69w.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4893,7 +5511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4917,7 +5535,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.97yrjpyf9r.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4938,7 +5556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4962,7 +5580,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4983,7 +5601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4999,7 +5617,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5020,7 +5638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5044,7 +5662,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5065,7 +5683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5081,7 +5699,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5102,7 +5720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5118,7 +5736,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5139,7 +5757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5155,7 +5773,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5176,7 +5794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5200,7 +5818,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.y53cy5s2zj.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5221,7 +5839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5245,7 +5863,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5266,7 +5884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5282,7 +5900,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5303,7 +5921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5327,7 +5945,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5348,7 +5966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5364,7 +5982,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.2yn17lgxub.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5385,7 +6003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5409,7 +6027,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5430,7 +6048,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5446,7 +6064,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5467,7 +6085,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5483,7 +6101,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5504,7 +6122,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5528,7 +6146,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5549,7 +6167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5565,7 +6183,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5586,7 +6204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5610,7 +6228,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5631,7 +6249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5647,7 +6265,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5668,7 +6286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5684,7 +6302,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5705,7 +6323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5729,7 +6347,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5750,7 +6368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5766,7 +6384,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.ik6i2hrs65.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5787,7 +6405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5811,7 +6429,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.ophe14yye5.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5832,7 +6450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5856,7 +6474,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.z9shlbduue.css",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5877,7 +6495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5901,7 +6519,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.1piudyfv7h.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5922,7 +6540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5946,7 +6564,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.f6zq8v6eb3.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5967,7 +6585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5991,7 +6609,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6012,7 +6630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6028,7 +6646,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6049,7 +6667,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6073,7 +6691,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6094,7 +6712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6110,7 +6728,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.89qbw8ngem.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6131,7 +6749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6155,7 +6773,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6176,7 +6794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6192,7 +6810,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6213,7 +6831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6237,7 +6855,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6258,7 +6876,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6274,7 +6892,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6295,7 +6913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6311,7 +6929,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6332,7 +6950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6356,7 +6974,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6377,7 +6995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6393,7 +7011,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jqwzsa9uv6.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6414,7 +7032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6438,7 +7056,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6459,7 +7077,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6475,7 +7093,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6496,7 +7114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6512,7 +7130,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6533,7 +7151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6557,7 +7175,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.n5w6o92d9r.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6578,7 +7196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6602,7 +7220,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6623,7 +7241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6639,7 +7257,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6660,7 +7278,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6684,7 +7302,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6705,7 +7323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6721,7 +7339,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.4908xmbfjr.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6742,7 +7360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6766,7 +7384,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6787,7 +7405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6803,7 +7421,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6824,7 +7442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6840,7 +7458,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6861,7 +7479,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6885,7 +7503,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6906,7 +7524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6922,7 +7540,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6943,7 +7561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6967,7 +7585,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6988,7 +7606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7004,7 +7622,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dsw5v3fbc5.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7025,7 +7643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7049,7 +7667,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7070,7 +7688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7086,7 +7704,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7107,7 +7725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7123,7 +7741,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.rm8d4uw1xt.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7144,7 +7762,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7168,7 +7786,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.ukz1g2vv03.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7189,7 +7807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7213,7 +7831,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.afgyafcsqt.txt",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7234,7 +7852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7258,7 +7876,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7279,7 +7897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7295,7 +7913,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7316,7 +7934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7340,7 +7958,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7361,7 +7979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7377,7 +7995,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7398,7 +8016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7422,7 +8040,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7443,7 +8061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7459,7 +8077,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.6d0lkjaslc.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7480,7 +8098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7504,7 +8122,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7525,7 +8143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7541,7 +8159,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7562,7 +8180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7578,7 +8196,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.l1zq2mitth.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7599,7 +8217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7623,7 +8241,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7644,7 +8262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7660,7 +8278,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7681,7 +8299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7705,7 +8323,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.dvc2bfcndg.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7726,7 +8344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7750,7 +8368,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7771,7 +8389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7787,7 +8405,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7808,7 +8426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7824,7 +8442,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.mt9h37ga6s.js",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7845,7 +8463,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7869,7 +8487,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7890,7 +8508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7906,7 +8524,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.wqejeusuyq.txt",
-      "AssetFile": "D:\\QLKhoaHoc_TrucTuyen\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\QLKhoaHoc\\Web-sell-online-courses\\DemoApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7927,7 +8545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Nov 2025 07:26:41 GMT"
+          "Value": "Sat, 22 Nov 2025 08:21:04 GMT"
         },
         {
           "Name": "Cache-Control",
