@@ -3,6 +3,7 @@ using DemoApp.Attributes;
 using DemoApp.Data;
 using DemoApp.Models;
 using DemoApp.ViewModels;
+using BCrypt.Net;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -399,6 +400,66 @@ namespace DemoApp.Controllers
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 principal,
                 new AuthenticationProperties { IsPersistent = true });
+        }
+        // GET: Account/ChangePassword
+        [HttpGet]
+        [Authorize]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        // POST: Account/ChangePassword
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+            {
+                return RedirectToAction("Login");
+            }
+
+            try
+            {
+                var user = await _context.User.FindAsync(userId);
+
+                if (user == null)
+                {
+                    return RedirectToAction("Login");
+                }
+
+                // Kiểm tra mật khẩu hiện tại
+                if (user.Password != model.CurrentPassword)
+                {
+                    ModelState.AddModelError("CurrentPassword", "Mật khẩu hiện tại không đúng.");
+                    return View(model);
+                }
+
+                // Cập nhật mật khẩu mới
+                user.Password = model.NewPassword;
+                //user.UpdatedAt = DateTime.Now;
+
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation("User {UserId} đổi mật khẩu thành công", userId);
+
+                TempData["SuccessMessage"] = "Đổi mật khẩu thành công!";
+                return RedirectToAction("Profile");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Lỗi khi đổi mật khẩu user {UserId}", userId);
+                ModelState.AddModelError(string.Empty, "Có lỗi xảy ra. Vui lòng thử lại.");
+                return View(model);
+            }
         }
         [HttpGet]
         public async Task<IActionResult> Logout()
