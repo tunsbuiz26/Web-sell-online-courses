@@ -24,6 +24,14 @@ namespace DemoApp
             });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            // =========  2 DÒNG NÀY ĐỂ DÙNG SESSION =========
+            builder.Services.AddDistributedMemoryCache();   // bộ nhớ tạm cho session
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // hết hạn sau 30 phút
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddCookie(options =>
@@ -46,6 +54,9 @@ namespace DemoApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
+
             app.UseAuthentication();
             app.UseAuthorization();
             app.Use(async (context, next) =>

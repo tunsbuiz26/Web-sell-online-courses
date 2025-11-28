@@ -21,7 +21,8 @@ namespace DemoApp.Data
         public DbSet<Cart> Cart { get; set; } = default!;
         public DbSet<BuoiHoc> BuoiHoc { get; set; } = default!;
         public DbSet<DiemDanh> DiemDanh { get; set; } = default!;
-
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -238,6 +239,30 @@ namespace DemoApp.Data
                       .WithMany(bh => bh.DiemDanhs!)
                       .HasForeignKey(dd => dd.BuoiHocId)
                       .OnDelete(DeleteBehavior.Restrict);
+            });
+            modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.HasKey(c => c.CartId);
+
+                entity.HasOne(c => c.User)
+                    .WithMany()                  // nếu User có ICollection<Cart> thì đổi sang .WithMany(u => u.Carts)
+                    .HasForeignKey(c => c.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<CartItem>(entity =>
+            {
+                entity.HasKey(ci => ci.CartItemId);
+
+                entity.HasOne(ci => ci.Cart)
+                    .WithMany(c => c.Items)
+                    .HasForeignKey(ci => ci.CartId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(ci => ci.KhoaHoc)
+                    .WithMany()                  // nếu KhoaHoc có ICollection<CartItem> thì đổi sang .WithMany(k => k.CartItems)
+                    .HasForeignKey(ci => ci.KhoaHocId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             SeedData(modelBuilder);

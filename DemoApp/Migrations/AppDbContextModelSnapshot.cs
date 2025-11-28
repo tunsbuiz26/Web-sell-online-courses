@@ -193,14 +193,54 @@ namespace DemoApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"), 1L, 1);
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UserId1")
                         .HasColumnType("int");
 
                     b.HasKey("CartId");
 
                     b.HasIndex("UserId");
 
+                    b.HasIndex("UserId1");
+
                     b.ToTable("Cart");
+                });
+
+            modelBuilder.Entity("DemoApp.Models.CartItem", b =>
+                {
+                    b.Property<int>("CartItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartItemId"), 1L, 1);
+
+                    b.Property<DateTime>("AddedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("KhoaHocId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("CartItemId");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("KhoaHocId");
+
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("DemoApp.Models.DangKyKhoaHoc", b =>
@@ -243,7 +283,7 @@ namespace DemoApp.Migrations
                         {
                             Id = 1,
                             KhoaHocId = 1,
-                            NgayDangKy = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(473),
+                            NgayDangKy = new DateTime(2025, 11, 28, 22, 53, 23, 848, DateTimeKind.Local).AddTicks(4552),
                             TrangThai = "DangHoc",
                             UserId = 2
                         });
@@ -430,7 +470,7 @@ namespace DemoApp.Migrations
                             GiaTien = 150000m,
                             MaKhoaHoc = "CPP001",
                             MoTaNgan = "Khóa học lập trình C++ cho người mới",
-                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(426),
+                            NgayTao = new DateTime(2025, 11, 28, 22, 53, 23, 848, DateTimeKind.Local).AddTicks(4455),
                             TenKhoaHoc = "Lập trình C++",
                             TrangThai = "DaXuatBan",
                             UserId = 1
@@ -444,7 +484,7 @@ namespace DemoApp.Migrations
                             GiaTien = 300000m,
                             MaKhoaHoc = "HTMLCSS001",
                             MoTaNgan = "Khóa học HTML CSS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(430),
+                            NgayTao = new DateTime(2025, 11, 28, 22, 53, 23, 848, DateTimeKind.Local).AddTicks(4459),
                             TenKhoaHoc = "Lập trình HTML và CSS",
                             TrangThai = "DaXuatBan",
                             UserId = 1
@@ -458,7 +498,7 @@ namespace DemoApp.Migrations
                             GiaTien = 250000m,
                             MaKhoaHoc = "SQL001",
                             MoTaNgan = "SQL cho người mới bắt đầu",
-                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(432),
+                            NgayTao = new DateTime(2025, 11, 28, 22, 53, 23, 848, DateTimeKind.Local).AddTicks(4462),
                             TenKhoaHoc = "Lập trình SQL",
                             TrangThai = "DaXuatBan",
                             UserId = 1
@@ -472,7 +512,7 @@ namespace DemoApp.Migrations
                             GiaTien = 500000m,
                             MaKhoaHoc = "REACT001",
                             MoTaNgan = "Khóa học ReactJS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(434),
+                            NgayTao = new DateTime(2025, 11, 28, 22, 53, 23, 848, DateTimeKind.Local).AddTicks(4465),
                             TenKhoaHoc = "Lập trình React",
                             TrangThai = "DaXuatBan",
                             UserId = 1
@@ -668,12 +708,35 @@ namespace DemoApp.Migrations
             modelBuilder.Entity("DemoApp.Models.Cart", b =>
                 {
                     b.HasOne("DemoApp.Models.User", "User")
-                        .WithMany("Carts")
+                        .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DemoApp.Models.User", null)
+                        .WithMany("Carts")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("DemoApp.Models.CartItem", b =>
+                {
+                    b.HasOne("DemoApp.Models.Cart", "Cart")
+                        .WithMany("Items")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DemoApp.Models.KhoaHoc", "KhoaHoc")
+                        .WithMany()
+                        .HasForeignKey("KhoaHocId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Cart");
+
+                    b.Navigation("KhoaHoc");
                 });
 
             modelBuilder.Entity("DemoApp.Models.DangKyKhoaHoc", b =>
@@ -786,6 +849,11 @@ namespace DemoApp.Migrations
             modelBuilder.Entity("DemoApp.Models.BuoiHoc", b =>
                 {
                     b.Navigation("DiemDanhs");
+                });
+
+            modelBuilder.Entity("DemoApp.Models.Cart", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("DemoApp.Models.DanhMuc", b =>
