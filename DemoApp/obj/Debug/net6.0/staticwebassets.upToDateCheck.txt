@@ -1,15 +1,11 @@
 wwwroot\css\admin-courses.css
 wwwroot\css\admin-dashboard.css
 wwwroot\css\ctkh.css
-wwwroot\css\dskh.css
 wwwroot\css\header.css
 wwwroot\css\home.css
 wwwroot\css\login.css
-<<<<<<< HEAD
 wwwroot\css\mycourses.css
-=======
 wwwroot\css\Profile.css
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
 wwwroot\css\register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
@@ -86,3 +82,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\dskh.css

@@ -14,22 +14,15 @@ namespace DemoApp.Models
         public string MaKhoaHoc { get; set; }
 
         [Required, StringLength(200)]
-<<<<<<< HEAD
+
         [Display(Name = "Tên Khóa Học")]
         public string TenKhoaHoc { get; set; }
 
         [Display(Name = "Mô tả ngắn ")]
         public string? MoTaNgan { get; set; }
 
-=======
-        [Display(Name = "Tên Kháo Học")]
-        public string? TenKhoaHoc { get; set; }
-        [Display(Name = "Mô tả ngắn ")]
-        public string? MoTaNgan { get; set; }
 
-        [Display(Name = "Mô tả chi tiết ")]
-        public string? MoTaChiTiet { get; set; }
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
+
         [Display(Name = "Ảnh bìa")]
         public string? AnhBia { get; set; }
 

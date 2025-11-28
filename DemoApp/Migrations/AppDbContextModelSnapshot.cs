@@ -87,7 +87,7 @@ namespace DemoApp.Migrations
                             DuongDanNoiDung = "https://www.youtube.com/watch?v=y-_fNgvSfjc&list=PLux-_phi0Rz0Hq9fDP4TlOulBl8APKp79&index=3",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong Ngôn Ngữ Lập Trình C++ (Phần 1)",
+                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong C++ (Phần 1)",
                             ThoiLuong = 0,
                             ThuTuHienThi = 3
                         },
@@ -97,7 +97,7 @@ namespace DemoApp.Migrations
                             DuongDanNoiDung = "https://www.youtube.com/watch?v=y-_fNgvSfjc&list=PLux-_phi0Rz0Hq9fDP4TlOulBl8APKp79&index=3",
                             KhoaHocId = 1,
                             LoaiNoiDung = "Video",
-                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong Ngôn Ngữ Lập Trình C++ (Phần 2)",
+                            TenBaiHoc = "Toàn Tập Về Các Toán Tử Cơ Bản Trong C++ (Phần 2)",
                             ThoiLuong = 0,
                             ThuTuHienThi = 4
                         },
@@ -183,26 +183,6 @@ namespace DemoApp.Migrations
                     b.HasIndex("KhoaHocId");
 
                     b.ToTable("BuoiHoc");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            KhoaHocId = 1,
-                            NgayHoc = new DateTime(2025, 11, 24, 0, 0, 0, 0, DateTimeKind.Local),
-                            TenBuoiHoc = "Buổi 1 - Lộ trình học & bài 1 C++",
-                            ThoiLuong = 60,
-                            ThuTuBuoi = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            KhoaHocId = 1,
-                            NgayHoc = new DateTime(2025, 11, 25, 0, 0, 0, 0, DateTimeKind.Local),
-                            TenBuoiHoc = "Buổi 2 - Làm quen với C++",
-                            ThoiLuong = 60,
-                            ThuTuBuoi = 2
-                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.Cart", b =>
@@ -263,19 +243,7 @@ namespace DemoApp.Migrations
                         {
                             Id = 1,
                             KhoaHocId = 1,
-<<<<<<< HEAD
-                            NgayDangKy = new DateTime(2025, 11, 24, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3803),
-=======
-                            NgayDangKy = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9760),
-                            TrangThai = "DangHoc",
-                            UserId = 3
-                        },
-                        new
-                        {
-                            Id = 2,
-                            KhoaHocId = 2,
-                            NgayDangKy = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9800),
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
+                            NgayDangKy = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(473),
                             TrangThai = "DangHoc",
                             UserId = 2
                         });
@@ -384,28 +352,6 @@ namespace DemoApp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("DiemDanh");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BuoiHocId = 1,
-                            GhiChu = "Có mặt đầy đủ buổi 1",
-                            KhoaHocId = 1,
-                            NgayDiemDanh = new DateTime(2025, 11, 24, 0, 0, 0, 0, DateTimeKind.Local),
-                            TrangThai = "present",
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BuoiHocId = 2,
-                            GhiChu = "Đến muộn 5 phút buổi 2",
-                            KhoaHocId = 1,
-                            NgayDiemDanh = new DateTime(2025, 11, 25, 0, 0, 0, 0, DateTimeKind.Local),
-                            TrangThai = "late",
-                            UserId = 2
-                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.KhoaHoc", b =>
@@ -439,9 +385,6 @@ namespace DemoApp.Migrations
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("MoTaChiTiet")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MoTaNgan")
                         .HasColumnType("nvarchar(max)");
@@ -481,24 +424,14 @@ namespace DemoApp.Migrations
                         new
                         {
                             Id = 1,
-                            AnhBia = "cpp.png",
+                            AnhBia = "cpp.jpg",
                             CapDo = "CoBan",
-<<<<<<< HEAD
                             DanhMucId = 3,
                             GiaTien = 150000m,
                             MaKhoaHoc = "CPP001",
                             MoTaNgan = "Khóa học lập trình C++ cho người mới",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3762),
+                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(426),
                             TenKhoaHoc = "Lập trình C++",
-=======
-                            DanhMucId = 1,
-                            GiaTien = 399000m,
-                            MaKhoaHoc = "WEB001",
-                            MoTaChiTiet = "Biến bạn từ người mới bắt đầu thành người xây dựng website chuyên nghiệp!Khóa học HTML CSS JavaScript Cơ Bản chính là nền tảng vững chắc đầu tiên dành cho bạn!Khóa học được thiết kế từ CƠ BẢN đến NÂNG CAO, phù hợp cho người mới bắt đầu. Bạn chỉ cần: Chăm chỉ và kiên trì thực hành,không ngại hỏi đáp, tích cực tương tác,chủ động đưa ra thắc mắc trong quá trình học tậpSau khóa học, bạn ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Frontend Developer, tự tin xây dựng website responsive, phát triển các dự án cá nhân chất lượngĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
-                            MoTaNgan = "Khóa học lập trình web cho người mới",
-                            NgayTao = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9703),
-                            TenKhoaHoc = "HTML CSS JavaScript Cơ Bản",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
                             UserId = 1
                         },
@@ -507,72 +440,42 @@ namespace DemoApp.Migrations
                             Id = 2,
                             AnhBia = "htmlcss.jpg",
                             CapDo = "CoBan",
-<<<<<<< HEAD
                             DanhMucId = 1,
                             GiaTien = 300000m,
                             MaKhoaHoc = "HTMLCSS001",
                             MoTaNgan = "Khóa học HTML CSS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3765),
+                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(430),
                             TenKhoaHoc = "Lập trình HTML và CSS",
-=======
-                            DanhMucId = 2,
-                            GiaTien = 299000m,
-                            MaKhoaHoc = "MOB001",
-                            MoTaChiTiet = "Biến ý tưởng thành ứng dụng thực tế - Khởi đầu sự nghiệp Mobile Developer!Khóa học Lập trình Android Cơ Bản chính là chìa khóa mở cánh cửa vào thế giới phát triển di động!Khóa học được thiết kế từ CƠ BẢN đến THỰC HÀNH, chỉ cần bạn: Chăm chỉ thực hành và không ngại thử nghiệm, tích cực hỏi đáp và chia sẻ khó khăn, có laptop cấu hình tối thiểu để cài đặt Android StudioSau khóa học, bạn HOÀN TOÀN ĐỦ NĂNG LỰC để: Ứng tuyển vị trí Fresher Android Developer, tự phát triển ứng dụng Android hoàn chỉnh, hiểu và áp dụng Android architecture patterns, kết nối với RESTful API và xử lý data public ứng dụng lên Google Play StoreĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
-                            MoTaNgan = "Học lập trình ứng dụng Android",
-                            NgayTao = new DateTime(2025, 11, 24, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9705),
-                            TenKhoaHoc = "Lập trình Android cơ bản",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
                             UserId = 1
                         },
                         new
                         {
                             Id = 3,
-                            AnhBia = "sql.png",
+                            AnhBia = "sql.jpg",
                             CapDo = "CoBan",
                             DanhMucId = 3,
-<<<<<<< HEAD
                             GiaTien = 250000m,
                             MaKhoaHoc = "SQL001",
                             MoTaNgan = "SQL cho người mới bắt đầu",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3767),
+                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(432),
                             TenKhoaHoc = "Lập trình SQL",
-=======
-                            GiaTien = 450000m,
-                            MaKhoaHoc = "DATA001",
-                            MoTaChiTiet = "Biến dữ liệu thô thành insights giá trị - Khởi đầu sự nghiệp Data Scientist!Khóa học Python Data Science sẽ trang bị cho bạn công cụ để trở thành chuyên gia phân tích dữ liệu thời đại 4.0!Khóa học được thiết kế từ CƠ BẢN đến CHUYÊN SÂU, chỉ cần bạn: Tư duy logic và ham học hỏi, chăm chỉ thực hành case study thực tế, không ngại hỏi đáp về các vấn đề dataSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher Data Analyst, tự tin phỏng vấn với technical knowledge, xử lý real-world data problems, tiếp tục học lên Advanced Data ScienceĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
-                            MoTaNgan = "Khoa học dữ liệu với Python cơ bản",
-                            NgayTao = new DateTime(2025, 11, 19, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9707),
-                            TenKhoaHoc = "Python Data Science",
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                             TrangThai = "DaXuatBan",
                             UserId = 1
                         },
                         new
                         {
                             Id = 4,
-                            AnhBia = "react.png",
+                            AnhBia = "react.jpg",
                             CapDo = "CoBan",
                             DanhMucId = 4,
-<<<<<<< HEAD
                             GiaTien = 500000m,
                             MaKhoaHoc = "REACT001",
                             MoTaNgan = "Khóa học ReactJS cơ bản",
-                            NgayTao = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3769),
+                            NgayTao = new DateTime(2025, 11, 28, 1, 50, 3, 169, DateTimeKind.Local).AddTicks(434),
                             TenKhoaHoc = "Lập trình React",
                             TrangThai = "DaXuatBan",
                             UserId = 1
-=======
-                            GiaTien = 350000m,
-                            MaKhoaHoc = "UIUX001",
-                            MoTaChiTiet = "Biến ý tưởng thành trải nghiệm người dùng tuyệt vời - Khởi đầu sự nghiệp Designer chuyên nghiệp!Khóa học Thiết kế UI/UX Cơ Bản sẽ biến bạn từ người mới bắt đầu thành designer có tư duy hệ thống!Khóa học được thiết kế từ NGUYÊN LÝ đến THỰC HÀNH, chỉ cần bạn: Đam mê sáng tạo và yêu thích cái đẹp, tư duy logic và hướng về người dùng, chăm chỉ thực hành và không ngại feedbackSau khóa học, bạn HOÀN TOÀN có thể: Ứng tuyển thành công vị trí Fresher UI/UX Designer, làm freelance project với mức lương 2-5 triệu/project, tiếp tục học nâng cao lên Senior level, tự quản lý design process từ A-ZĐĂNG KÝ NGAY ĐỂ BIẾN ĐAM MÊ THÀNH NGHỀ NGHIỆP!",
-                            MoTaNgan = "Học thiết kế giao diện người dùng chuyên nghiệp",
-                            NgayTao = new DateTime(2025, 11, 22, 22, 42, 10, 173, DateTimeKind.Local).AddTicks(9714),
-                            TenKhoaHoc = "Thiết kế UI/UX cơ bản",
-                            TrangThai = "BanNhap",
-                            UserId = 3
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
                         });
                 });
 
@@ -657,47 +560,6 @@ namespace DemoApp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("TienDoHocTap");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BaiHocId = 1,
-                            DaHoanThanh = true,
-                            KhoaHocId = 1,
-                            ThoiGianBatDau = new DateTime(2025, 11, 25, 23, 12, 0, 294, DateTimeKind.Local).AddTicks(3849),
-                            ThoiGianCapNhat = new DateTime(2025, 11, 25, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3854),
-                            ThoiGianHoanThanh = new DateTime(2025, 11, 25, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3853),
-                            ThoiGianHoc = 30,
-                            TrangThaiHoc = "DaHoanThanh",
-                            TyLeHoanThanh = 100m,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BaiHocId = 2,
-                            DaHoanThanh = false,
-                            KhoaHocId = 1,
-                            ThoiGianBatDau = new DateTime(2025, 11, 26, 23, 32, 0, 294, DateTimeKind.Local).AddTicks(3857),
-                            ThoiGianCapNhat = new DateTime(2025, 11, 26, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3858),
-                            ThoiGianHoc = 10,
-                            TrangThaiHoc = "DangHoc",
-                            TyLeHoanThanh = 40m,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BaiHocId = 3,
-                            DaHoanThanh = false,
-                            KhoaHocId = 1,
-                            ThoiGianCapNhat = new DateTime(2025, 11, 27, 23, 42, 0, 294, DateTimeKind.Local).AddTicks(3860),
-                            ThoiGianHoc = 0,
-                            TrangThaiHoc = "DangHoc",
-                            TyLeHoanThanh = 0m,
-                            UserId = 2
-                        });
                 });
 
             modelBuilder.Entity("DemoApp.Models.User", b =>

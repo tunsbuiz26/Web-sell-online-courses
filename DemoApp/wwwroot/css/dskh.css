@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿﻿.page-header {
-=======
-﻿.page-header {
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
+.page-header {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem 0;
@@ -41,10 +37,7 @@
     margin: 0 auto;
     line-height: 1.6;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 1ddccca520d1f33fe634b9d6b6092e8d45c32975
 .courses-horizontal-container {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +89,7 @@
     text-align: center;
 }
 
-/* CHECKLIST VỚI ICONS MINH HỌA */
+/* CHECKLIST */
 .course-checklist {
     list-style: none;
     padding: 0;
@@ -122,7 +115,6 @@
     justify-content: center;
 }
 
-    /* Sử dụng emoji icons */
     .checklist-icon.lessons::before {
         content: "📚";
         font-size: 1rem;
@@ -186,10 +178,11 @@
     border: 1px solid #e2e8f0;
 }
 
+/* ✔ GIÁ HIỆN TẠI – XANH LÁ CÂY HIỆN ĐẠI */
 .course-price-current {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #dc2626;
+    color: #16a34a; /* GREEN */
 }
 
 .course-price-original {
@@ -199,9 +192,10 @@
     font-weight: 500;
 }
 
+/* ✔ NÚT ĐĂNG KÍ NGAY – XANH DƯƠNG ĐẬM HIỆN ĐẠI */
 .btn-enroll {
     display: inline-block;
-    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 8px;
@@ -217,10 +211,11 @@
 }
 
     .btn-enroll:hover {
-        background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+        background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
         transform: translateY(-2px);
     }
 
+/* ANIMATIONS */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -237,6 +232,7 @@
     animation: fadeInUp 0.6s ease-out;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .courses-horizontal-container {
         justify-content: flex-start;
