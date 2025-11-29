@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null; // Layout riêng cho admin, không lồng vào _Layout chung
+    Layout = null;
     var title = ViewData["Title"] as string ?? "TTNK Admin";
 }
 
@@ -42,7 +42,6 @@
                 </div>
 
                 <div class="header-right">
-                    
                     <div class="admin-profile">
                         <img src="~/images/admin-avatar.jpg" alt="Admin" class="profile-avatar" />
                         <div class="profile-info">
@@ -91,6 +90,14 @@
                     </svg>
                     <span>Quản lý khóa học</span>
                 </a>
+                <a href="/admin/lessons" class="nav-item @(ViewBag.ActiveMenu == "lessons" ? "active" : "")">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>Quản lý bài học</span>
+                </a>
                 <a href="/admin/users" class="nav-item @(ViewBag.ActiveMenu == "users" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -101,25 +108,15 @@
                     </svg>
                     <span>Quản lý người dùng</span>
                 </a>
-                <a href="/admin/orders" class="nav-item @(ViewBag.ActiveMenu == "orders" ? "active" : "")">
+                <a href="/admin/statistics" class="nav-item @(ViewBag.ActiveMenu == "statistics" ? "active" : "")">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
                     </svg>
-                    <span>Tiến Độ</span>
-                    <span class="badge">12</span>
+                    <span>Thống kê</span>
                 </a>
-                <a href="/admin/revenue" class="nav-item @(ViewBag.ActiveMenu == "revenue" ? "active" : "")">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="12" y1="1" x2="12" y2="23"></line>
-                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                    </svg>
-                    <span>Điểm Danh</span>
-                </a>
-                
             </nav>
 
             <div class="sidebar-footer">

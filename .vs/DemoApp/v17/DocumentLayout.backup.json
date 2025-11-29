@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Lap trinh .NET\\DemoApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|solutionrelative:demoapp\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB8BED7C-11DC-4DA1-B876-FB8AC73A46C7}|DemoApp\\DemoApp.csproj|d:\\lap trinh .net\\demoapp\\demoapp\\models\\khoahoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -246,20 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateCourse.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T14:53:42.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "admin-dashboard.js",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\js\\admin-dashboard.js",
               "RelativeDocumentMoniker": "DemoApp\\wwwroot\\js\\admin-dashboard.js",
@@ -272,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Controllers\\AdminController.cs",
@@ -285,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DemoApp\\Data\\AppDbContext.cs",
@@ -298,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "DemoApp\\Models\\CartItem.cs",
@@ -311,20 +298,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Courses.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Courses.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml*",
-              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml*",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAAE8AAABBAAAAAAAAAA==",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Courses.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\Courses.cshtml",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAI8AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-29T06:36:27.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T15:59:21.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CreateCourse.cshtml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
+              "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
+              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\CreateCourse.cshtml",
+              "RelativeToolTip": "DemoApp\\Views\\Admin\\CreateCourse.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T14:53:42.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DanhSachKhoaHoc.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\KhoaHocs\\DanhSachKhoaHoc.cshtml",
@@ -337,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Dashboard.cshtml",
@@ -350,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MyCoursesController.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Controllers\\MyCoursesController.cs",
               "RelativeDocumentMoniker": "DemoApp\\Controllers\\MyCoursesController.cs",
@@ -363,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_Layout.cshtml",
@@ -376,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "admin-courses.css",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\wwwroot\\css\\admin-courses.css",
               "RelativeDocumentMoniker": "DemoApp\\wwwroot\\css\\admin-courses.css",
@@ -402,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Admin\\Edit.cshtml",
               "RelativeDocumentMoniker": "DemoApp\\Views\\Admin\\Edit.cshtml",
@@ -411,19 +424,6 @@
               "ViewState": "AgIAAMoAAAAAAAAAAAAAANQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-29T14:41:08.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "D:\\Lap trinh .NET\\DemoApp\\DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "DemoApp\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-27T15:59:21.079Z",
               "EditorCaption": ""
             },
             {
