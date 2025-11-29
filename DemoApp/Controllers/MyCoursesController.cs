@@ -1,17 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
 using DemoApp.Data;
 using DemoApp.Models;
 using DemoApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DemoApp.Controllers
 {
-    [Authorize] // bắt buộc đăng nhập mới xem được khóa học của tôi
+    [Authorize]
     public class MyCoursesController : Controller
     {
         private readonly AppDbContext _context;
@@ -21,40 +21,37 @@ namespace DemoApp.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        // ================== LẤY USER HIỆN TẠI ==================
+        private async Task<User?> GetCurrentUserAsync()
         {
-            // 1. Lấy thông tin user hiện tại
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "Account");
-            }
+                return null;
 
-            var identityName = User.Identity.Name; // thường là Email hoặc Username
+            var identityName = User.Identity.Name; // Email hoặc Username
 
-            var currentUser = await _context.User
+            return await _context.User
                 .FirstOrDefaultAsync(u =>
                     u.Email == identityName || u.Username == identityName);
+        }
 
+        // ================== KHÓA HỌC CỦA TÔI ==================
+        public async Task<IActionResult> Index()
+        {
+            var currentUser = await GetCurrentUserAsync();
             if (currentUser == null)
-            {
-                // không tìm được user trong DB -> bắt login lại
                 return RedirectToAction("Login", "Account");
-            }
 
-            // 2. Lấy danh sách đăng ký khóa học của user
             var registrations = await _context.DangKyKhoaHoc
                 .Where(dk => dk.UserId == currentUser.UserId
-                             && dk.TrangThai == "DangHoc") // chỉ lấy khóa đang học
+                             && dk.TrangThai == "DangHoc")
                 .Include(dk => dk.KhoaHoc!)
                     .ThenInclude(kh => kh.BaiHoc)
                 .ToListAsync();
 
-            // 3. Lấy tiến độ học tập của user cho tất cả khóa
             var tienDoList = await _context.TienDoHocTap
                 .Where(td => td.UserId == currentUser.UserId)
                 .ToListAsync();
 
-            // 4. Map sang MyCourseItemViewModel
             var viewModel = new List<MyCourseItemViewModel>();
 
             foreach (var dk in registrations)
@@ -62,20 +59,15 @@ namespace DemoApp.Controllers
                 var kh = dk.KhoaHoc!;
                 var totalLessons = kh.BaiHoc?.Count ?? 0;
 
-                // Đếm số bài đã hoàn thành trong TienDoHocTap
                 var completedLessons = tienDoList
                     .Where(td => td.KhoaHocId == kh.Id && td.DaHoanThanh)
                     .Select(td => td.BaiHocId)
                     .Distinct()
                     .Count();
 
-                int progressPercent = 0;
-                if (totalLessons > 0)
-                {
-                    progressPercent = (int)Math.Round(
-                        completedLessons * 100.0 / totalLessons
-                    );
-                }
+                int percent = totalLessons > 0
+                    ? (int)Math.Round(completedLessons * 100.0 / totalLessons)
+                    : 0;
 
                 viewModel.Add(new MyCourseItemViewModel
                 {
@@ -85,16 +77,14 @@ namespace DemoApp.Controllers
                     ThumbnailUrl = "/images/" + (kh.AnhBia ?? "default-course.jpg"),
                     Level = MapLevel(kh.CapDo),
                     TotalLessons = totalLessons,
-                    ProgressPercent = progressPercent,
+                    ProgressPercent = percent,
                     StartDate = dk.NgayDangKy
                 });
             }
 
-            // 5. Trả về view /Views/MyCourses/Index.cshtml với Model là List<MyCourseItemViewModel>
             return View(viewModel);
         }
 
-        // Hàm phụ để convert CapDo -> text đẹp
         private string MapLevel(string? capDo)
         {
             return capDo switch
@@ -105,33 +95,46 @@ namespace DemoApp.Controllers
                 _ => "All level"
             };
         }
-        // ================== CHI TIẾT MỘT KHÓA HỌC ==================
+
+        // ================== CHI TIẾT KHÓA HỌC ==================
         public async Task<IActionResult> Details(int id, int? activeLessonId = null)
         {
-            if (User?.Identity == null || !User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-
-            var identityName = User.Identity.Name;
-
-            var currentUser = await _context.User
-                .FirstOrDefaultAsync(u =>
-                    u.Email == identityName || u.Username == identityName);
-
+            var currentUser = await GetCurrentUserAsync();
             if (currentUser == null)
-            {
                 return RedirectToAction("Login", "Account");
-            }
 
-            // Lấy khóa học & bài học
             var course = await _context.KhoaHoc
                 .Include(k => k.BaiHoc)
                 .FirstOrDefaultAsync(k => k.Id == id);
 
             if (course == null)
-            {
                 return NotFound();
+
+            // (OPTION) Nếu chưa có buổi học nào thì create vài buổi demo theo số bài
+            var hasSessions = await _context.BuoiHoc.AnyAsync(b => b.KhoaHocId == id);
+            if (!hasSessions && course.BaiHoc != null && course.BaiHoc.Count > 0)
+            {
+                var orderedLessons = course.BaiHoc
+                    .OrderBy(b => b.ThuTuHienThi)
+                    .ThenBy(b => b.Id)
+                    .ToList();
+
+                var demoSessions = new List<BuoiHoc>();
+                int order = 1;
+                foreach (var les in orderedLessons)
+                {
+                    demoSessions.Add(new BuoiHoc
+                    {
+                        KhoaHocId = id,
+                        TenBuoiHoc = $"Buổi {order}: {les.TenBaiHoc}",
+                        ThuTuBuoi = order,
+                        NgayHoc = DateTime.Today.AddDays(order - 1)
+                    });
+                    order++;
+                }
+
+                _context.BuoiHoc.AddRange(demoSessions);
+                await _context.SaveChangesAsync();
             }
 
             var lessons = course.BaiHoc
@@ -141,7 +144,6 @@ namespace DemoApp.Controllers
 
             var totalLessons = lessons.Count;
 
-            // Lấy tiến độ
             var progresses = await _context.TienDoHocTap
                 .Where(t => t.UserId == currentUser.UserId && t.KhoaHocId == id)
                 .ToListAsync();
@@ -152,15 +154,13 @@ namespace DemoApp.Controllers
                 .Distinct()
                 .ToList();
 
-            var completedCount = completedIds.Count;
+            int completedCount = completedIds.Count;
 
-            int progressPercent = 0;
-            if (totalLessons > 0)
-            {
-                progressPercent = (int)Math.Round(completedCount * 100.0 / totalLessons);
-            }
+            int progressPercent = totalLessons > 0
+                ? (int)Math.Round(completedCount * 100.0 / totalLessons)
+                : 0;
 
-            // Điểm danh + thống kê (nếu có)
+            // ====== ĐIỂM DANH + THỐNG KÊ ======
             var sessions = await _context.BuoiHoc
                 .Where(b => b.KhoaHocId == id)
                 .OrderBy(b => b.ThuTuBuoi)
@@ -171,14 +171,55 @@ namespace DemoApp.Controllers
                 .Include(d => d.BuoiHoc)
                 .ToListAsync();
 
-            // Tính thống kê đơn giản
+            var allProgresses = await _context.TienDoHocTap
+                .Where(t => t.UserId == currentUser.UserId && t.KhoaHocId == id)
+                .ToListAsync();
+
             var stats = new CourseLearningStatsViewModel();
-            if (sessions.Count > 0)
+
+            if (allProgresses.Any())
             {
-                var totalSession = sessions.Count;
-                var attended = attendances.Count(d => d.TrangThai == "present" || d.TrangThai == "late");
-                stats.AttendanceRate = (int)Math.Round(attended * 100.0 / totalSession);
+                stats.StartDate = allProgresses.Min(p => p.ThoiGianBatDau);
+                stats.LastStudyDate = allProgresses.Max(p => p.ThoiGianBatDau);
+
+                stats.StudyDays = allProgresses
+                    .Select(p => p.ThoiGianBatDau.Value.Date)
+                    .Distinct()
+                    .Count();
+
+                stats.TotalStudyMinutes = allProgresses.Sum(p => p.ThoiGianHoc);
             }
+
+            stats.TotalSessions = sessions.Count;
+
+            stats.AttendancePresent = attendances
+                .Count(d => d.TrangThai == "present" || d.TrangThai == "late");
+
+            stats.AttendanceRate = stats.TotalSessions > 0
+                ? (int)Math.Round(stats.AttendancePresent * 100.0 / stats.TotalSessions)
+                : 0;
+
+            if (allProgresses.Any())
+            {
+                var studyDates = allProgresses
+                    .Select(p => p.ThoiGianBatDau.Value.Date)
+                    .Distinct()
+                    .OrderBy(d => d)
+                    .ToList();
+
+                int streak = 0;
+                DateTime cursor = DateTime.Today;
+
+                while (studyDates.Contains(cursor))
+                {
+                    streak++;
+                    cursor = cursor.AddDays(-1);
+                }
+
+                stats.CurrentStreakDays = streak;
+                stats.StreakDays = streak;
+            }
+
             stats.AvgScore = 0;
 
             var vm = new CourseLearningViewModel
@@ -194,67 +235,49 @@ namespace DemoApp.Controllers
                 Stats = stats
             };
 
-            // truyền bài đang học để View biết bài nào cho phép hiện nút hoàn thành
             ViewBag.ActiveLessonId = activeLessonId;
 
             return View(vm);
         }
+
+        // ================== HOÀN THÀNH BÀI HỌC (+ AUTO ĐIỂM DANH) ==================
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CompleteLesson(int courseId, int lessonId)
         {
-            // 1. Check đăng nhập
-            if (User?.Identity == null || !User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-
-            var identityName = User.Identity.Name;
-
-            var currentUser = await _context.User
-                .FirstOrDefaultAsync(u =>
-                    u.Email == identityName || u.Username == identityName);
-
+            var currentUser = await GetCurrentUserAsync();
             if (currentUser == null)
-            {
                 return RedirectToAction("Login", "Account");
-            }
 
-            // 2. Lấy bài học
             var lesson = await _context.BaiHoc
                 .FirstOrDefaultAsync(b => b.Id == lessonId && b.KhoaHocId == courseId);
 
             if (lesson == null)
-            {
                 return NotFound();
-            }
 
-            // 3. BẮT BUỘC HOÀN THÀNH BÀI TRƯỚC ĐÓ
-            // Tìm bài học ngay trước nó trong khóa (theo ThuTuHienThi)
+            // BẮT BUỘC HOÀN THÀNH BÀI TRƯỚC
             var previousLesson = await _context.BaiHoc
-                .Where(b => b.KhoaHocId == courseId
-                            && b.ThuTuHienThi < lesson.ThuTuHienThi)
+                .Where(b => b.KhoaHocId == courseId && b.ThuTuHienThi < lesson.ThuTuHienThi)
                 .OrderByDescending(b => b.ThuTuHienThi)
                 .FirstOrDefaultAsync();
 
             if (previousLesson != null)
             {
-                var prevProgress = await _context.TienDoHocTap
-                    .FirstOrDefaultAsync(t =>
+                var prevDone = await _context.TienDoHocTap
+                    .AnyAsync(t =>
                         t.UserId == currentUser.UserId &&
                         t.KhoaHocId == courseId &&
                         t.BaiHocId == previousLesson.Id &&
                         t.DaHoanThanh);
 
-                if (prevProgress == null)
+                if (!prevDone)
                 {
-                    TempData["Error"] = "Bạn cần hoàn thành bài học trước đó trước khi đánh dấu bài này.";
+                    TempData["Error"] = "Bạn cần hoàn thành bài học trước đó.";
                     return RedirectToAction("Details", new { id = courseId });
                 }
             }
-            // Nếu không có previousLesson (tức là bài đầu tiên) thì cho phép tick bình thường.
 
-            // 4. Tìm hoặc tạo record tiến độ
+            // TIẾN ĐỘ
             var progress = await _context.TienDoHocTap
                 .FirstOrDefaultAsync(t =>
                     t.UserId == currentUser.UserId &&
@@ -273,29 +296,139 @@ namespace DemoApp.Controllers
                 _context.TienDoHocTap.Add(progress);
             }
 
-            // 5. Cập nhật trạng thái hoàn thành
             progress.DaHoanThanh = true;
             progress.TrangThaiHoc = "DaHoanThanh";
             progress.ThoiGianHoanThanh = DateTime.Now;
             progress.ThoiGianCapNhat = DateTime.Now;
             progress.TyLeHoanThanh = 100;
+            progress.ThoiGianHoc = lesson.ThoiLuong.Value > 0 ? lesson.ThoiLuong.Value : 45;
 
-            // ThoiLuong là int? nên phải xử lý nullable
-            if (lesson.ThoiLuong.HasValue && lesson.ThoiLuong.Value > 0)
+            // ============ AUTO ĐIỂM DANH BUỔI HỌC TƯƠNG ỨNG ============
+            // Quy ước: BuoiHoc.ThuTuBuoi trùng với BaiHoc.ThuTuHienThi
+            var session = await _context.BuoiHoc
+                .FirstOrDefaultAsync(b =>
+                    b.KhoaHocId == courseId &&
+                    b.ThuTuBuoi == lesson.ThuTuHienThi);
+
+            if (session != null)
             {
-                progress.ThoiGianHoc = lesson.ThoiLuong.Value;
+                var attend = await _context.DiemDanh
+                    .FirstOrDefaultAsync(d =>
+                        d.UserId == currentUser.UserId &&
+                        d.KhoaHocId == courseId &&
+                        d.BuoiHocId == session.Id);
+
+                if (attend == null)
+                {
+                    attend = new DiemDanh
+                    {
+                        UserId = currentUser.UserId,
+                        KhoaHocId = courseId,
+                        BuoiHocId = session.Id,
+                        NgayDiemDanh = DateTime.Now,
+                        TrangThai = "present"
+                    };
+                    _context.DiemDanh.Add(attend);
+                }
+                else
+                {
+                    attend.NgayDiemDanh = DateTime.Now;
+                    attend.TrangThai = "present";
+                    _context.DiemDanh.Update(attend);
+                }
             }
-            else
-            {
-                progress.ThoiGianHoc = 45; // mặc định nếu muốn
-            }
+            // ===========================================================
 
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Details", new { id = courseId });
         }
 
+        // ================== ENROLL (HỌC NGAY) ==================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Enroll(int id)
+        {
+            var currentUser = await GetCurrentUserAsync();
+            if (currentUser == null)
+                return RedirectToAction("Login", "Account");
 
+            if (id <= 0)
+                return RedirectToAction("DanhSachKhoaHoc", "KhoaHocs");
 
+            var course = await _context.KhoaHoc.FindAsync(id);
+            if (course == null)
+                return NotFound();
+
+            var dk = await _context.DangKyKhoaHoc
+                .FirstOrDefaultAsync(x => x.UserId == currentUser.UserId && x.KhoaHocId == id);
+
+            if (dk == null)
+            {
+                dk = new DangKyKhoaHoc
+                {
+                    UserId = currentUser.UserId,
+                    KhoaHocId = id,
+                    NgayDangKy = DateTime.Now,
+                    TrangThai = "DangHoc"
+                };
+                _context.DangKyKhoaHoc.Add(dk);
+            }
+            else
+            {
+                dk.TrangThai = "DangHoc";
+                dk.NgayDangKy = DateTime.Now;
+                _context.DangKyKhoaHoc.Update(dk);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "MyCourses");
+        }
+
+        // ================== (OPTION) ĐIỂM DANH THỦ CÔNG MỘT BUỔI ==================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CheckIn(int courseId, int sessionId)
+        {
+            var currentUser = await GetCurrentUserAsync();
+            if (currentUser == null)
+                return RedirectToAction("Login", "Account");
+
+            var session = await _context.BuoiHoc
+                .FirstOrDefaultAsync(b => b.Id == sessionId && b.KhoaHocId == courseId);
+
+            if (session == null)
+                return NotFound();
+
+            var attend = await _context.DiemDanh
+                .FirstOrDefaultAsync(d =>
+                    d.UserId == currentUser.UserId &&
+                    d.KhoaHocId == courseId &&
+                    d.BuoiHocId == sessionId);
+
+            if (attend == null)
+            {
+                attend = new DiemDanh
+                {
+                    UserId = currentUser.UserId,
+                    KhoaHocId = courseId,
+                    BuoiHocId = sessionId,
+                    NgayDiemDanh = DateTime.Now,
+                    TrangThai = "present"
+                };
+                _context.DiemDanh.Add(attend);
+            }
+            else
+            {
+                attend.NgayDiemDanh = DateTime.Now;
+                attend.TrangThai = "present";
+                _context.DiemDanh.Update(attend);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Details", new { id = courseId });
+        }
     }
 }

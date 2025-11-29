@@ -31,7 +31,7 @@
                 </a>
 
                 <!-- Navigation Menu -->
-                <nav class="nav-menu">
+                <nav class="nav-menu" >
                     <a href="/" class="nav-link active">Trang Chủ</a>
 
                     <a asp-action="DanhSachKhoaHoc" asp-controller="KhoaHocs" class="nav-link">Danh Sách Khóa Học</a>
@@ -82,9 +82,7 @@
                         }
                         else
                         {
-                            <!-- MENU CHO USER THƯỜNG -->
-                            @* GIỎ HÀNG Ở HEADER *@
-                            @await Component.InvokeAsync("CartSummary")
+                          
 
                             <div class="user-menu">
                                 <button class="user-button">

@@ -1,12 +1,11 @@
-﻿@model List<DemoApp.Models.KhoaHoc>
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewData["Title"] = "Danh Sách Khóa Học";
-}
+﻿    @model List<DemoApp.Models.KhoaHoc>
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+        ViewData["Title"] = "Danh Sách Khóa Học";
+    }
 
-<link rel="stylesheet" href="~/css/dskh.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dskh.css" asp-append-version="true" />
 
-<body class="bg-gray-50">
     <main class="container mx-auto px-4 py-8">
         <div class="page-header">
             <h1 class="page-title">Danh Sách Khóa Học</h1>
@@ -28,135 +27,30 @@
                             <h2 class="course-main-title">@khoaHoc.TenKhoaHoc.ToUpper()</h2>
                             <span class="course-subtitle">@khoaHoc.MoTaNgan</span>
 
-                            <ul class="course-checklist">
-                                <li class="checklist-item">
-                                    <span class="checklist-icon lessons"></span>
-                                    <span class="checklist-text">25 Bài giảng</span>
-                                </li>
-                                <li class="checklist-item">
-                                    <span class="checklist-icon calendar"></span>
-                                    <span class="checklist-text">Khai giảng: @khoaHoc.NgayTao.ToString("dd/MM/yyyy")</span>
-                                </li>
-                                <li class="checklist-item">
-                                    <span class="checklist-icon schedule"></span>
-                                    <span class="checklist-text">Lịch học: Thứ 2, Thứ 4, Thứ 6</span>
-                                </li>
-                                <li class="checklist-item">
-                                    <span class="checklist-icon clock"></span>
-                                    <span class="checklist-text">Giờ học: 20h–22h</span>
-                                </li>
-                            </ul>
-
+                            <!-- ... checklist giữ nguyên ... -->
 
                             <div class="course-divider"></div>
 
-
                             <div class="course-instructor">Đội Ngũ 28Tech</div>
 
-
                             <div class="course-price-container">
-                                <div class="course-price-current">@khoaHoc.GiaTien.ToString("N0")đ</div>
-                                @* <div class="course-price-original">6,000,000đ</div> *@
+                                <div class="course-price-current">FREE</div>
                             </div>
 
-                            <button class="btn-enroll">Đăng Ký Ngay</button>
+                            @* HỌC NGAY → ADD VÀO "KHÓA HỌC CỦA TÔI" *@
+                            <form asp-controller="MyCourses"
+                                  asp-action="Enroll"
+                                  method="post"
+                                  class="course-enroll-form">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@khoaHoc.Id" />
+                                <button type="submit" class="btn-enroll">
+                                    Học ngay
+                                </button>
+                            </form>
                         </div>
                     </div>
                 }
-                <div class="course-card-horizontal">
-                    <div class="course-header-horizontal">
-                        <a asp-action="ChiTietKhoaHoc" asp-controller="KhoaHocs" asp-route-id="">
-                            <img src="/images/anh5.png"  class="course-image" />
-                        </a>
-                    </div>
-                    <div class="course-content-horizontal">
-                        <h2 class="course-main-title">Lập trình Front-End</h2>
-                        <span class="course-subtitle">Học HTML, CSS, JavaScript, ReactJS và các công nghệ Frontend hiện đại</span>
-
-                        <ul class="course-checklist">
-                            <li class="checklist-item">
-                                <span class="checklist-icon lessons"></span>
-                                <span class="checklist-text">25 Bài giảng</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon calendar"></span>
-                                <span class="checklist-text">Khai giảng: 24/11/2025</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon schedule"></span>
-                                <span class="checklist-text">Lịch học: Thứ 2, Thứ 4, Thứ 6</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon clock"></span>
-                                <span class="checklist-text">Giờ học: 20h–22h</span>
-                            </li>
-                        </ul>
-
-
-                        <div class="course-divider"></div>
-
-
-                        <div class="course-instructor">Đội Ngũ 28Tech</div>
-
-
-                        <div class="course-price-container">
-                            <div class="course-price-current">499.000đ</div>
-                            @* <div class="course-price-original">6,000,000đ</div> *@
-                        </div>
-
-                        <button class="btn-enroll">Đăng Ký Ngay</button>
-
-
-                    </div>
-                </div>
-
-                <div class="course-card-horizontal">
-                    <div class="course-header-horizontal">
-                        <a asp-action="ChiTietKhoaHoc" asp-controller="KhoaHocs" asp-route-id="">
-                            <img src="/images/anh6.png" class="course-image" />
-                        </a>
-                    </div>
-                    <div class="course-content-horizontal">
-                        <h2 class="course-main-title">Cấu trúc dữ liệu & Giải thuật</h2>
-                        <span class="course-subtitle">Nắm vững CTDL, giải thuật và kỹ thuật lập trình thi đấu</span>
-
-                        <ul class="course-checklist">
-                            <li class="checklist-item">
-                                <span class="checklist-icon lessons"></span>
-                                <span class="checklist-text">25 Bài giảng</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon calendar"></span>
-                                <span class="checklist-text">Khai giảng: 24/11/2025</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon schedule"></span>
-                                <span class="checklist-text">Lịch học: Thứ 2, Thứ 4, Thứ 6</span>
-                            </li>
-                            <li class="checklist-item">
-                                <span class="checklist-icon clock"></span>
-                                <span class="checklist-text">Giờ học: 20h–22h</span>
-                            </li>
-                        </ul>
-
-
-                        <div class="course-divider"></div>
-
-
-                        <div class="course-instructor">Đội Ngũ 28Tech</div>
-
-
-                        <div class="course-price-container">
-                            <div class="course-price-current">999.000đ</div>
-                            @* <div class="course-price-original">6,000,000đ</div> *@
-                        </div>
-
-                        <button class="btn-enroll">Đăng Ký Ngay</button>
-
-
-                    </div>
-                </div>
-
 
             </div>
         }
@@ -167,4 +61,3 @@
             </div>
         }
     </main>
-</body>

@@ -18,13 +18,14 @@
 }
 
 .header-container {
-    max-width: 1400px;
+    max-width: 1200px; /* khớp với home.css */
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* dùng flex, không space-between nữa */
     padding: 0 2rem;
+    gap: 2rem;
 }
 
 /* ===== LOGO ===== */
@@ -44,6 +45,8 @@
 /* ===== NAVIGATION MENU ===== */
 .nav-menu {
     display: flex;
+    flex: 1; /* chiếm khoảng giữa */
+    justify-content: center; /* căn giữa trong khoảng đó */
     gap: 2rem;
     align-items: center;
 }
@@ -77,61 +80,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: auto; /* Đẩy sang phải */
-}
-/* ===== CART STYLES ===== */
-.header-cart {
-    display: inline-flex; /* Thay đổi từ flex sang inline-flex */
-    align-items: center;
-}
-
-.cart-link {
-    display: inline-flex; /* Thay đổi từ flex sang inline-flex */
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: var(--header-text-color);
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    white-space: nowrap;
-}
-
-    .cart-link:hover {
-        background: rgba(255, 255, 255, 0.15);
-    }
-
-    .cart-link svg {
-        flex-shrink: 0;
-        width: 20px;
-        height: 20px;
-    }
-
-.cart-text {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--header-text-color);
-    line-height: 1;
-}
-
-.cart-badge {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    background: #ff4444;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 2px 5px;
-    border-radius: 10px;
-    min-width: 18px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1;
+    margin-left: auto; /* đẩy sang mép phải */
 }
 
 /* ===== USER MENU ===== */
@@ -159,14 +108,6 @@
     .user-button:hover {
         background: rgba(255, 255, 255, 0.2);
         transform: translateY(-2px);
-    }
-
-    .user-button svg {
-        flex-shrink: 0;
-    }
-
-    .user-button span {
-        line-height: 1;
     }
 
 /* ===== DROPDOWN MENU ===== */
@@ -201,14 +142,6 @@
     font-size: 0.9rem;
     transition: all 0.2s ease;
 }
-
-    .dropdown-item:first-child {
-        border-radius: 12px 12px 0 0;
-    }
-
-    .dropdown-item:last-child {
-        border-radius: 0 0 12px 12px;
-    }
 
     .dropdown-item:hover {
         background: #f8f9fa;
@@ -299,28 +232,16 @@ main {
     .nav-menu {
         gap: 1.5rem;
     }
-
-    .cart-text {
-        display: none;
-    }
-
-    .cart-link {
-        padding: 0.5rem;
-    }
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        padding: 0 1rem;
-    }
-
     .nav-menu {
-        display: none;
+        display: none; /* ẩn menu desktop khi mobile */
+        flex: 0;
     }
 
     .header-actions .user-menu,
-    .header-actions .auth-buttons,
-    .header-cart {
+    .header-actions .auth-buttons {
         display: none;
     }
 
@@ -345,10 +266,6 @@ main {
             left: 0;
         }
 
-    .mobile-nav {
-        padding: 1rem 0;
-    }
-
     .mobile-nav-link {
         display: block;
         padding: 1rem 1.5rem;
@@ -358,40 +275,8 @@ main {
         transition: all 0.2s ease;
     }
 
-        .mobile-nav-link:hover,
-        .mobile-nav-link.active {
+        .mobile-nav-link:hover {
             background: #f8f9fa;
             color: var(--gradient-start);
         }
-
-    .mobile-actions {
-        padding: 1rem 1.5rem;
-        border-top: 1px solid #e9ecef;
-    }
-
-    .btn-mobile,
-    .btn-mobile-outline {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 0.75rem;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 0.95rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-
-    .btn-mobile {
-        background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-        color: white;
-        border: none;
-    }
-
-    .btn-mobile-outline {
-        background: white;
-        color: var(--gradient-start);
-        border: 2px solid var(--gradient-start);
-    }
 }

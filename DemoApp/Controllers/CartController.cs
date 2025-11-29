@@ -182,8 +182,37 @@ namespace DemoApp.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // TODO: Đăng ký khóa học, thanh toán
-            return View(cart);
+            // Tạo đăng ký khóa học cho từng item trong giỏ
+            foreach (var item in cart.Items)
+            {
+                // Nếu đã đăng ký rồi thì bỏ qua (tránh trùng)
+                bool alreadyRegistered = await _context.DangKyKhoaHoc
+                    .AnyAsync(d => d.UserId == userId.Value && d.KhoaHocId == item.KhoaHocId);
+
+                if (!alreadyRegistered)
+                {
+                    var dk = new DangKyKhoaHoc
+                    {
+                        UserId = userId.Value,
+                        KhoaHocId = item.KhoaHocId,
+                        NgayDangKy = DateTime.Now,
+                        TrangThai = "Pending" // chờ admin duyệt
+                    };
+
+                    _context.DangKyKhoaHoc.Add(dk);
+                }
+            }
+
+            // Xóa giỏ hàng sau khi tạo đăng ký
+            _context.CartItems.RemoveRange(cart.Items);
+            cart.Items.Clear();
+            cart.UpdatedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            // Có thể chuyển sang trang thông báo
+            return View("CheckoutSuccess"); // tạo view này đơn giản: "Đăng ký thành công, vui lòng chờ admin xác nhận"
         }
+
     }
 }

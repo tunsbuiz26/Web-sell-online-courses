@@ -1,5 +1,6 @@
 wwwroot\css\admin-courses.css
 wwwroot\css\admin-dashboard.css
+wwwroot\css\cart.css
 wwwroot\css\ctkh.css
 wwwroot\css\dskh.css
 wwwroot\css\header.css

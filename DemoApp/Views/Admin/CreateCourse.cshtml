@@ -27,9 +27,21 @@
     </div>
 
     <div class="mb-3">
-        <label asp-for="AnhBia" class="form-label"></label>
-        <input asp-for="AnhBia" class="form-control" placeholder="Nhập URL ảnh bìa" />
+        <label class="form-label fw-bold">Ảnh bìa</label>
+
+        <!-- Input upload -->
+        <input type="file" name="AnhBiaFile" id="AnhBiaFile" class="form-control" accept="image/*" />
+
+        <!-- Preview ảnh -->
+        <div class="mt-3">
+            <img id="previewImage"
+                 src="#"
+                 style="max-width: 250px; border-radius: 10px; display:none; box-shadow:0 5px 20px rgba(0,0,0,0.15);" />
+        </div>
     </div>
+
+    <!-- Hidden để lưu đường dẫn ảnh -->
+    <input type="hidden" asp-for="AnhBia" />
 
     <div class="mb-3">
         <label class="form-label">Danh mục</label>
@@ -48,10 +60,7 @@
         </select>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="GiaTien" class="form-label"></label>
-        <input asp-for="GiaTien" class="form-control" type="number" step="1000" />
-    </div>
+    <input type="hidden" asp-for="GiaTien" value="0" />
 
     <div class="mb-3">
         <label asp-for="TrangThai" class="form-label"></label>
@@ -68,4 +77,19 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.getElementById("AnhBiaFile").addEventListener("change", function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                const img = document.getElementById("previewImage");
+                img.src = event.target.result;
+                img.style.display = "block";
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
 }

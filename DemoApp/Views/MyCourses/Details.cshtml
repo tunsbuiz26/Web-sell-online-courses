@@ -3,8 +3,6 @@
 @{
     ViewData["Title"] = "Khóa học: " + (Model.KhoaHoc?.TenKhoaHoc ?? "Khóa học");
     var percent = Model.ProgressPercent;
-
-    // bài đang học, chỉ sau khi bấm "Học ngay" mới có giá trị
     int activeLessonId = ViewBag.ActiveLessonId != null ? (int)ViewBag.ActiveLessonId : 0;
 }
 
@@ -22,20 +20,15 @@
             ← Quay lại danh sách khóa học
         </button>
 
-        <!-- Card header khóa học -->
+        <!-- Header khóa học -->
         <div class="mc-course-header-card">
             <div class="mc-course-header-left">
-                <h1 class="mc-course-header-title">
-                    @Model.KhoaHoc?.TenKhoaHoc
-                </h1>
-                <p class="mc-course-header-subtitle">
-                    @Model.KhoaHoc?.MoTaNgan
-                </p>
+                <h1 class="mc-course-header-title">@Model.KhoaHoc?.TenKhoaHoc</h1>
+                <p class="mc-course-header-subtitle">@Model.KhoaHoc?.MoTaNgan</p>
 
                 <div class="mc-course-header-progress">
                     <div class="mc-progress-bar mc-progress-bar-lg">
-                        <div class="mc-progress-bar-fill"
-                             style="width:@percent%;"></div>
+                        <div class="mc-progress-bar-fill" style="width:@percent%;"></div>
                     </div>
                     <div class="mc-course-header-progress-text">
                         @Model.CompletedLessons/@Model.TotalLessons bài học đã hoàn thành
@@ -44,38 +37,28 @@
             </div>
 
             <div class="mc-course-header-badge">
-                <div class="mc-course-header-badge-title">
-                    Tiến độ hoàn thành
-                </div>
-                <div class="mc-course-header-badge-value">
-                    @percent%
-                </div>
+                <div class="mc-course-header-badge-title">Tiến độ</div>
+                <div class="mc-course-header-badge-value">@percent%</div>
             </div>
         </div>
 
         <!-- Tabs -->
         <div class="mc-tabs">
-            <button type="button"
-                    class="mc-tab is-active"
-                    data-tab="lessons">
+            <button type="button" class="mc-tab is-active" data-tab="lessons">
                 <span class="mc-tab-icon">📖</span>
                 <span>Bài học</span>
             </button>
-            <button type="button"
-                    class="mc-tab"
-                    data-tab="attendance">
+            <button type="button" class="mc-tab" data-tab="attendance">
                 <span class="mc-tab-icon">📅</span>
                 <span>Điểm danh</span>
             </button>
-            <button type="button"
-                    class="mc-tab"
-                    data-tab="stats">
+            <button type="button" class="mc-tab" data-tab="stats">
                 <span class="mc-tab-icon">👤</span>
                 <span>Thống kê</span>
             </button>
         </div>
 
-        <!-- Nội dung tab -->
+        <!-- Panels -->
         <div class="mc-tab-panels">
 
             <!-- TAB: BÀI HỌC -->
@@ -83,75 +66,54 @@
                 <div class="mc-lessons-list">
                     @if (Model.Lessons == null || Model.Lessons.Count == 0)
                     {
-                        <div class="mc-empty-box">
-                            Chưa có bài học nào trong khóa này.
-                        </div>
+                        <div class="mc-empty-box">Chưa có bài học nào.</div>
                     }
                     else
                     {
                         var index = 1;
-                        bool prevCompleted = true; // bài 1 luôn cho phép học
+                        bool prevCompleted = true;
 
                         foreach (var lesson in Model.Lessons)
                         {
                             bool isCompleted = Model.CompletedLessonIds != null
                             && Model.CompletedLessonIds.Contains(lesson.Id);
 
-                            // chỉ cho phép hiện nút "Đánh dấu hoàn thành" khi:
-                            // - bài chưa hoàn thành
-                            // - bài trước đã hoàn thành (hoặc bài đầu tiên)
-                            // - và bài này chính là bài user vừa bấm "Học ngay"
                             bool canMarkComplete =
-                            !isCompleted
-                            && (index == 1 || prevCompleted)
-                            && (lesson.Id == activeLessonId);
+                            !isCompleted &&
+                            (index == 1 || prevCompleted) &&
+                            (lesson.Id == activeLessonId);
 
                             <article class="mc-lesson-card @(isCompleted ? "mc-lesson-card-completed" : "")">
                                 <div class="mc-lesson-left">
                                     <div class="mc-lesson-icon">
-                                        @if (isCompleted)
-                                        {
-                                            <span>✔</span>
-                                        }
-                                        else
-                                        {
-                                            <span>@index</span>
-                                        }
+                                        @(isCompleted ? "✔" : index.ToString())
                                     </div>
                                     <div class="mc-lesson-text">
-                                        <h3 class="mc-lesson-title">
-                                            @lesson.TenBaiHoc
-                                        </h3>
+                                        <h3 class="mc-lesson-title">@lesson.TenBaiHoc</h3>
                                         <div class="mc-lesson-meta">
-                                            ⏱ @(lesson.ThoiLuong > 0
-                                                                                ? $"{lesson.ThoiLuong} phút"
-                                                                                : "45 phút")
+                                            ⏱ @(lesson.ThoiLuong > 0 ? $"{lesson.ThoiLuong} phút" : "45 phút")
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
                                 <div class="mc-lesson-right">
-                                    <!-- Nút HỌC NGAY -->
                                     <button type="button"
                                             class="mc-btn-secondary"
                                             onclick="startLesson(@lesson.Id, '@lesson.DuongDanNoiDung')">
                                         @(isCompleted ? "Xem lại" : "Học ngay")
                                     </button>
 
-                                    <!-- Nút đánh dấu hoàn thành -->
-                            @if (canMarkComplete)
+                                    @if (canMarkComplete)
                                     {
                                         <form asp-action="CompleteLesson"
                                               asp-controller="MyCourses"
                                               method="post"
                                               class="mc-complete-form"
-                                              style="display: inline-block; margin-left: 12px; margin-top: 6px;">
+                                              style="display:inline-block;margin-left:12px;margin-top:6px;">
                                             @Html.AntiForgeryToken()
                                             <input type="hidden" name="courseId" value="@Model.KhoaHoc!.Id" />
                                             <input type="hidden" name="lessonId" value="@lesson.Id" />
-                                            <button type="submit" class="mc-btn-complete">
-                                                ✓ Đánh dấu đã hoàn thành
-                                            </button>
+                                            <button type="submit" class="mc-btn-complete">✓ Hoàn thành</button>
                                         </form>
                                     }
                                 </div>
@@ -167,52 +129,73 @@
             <!-- TAB: ĐIỂM DANH -->
             <div class="mc-tab-panel" data-tab-panel="attendance">
                 <div class="mc-attendance-wrapper">
-                    <!-- Card tỷ lệ điểm danh -->
+
+                    <!-- Summary card -->
                     <div class="mc-attendance-summary-card">
                         <div>
                             <h3 class="mc-attendance-title">Tỷ lệ điểm danh</h3>
-                            <p class="mc-attendance-subtitle">Tháng này</p>
+                            <p class="mc-attendance-subtitle">Tổng quan</p>
                         </div>
                         <div class="mc-attendance-rate">
                             @(Model.Stats?.AttendanceRate ?? 0)%
                         </div>
                     </div>
 
-                    <!-- Danh sách buổi học / điểm danh -->
+                    <!-- Danh sách buổi học -->
                     <div class="mc-attendance-list">
-                        @if (Model.Attendances == null || Model.Attendances.Count == 0)
+                        @if (Model.Sessions == null || Model.Sessions.Count == 0)
                         {
-                            <div class="mc-empty-box">
-                                Chưa có dữ liệu điểm danh.
-                            </div>
+                            <div class="mc-empty-box">Chưa có buổi học nào.</div>
                         }
                         else
                         {
-                            foreach (var d in Model.Attendances)
+                            foreach (var session in Model.Sessions)
                             {
-                                var status = d.TrangThai; // "present", "late", "absent"
-                                var statusText = status == "present"
-                                ? "Có mặt"
-                                : status == "late"
-                                ? "Đi muộn"
-                                : "Vắng mặt";
+                                var attend = Model.Attendances
+                                ?.FirstOrDefault(a => a.BuoiHocId == session.Id);
+
+                                string status = attend?.TrangThai ?? "none";
+                                string dateText = attend?.NgayDiemDanh.ToString("dd/MM/yyyy") ?? "";
+                                string statusText = status switch
+                                {
+                                    "present" => "Có mặt",
+                                    "late" => "Đi muộn",
+                                    "absent" => "Vắng",
+                                    _ => "Chưa điểm danh"
+                                };
 
                                 <article class="mc-attendance-item">
                                     <div class="mc-attendance-left">
                                         <span class="mc-attendance-dot mc-attendance-dot-@status"></span>
                                         <div>
-                                            <div class="mc-attendance-lesson">
-                                                @(d.BuoiHoc?.TenBuoiHoc ?? "Buổi học")
-                                            </div>
-                                            <div class="mc-attendance-date">
-                                                @d.NgayDiemDanh.ToString("yyyy-MM-dd")
-                                            </div>
+                                            <div class="mc-attendance-lesson">@session.TenBuoiHoc</div>
+                                            @if (!string.IsNullOrEmpty(dateText))
+                                            {
+                                                <div class="mc-attendance-date">@dateText</div>
+                                            }
                                         </div>
                                     </div>
+
                                     <div class="mc-attendance-right">
                                         <span class="mc-attendance-badge mc-attendance-badge-@status">
                                             @statusText
                                         </span>
+
+                                        @* Nút điểm danh nếu chưa có bản ghi *@
+                                        @if (status == "none")
+                                        {
+                                            <form asp-controller="MyCourses"
+                                                  asp-action="CheckIn"
+                                                  method="post"
+                                                  class="mc-attendance-checkin-form">
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="courseId" value="@Model.KhoaHoc!.Id" />
+                                                <input type="hidden" name="sessionId" value="@session.Id" />
+                                                <button type="submit" class="mc-btn-secondary mc-btn-xs">
+                                                    Điểm danh
+                                                </button>
+                                            </form>
+                                        }
                                     </div>
                                 </article>
                             }
@@ -224,6 +207,7 @@
             <!-- TAB: THỐNG KÊ -->
             <div class="mc-tab-panel" data-tab-panel="stats">
                 <div class="mc-stats-grid">
+
                     <div class="mc-stat-card mc-stat-card-green">
                         <div class="mc-stat-card-header">
                             <span>Bài học</span>
@@ -232,9 +216,7 @@
                         <div class="mc-stat-card-value">
                             @Model.CompletedLessons/@Model.TotalLessons
                         </div>
-                        <div class="mc-stat-card-note">
-                            Hoàn thành
-                        </div>
+                        <div class="mc-stat-card-note">Đã hoàn thành</div>
                     </div>
 
                     <div class="mc-stat-card mc-stat-card-blue">
@@ -245,9 +227,7 @@
                         <div class="mc-stat-card-value">
                             @(Model.Stats?.AttendanceRate ?? 0)%
                         </div>
-                        <div class="mc-stat-card-note">
-                            Tỷ lệ tham gia
-                        </div>
+                        <div class="mc-stat-card-note">Tỷ lệ tham gia</div>
                     </div>
 
                     <div class="mc-stat-card mc-stat-card-orange">
@@ -258,10 +238,9 @@
                         <div class="mc-stat-card-value">
                             @(Model.Stats?.AvgScore ?? 0)/100
                         </div>
-                        <div class="mc-stat-card-note">
-                            Điểm trung bình
-                        </div>
+                        <div class="mc-stat-card-note">Điểm trung bình</div>
                     </div>
+
                 </div>
             </div>
 
@@ -271,34 +250,26 @@
 
 @section Scripts {
     <script>
-        // base URL cho trang Details
         const detailsBaseUrl = '@Url.Action("Details", "MyCourses", new { id = Model.KhoaHoc!.Id })';
 
-        // Khi bấm "Học ngay": mở YouTube + reload lại trang với activeLessonId
-               function startLesson(lessonId, url) {
-            // Mở video YouTube
+        function startLesson(lessonId, url) {
             window.open(url, '_blank');
-
-            // Reload lại trang details kèm bài đang học
             window.location.href = detailsBaseUrl + '?activeLessonId=' + lessonId;
         }
 
-        // logic chuyển tab
         document.addEventListener('DOMContentLoaded', function () {
-            const tabButtons = document.querySelectorAll('.mc-tab');
-            const tabPanels = document.querySelectorAll('.mc-tab-panel');
+            const tabs = document.querySelectorAll('.mc-tab');
+            const panels = document.querySelectorAll('.mc-tab-panel');
 
-            tabButtons.forEach(btn => {
+            tabs.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const target = btn.getAttribute('data-tab');
 
-                    tabButtons.forEach(b => b.classList.remove('is-active'));
-                    tabPanels.forEach(p => p.classList.remove('is-active'));
+                    tabs.forEach(b => b.classList.remove('is-active'));
+                    panels.forEach(p => p.classList.remove('is-active'));
 
                     btn.classList.add('is-active');
-                    document
-                        .querySelector('[data-tab-panel="' + target + '"]')
-                        .classList.add('is-active');
+                    document.querySelector('[data-tab-panel="' + target + '"]').classList.add('is-active');
                 });
             });
         });

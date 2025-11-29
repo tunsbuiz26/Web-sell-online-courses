@@ -249,3 +249,10 @@
         height: 180px;
     }
 }
+.course-enroll-form {
+    margin-top: 16px;
+}
+
+    .course-enroll-form .btn-enroll {
+        width: 100%;
+    }

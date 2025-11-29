@@ -1,4 +1,4 @@
-﻿//Nút quay lại trang admin 
+﻿// Nút quay lại trang admin (giữ nguyên nếu bạn đang dùng)
 document.addEventListener('DOMContentLoaded', function () {
     const backToSiteBtn = document.querySelector('.back-to-site');
 
@@ -6,99 +6,90 @@ document.addEventListener('DOMContentLoaded', function () {
         backToSiteBtn.addEventListener('click', function (e) {
             console.log('Nút "Về trang chủ" được click');
             console.log('Href:', this.getAttribute('href'));
-
-            // Nếu vẫn không hoạt động, thử dùng JavaScript redirect
-            // e.preventDefault();
-            // window.location.href = '/';
         });
     }
 });
-// Toggle sidebar functionality
+
+// Toggle sidebar + chart
 document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.getElementById('adminSidebar');
     const mainContent = document.getElementById('adminMain');
     const sidebarToggle = document.getElementById('sidebarToggle');
 
+    if (sidebar && mainContent && sidebarToggle) {
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
 
-    // Toggle sidebar
-    sidebarToggle.addEventListener('click', function () {
-        sidebar.classList.toggle('collapsed');
-        mainContent.classList.toggle('expanded');
+            const icon = sidebarToggle.querySelector('svg');
+            if (!icon) return;
 
-        // Update toggle button icon với hiệu ứng xoay
-        const icon = sidebarToggle.querySelector('svg');
-        if (sidebar.classList.contains('collapsed')) {
-            // Khi thu gọn, đổi icon thành mũi tên sang phải
-            icon.innerHTML = `
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-            `;
-        } else {
-            // Khi mở rộng, đổi icon thành mũi tên sang trái
-            icon.innerHTML = `
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-            `;
-        }
-    });
+            if (sidebar.classList.contains('collapsed')) {
+                icon.innerHTML = `
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                `;
+            } else {
+                icon.innerHTML = `
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                `;
+            }
+        });
+    }
 
-    // Initialize revenue chart
-    initializeRevenueChart();
+    initializeRegistrationChart();
 });
 
-// Revenue Chart
-function initializeRevenueChart() {
-    const ctx = document.getElementById('revenueChart').getContext('2d');
+// Biểu đồ tỉ lệ đăng ký
+function initializeRegistrationChart() {
+    const canvas = document.getElementById('registrationChart');
+    if (!canvas || !window.registrationChartLabels) {
+        console.warn('Không có dữ liệu cho biểu đồ đăng ký');
+        return;
+    }
 
-    const revenueData = {
-        labels: ['Th1', 'Th2', 'Th3', 'Th4', 'Th5', 'Th6', 'Th7', 'Th8', 'Th9', 'Th10', 'Th11', 'Th12'],
-        datasets: [{
-            label: 'Doanh thu (triệu VNĐ)',
-            data: [850, 920, 780, 1100, 1250, 980, 1350, 1420, 1280, 1560, 1480, 1720],
-            backgroundColor: 'rgba(0, 80, 255, 0.1)',
-            borderColor: '#0050FF',
-            borderWidth: 2,
-            fill: true,
-            tension: 0.4
-        }]
-    };
+    const labels = window.registrationChartLabels;
+    const dataPercents = window.registrationChartPercents;
+    const dataRegs = window.registrationChartRegs;
 
-    const revenueChart = new Chart(ctx, {
-        type: 'line',
-        data: revenueData,
+    const ctx = canvas.getContext('2d');
+
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Tỉ lệ đăng ký (%)',
+                data: dataPercents,
+                borderWidth: 1,
+                // có thể tinh chỉnh lại màu nếu muốn
+                backgroundColor: [
+                    'rgba(59, 130, 246, 0.8)',
+                    'rgba(16, 185, 129, 0.8)',
+                    'rgba(245, 158, 11, 0.8)',
+                    'rgba(239, 68, 68, 0.8)',
+                    'rgba(139, 92, 246, 0.8)',
+                    'rgba(236, 72, 153, 0.8)'
+                ]
+            }]
+        },
         options: {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
-                legend: {
-                    display: false
-                },
                 tooltip: {
-                    mode: 'index',
-                    intersect: false,
                     callbacks: {
                         label: function (context) {
-                            return `Doanh thu: ${context.parsed.y.toLocaleString()} triệu VNĐ`;
-                        }
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    grid: {
-                        color: 'rgba(0, 0, 0, 0.05)'
-                    },
-                    ticks: {
-                        callback: function (value) {
-                            return value.toLocaleString() + ' tr';
+                            const idx = context.dataIndex;
+                            const regs = dataRegs[idx] || 0;
+                            const percent = dataPercents[idx] || 0;
+                            return `${regs.toLocaleString()} lượt đăng ký (${percent.toFixed(2)}%)`;
                         }
                     }
                 },
-                x: {
-                    grid: {
-                        display: false
-                    }
+                legend: {
+                    position: 'bottom'
                 }
             }
         }

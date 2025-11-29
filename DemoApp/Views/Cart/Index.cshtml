@@ -3,10 +3,12 @@
 @{
     ViewData["Title"] = "Giỏ hàng";
 }
-
+@section Styles {
+    <link rel="stylesheet" href="~/css/cart.css" />
+}
 <section class="cart-page">
     <div class="container">
-        <h1 class="page-title">Giỏ hàng của bạn</h1>
+        <h1 class="page-title" style="text-align: center;">Giỏ hàng của bạn</h1>
 
         @if (Model.Items == null || !Model.Items.Any())
         {
